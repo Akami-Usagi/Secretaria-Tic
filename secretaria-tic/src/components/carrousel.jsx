@@ -67,7 +67,7 @@ export default function Carrousel(){
         <CarroulseDiv>
             <CustomCarrousel 
             showArrows={true} 
-            autoPlay={false} 
+            autoPlay={true}
             infiniteLoop={true}
             preventMovementUntilSwipeScrollTolerance={true}
             showThumbs={false}

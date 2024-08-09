@@ -8,7 +8,7 @@ const InfoBack = styled.div`
     margin: 30px 0;
 `
 const InfoContent = styled.div`
-    width: 97%;
+    width: 70%;
     height: 400px;
     background-color: #e4f9ff;
     border-radius: 20px;
