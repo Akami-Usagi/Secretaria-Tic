@@ -37,7 +37,7 @@ const NavButton = styled.button`
     
     transition: ease-in-out 200ms;
     &:hover{
-        background-color: #6dc9ee;
+        background-color: #aee8ff;
     }
 `
 

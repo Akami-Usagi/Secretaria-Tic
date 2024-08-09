@@ -10,9 +10,10 @@ const InfoBack = styled.div`
 const InfoContent = styled.div`
     width: 97%;
     height: 400px;
-    background-color: #dcf7ff;
+    background-color: #dddddd;
     border-radius: 20px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -35,7 +36,7 @@ const InfoText = styled.p`
     width: 500px;
 `
 
-export default function InfoCard(){
+export default function InfoCardLeft(){
     return(
         <InfoBack>
             <InfoContent>
