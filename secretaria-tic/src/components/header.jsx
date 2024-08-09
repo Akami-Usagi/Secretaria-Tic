@@ -52,10 +52,10 @@ export default function Header(){
                 <nav>
                     <NavList>
                         <li><Link to={"/"}><NavButton>Inicio</NavButton></Link></li>
-                        <li><NavButton>Buga Avanza</NavButton></li>
+                        <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>
                         <li><NavButton>Digicampus</NavButton></li>
                         <li><NavButton>Aula Virtual</NavButton></li>
-                        <li><NavButton>Oferta Institucional</NavButton></li>
+                        <li><Link to={"/oferta-institucional"}><NavButton>Oferta Institucional</NavButton></Link></li>
                         <li><NavButton>CTD</NavButton></li>
                         <li><NavButton>Talento Humano</NavButton></li>
                     </NavList>
