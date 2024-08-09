@@ -21,6 +21,7 @@ const LogoImage = styled.img`
 const NavList = styled.ul`
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
@@ -33,7 +34,7 @@ const NavButton = styled.button`
     font-weight: 400;
     border: none;
     border-radius: 30px;
-    background-color: #d8d8d8;
+    background-color: #e7e7e7;
     
     transition: ease-in-out 200ms;
     &:hover{
