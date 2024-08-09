@@ -36,12 +36,12 @@ const InfoText = styled.p`
     width: 500px;
 `
 
-export default function InfoCardLeft(){
+export default function InfoCardLeft({image}){
     return(
         <InfoBack>
             <InfoContent>
                 <InfoImageDiv>
-                    <InfoImage src="/images/banner/image_1.webp" alt="Tarjeta" />
+                    <InfoImage src={image} alt="Tarjeta" />
                 </InfoImageDiv>
             <InfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</InfoText>
             </InfoContent>

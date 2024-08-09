@@ -7,10 +7,10 @@ export default function Main(){
     return(
         <div>
             <Carrousel/>
-            <InfoCard/>
-            <InfoCardLeft/>
-            <InfoCard/>
-            <InfoCardLeft/>
+            <InfoCard image={"/images/banner/image_1.webp"}/>
+            <InfoCardLeft image={"/images/banner/image_2.webp"}/>
+            <InfoCard image={"/images/banner/image_3.webp"}/>
+            <InfoCardLeft image={"/images/banner/image_1.webp"}/>
         </div>
         
     )

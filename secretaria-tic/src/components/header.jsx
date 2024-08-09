@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledHeader = styled.header`
     width: 100%;
@@ -49,7 +50,7 @@ export default function Header(){
                 <LogoImage src="/images/logo_tic.webp" alt="Logo Secretaría TIC" />
                 <nav>
                     <NavList>
-                        <li><NavButton>Inicio</NavButton></li>
+                        <li><Link to={"/"}><NavButton>Inicio</NavButton></Link></li>
                         <li><NavButton>Buga Avanza</NavButton></li>
                         <li><NavButton>Digicampus</NavButton></li>
                         <li><NavButton>Aula Virtual</NavButton></li>
