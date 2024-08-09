@@ -1,0 +1,32 @@
+import React from "react";
+import styled from "styled-components";
+
+const InfoBack = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+`
+const InfoContent = styled.div`
+    width: 97%;
+    height: 400px;
+    background-color: #c4e4ee;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+const InfoImage = styled.img`
+    width: 500px;
+`
+
+export default function InfoCard(){
+    return(
+        <InfoBack>
+            <InfoContent>
+                <InfoImage src="/images/banner/image_1.webp" alt="Tarjeta" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</p>
+            </InfoContent>
+        </InfoBack>
+    )
+}

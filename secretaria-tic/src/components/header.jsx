@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
     width: 100%;
-    height: 120px;
+    height: fit-content;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
 `
@@ -20,6 +21,7 @@ const LogoImage = styled.img`
 const NavList = styled.ul`
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     align-items: center;
 `
