@@ -15,7 +15,7 @@ const CustomCarrousel = styled(Carousel)`
     display: grid;
     place-items: center;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20px 150px 20px 150px;
     
 `
 const ImageDiv = styled.div`
@@ -74,7 +74,7 @@ export default function Carrousel(){
             stopOnHover={false}
             showStatus={false}
             showIndicators={false}
-            interval={5000}>    
+            interval={4000}>    
                 <ImageDiv>
                     <h1>placeholder title</h1>
                     <h3>placeholder text</h3>
