@@ -32,14 +32,14 @@ const TextDiv = styled.div`
 const Title = styled.h1`
     text-align: left;
 `
-export default function BugaAvanza(){
+export default function Digicampus(){
     return(
         <BugaDiv>
             <ContentDiv>
                 <Image src="/images/banner/image_1.webp" alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
-                <Title>Buga Avanza</Title>
+                <Title>Digicampus</Title>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</p>
             </TextDiv>
         </BugaDiv>

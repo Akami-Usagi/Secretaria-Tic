@@ -13,7 +13,7 @@ const BannerDiv = styled.div`
     width: 97%;
     height: 600px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 20px 150px 20px 150px;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -31,7 +31,7 @@ const TextDiv = styled.div`
 `
 const Title = styled.h1`
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
 `
 const Text = styled.p`
     font-size: 1.5rem;

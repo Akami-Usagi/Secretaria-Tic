@@ -60,8 +60,8 @@ export default function Header(){
                     <NavList>
                         <li><Link to={"/"}><NavButton>Inicio</NavButton></Link></li>
                         <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>
-                        <li><NavButton>Digicampus</NavButton></li>
-                        <li><NavButton>Aula Virtual</NavButton></li>
+                        <li><Link to={"/digicampus"}><NavButton>Digicampus</NavButton></Link></li>
+                        <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
                         <li><Link to={"/oferta-institucional"}><NavButton>Oferta Institucional</NavButton></Link></li>
                         <li><NavButton>CTD</NavButton></li>
                         <li><NavButton>Talento Humano</NavButton></li>
