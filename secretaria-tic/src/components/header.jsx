@@ -75,7 +75,7 @@ const MenuImage = styled.img`
 export default function Header(){
 
     
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return(
         <StyledHeader>
