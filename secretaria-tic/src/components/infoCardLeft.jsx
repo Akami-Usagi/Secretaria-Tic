@@ -24,13 +24,20 @@ const InfoImageDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px 80px 10px 80px;
 
 `
 const InfoImage = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+`
+const TextDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+const InfoTitle = styled.h3`
+    
 `
 const InfoText = styled.p`
     width: 500px;
@@ -43,7 +50,10 @@ export default function InfoCardLeft({image}){
                 <InfoImageDiv>
                     <InfoImage src={image} alt="Tarjeta" />
                 </InfoImageDiv>
-            <InfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</InfoText>
+                <TextDiv>
+                    <InfoTitle>placeholder title</InfoTitle>
+                    <InfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</InfoText>
+                </TextDiv>    
             </InfoContent>
         </InfoBack>
     )
