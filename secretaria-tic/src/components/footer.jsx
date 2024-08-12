@@ -11,10 +11,12 @@ const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 `
 const FooterImage = styled.img`
     height: 80px;
+    @media (max-width: 400px){
+        height: 40px;
+    }
 `
 const IconDiv = styled.div`
     display: flex;
@@ -24,6 +26,9 @@ const IconDiv = styled.div`
 const FooterIcon = styled.a`
     color: white;
     font-size: 50px;
+    @media (max-width: 400px){
+        font-size: 40px;
+    }
 `
 
 export default function Footer(){

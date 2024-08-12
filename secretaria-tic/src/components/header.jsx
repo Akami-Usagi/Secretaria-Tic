@@ -9,6 +9,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: center;
     background-color: #dddddd;
+    
 `
 const HeaderDiv = styled.div`
     width: 100%;
@@ -19,6 +20,9 @@ const HeaderDiv = styled.div`
 `
 const LogoImage = styled.img`
     height: 110px;
+    @media (max-width: 400px){
+        height: 80px;
+    }
 `
 const NavList = styled.ul`
     list-style: none;
@@ -30,6 +34,10 @@ const NavList = styled.ul`
     background-color: #f1f1f1;
     border-radius: 30px;
     padding: 5px 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -5px -5px 7px rgba(255,255,255,0.5);
+    @media (max-width: 400px){
+        display: none;
+    }
     
 `
 const NavButton = styled.button`
@@ -41,7 +49,6 @@ const NavButton = styled.button`
     border: none;
     border-radius: 30px;
     background-color: #ffffff;
-    
     transition: ease-in-out 200ms;
     &:hover{
         background-color: #a7a7a7;
