@@ -36,7 +36,6 @@ const TextDiv = styled.div`
     flex-direction: column;
     
     @media (max-width: 400px){
-        
         width: 90%;
         margin-bottom: 10px;
     }
