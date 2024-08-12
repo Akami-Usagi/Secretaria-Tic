@@ -18,7 +18,7 @@ const HeaderDiv = styled.div`
     padding: 0 3%;
 `
 const LogoImage = styled.img`
-    height: 100px;
+    height: 110px;
 `
 const NavList = styled.ul`
     list-style: none;
@@ -44,9 +44,10 @@ const NavButton = styled.button`
     
     transition: ease-in-out 200ms;
     &:hover{
-        background-color: #aee8ff;
+        background-color: #a7a7a7;
         font-weight: 600;
         width: 170px;
+        color: white;
     }
 `
 
