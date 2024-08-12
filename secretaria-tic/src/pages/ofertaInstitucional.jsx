@@ -16,7 +16,7 @@ const ContentDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 95%;
         height: 600px;
         border-radius: 10px 70px 10px 70px;
@@ -35,14 +35,14 @@ const TextDiv = styled.div`
     display: flex;
     flex-direction: column;
     
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 90%;
         margin-bottom: 10px;
     }
     
 `
 const Title = styled.h1`
-@media (max-width: 400px){
+@media (max-width: 500px){
     text-align: center;
 }
     
@@ -55,7 +55,7 @@ const CousesDiv = styled.div`
     gap: 50px;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         gap: 30px;
         width: 100%;
     }
@@ -64,7 +64,7 @@ const CourseImage = styled.img`
     width: 400px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 90%;
     }
 `

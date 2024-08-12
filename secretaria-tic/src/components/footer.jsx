@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
 `
 const FooterImage = styled.img`
     height: 80px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         height: 40px;
     }
 `
@@ -26,7 +26,7 @@ const IconDiv = styled.div`
 const FooterIcon = styled.a`
     color: white;
     font-size: 50px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         font-size: 30px;
     }
 `

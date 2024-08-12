@@ -84,7 +84,7 @@ const InfoButon = styled.button`
         margin: 20px;
         color: white;
     }
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         margin-bottom: 30px;
     }
 `

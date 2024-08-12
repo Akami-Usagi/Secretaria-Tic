@@ -16,7 +16,7 @@ const InfoContent = styled.div`
     justify-content: center;
     align-items: center;
     gap: 50px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         flex-direction: column;
         height: fit-content;
         width: 90%;
@@ -30,7 +30,7 @@ const InfoImageDiv = styled.div`
     overflow: hidden;
     border-radius: 10px 80px 10px 80px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 90%;
         height: 200px;
         margin-top: 20px;
@@ -61,7 +61,7 @@ const InfoTitle = styled.h2`
 `
 const InfoText = styled.p`
     width: 500px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 300px;
         overflow: hidden;
         display: -webkit-box;
@@ -85,7 +85,7 @@ const InfoButon = styled.button`
         margin: 20px;
         color: white;
     }
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         margin-bottom: 30px;
     }
 `

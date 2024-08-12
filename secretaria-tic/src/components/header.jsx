@@ -20,7 +20,7 @@ const HeaderDiv = styled.div`
 `
 const LogoImage = styled.img`
     height: 110px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         height: 80px;
     }
 `
@@ -35,7 +35,7 @@ const NavList = styled.ul`
     border-radius: 30px;
     padding: 5px 10px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5), -5px -5px 7px rgba(255,255,255,0.5);
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         display: none;
     }
     

@@ -16,7 +16,7 @@ const CustomCarrousel = styled(Carousel)`
     place-items: center;
     overflow: hidden;
     border-radius: 20px 150px 20px 150px;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 95%;
         height: 600px;
         border-radius: 10px 70px 10px 70px;
@@ -36,7 +36,7 @@ const ImageDiv = styled.div`
     padding: 70px;
     color: white;
     font-size: larger;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
     }
@@ -54,7 +54,7 @@ const ImageDiv2 = styled.div`
     padding: 50px;
     color: white;
     font-size: larger;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
     }
@@ -72,14 +72,14 @@ const ImageDiv3 = styled.div`
     padding: 50px;
     color: white;
     font-size: larger;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
     }
 `
 const CarrouselTitle = styled.h1`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         font-size: larger;
         position: relative;
         bottom: 50px;
@@ -87,7 +87,7 @@ const CarrouselTitle = styled.h1`
 `
 const CarrouselText = styled.h3`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         font-size: large;
         position: relative;
         bottom: 50px;

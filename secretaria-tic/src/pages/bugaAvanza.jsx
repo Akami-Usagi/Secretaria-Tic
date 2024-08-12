@@ -16,7 +16,7 @@ const ContentDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         width: 95%;
         height: 600px;
         border-radius: 10px 70px 10px 70px;
@@ -34,7 +34,7 @@ const TextDiv = styled.div`
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         align-items: center;
         width: 85%;
     }
@@ -60,7 +60,7 @@ const InfoButon = styled.button`
         height: 60px;
         color: white;
     }
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         margin-top: 20px;
     }
 `
