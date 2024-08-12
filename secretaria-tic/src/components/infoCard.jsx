@@ -62,7 +62,8 @@ const InfoTitle = styled.h2`
 const InfoText = styled.p`
     width: 500px;
     @media (max-width: 500px){
-        width: 300px;
+        width: 80%;
+        margin-bottom: 30px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 4; /* number of lines to show */
