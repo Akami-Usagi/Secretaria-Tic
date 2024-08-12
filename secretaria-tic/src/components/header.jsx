@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import HeaderMenu from "./headerMenu";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const StyledHeader = styled.header`
@@ -7,6 +9,7 @@ const StyledHeader = styled.header`
     height: fit-content;
     padding: 15px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #dddddd;
     
@@ -50,6 +53,7 @@ const NavButton = styled.button`
     border-radius: 30px;
     background-color: #ffffff;
     transition: ease-in-out 200ms;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     &:hover{
         background-color: #a7a7a7;
         font-weight: 600;
@@ -57,8 +61,22 @@ const NavButton = styled.button`
         color: white;
     }
 `
-
+const MenuImage = styled.img`
+        width: 50px;
+        display: none;
+        transition: ease-in-out 200ms;
+        @media (max-width: 500px){
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+    `
 export default function Header(){
+
+    
+    const [menuOpen, setMenuOpen] = useState(true);
+
     return(
         <StyledHeader>
             <HeaderDiv>
@@ -70,11 +88,13 @@ export default function Header(){
                         <li><Link to={"/digicampus"}><NavButton>Digicampus</NavButton></Link></li>
                         <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
                         <li><Link to={"/oferta-institucional"}><NavButton>Oferta Institucional</NavButton></Link></li>
-                        <li><NavButton>CTD</NavButton></li>
-                        <li><NavButton>Talento Humano</NavButton></li>
+                        <li><Link to={"/centros_transfomacion_digital"}><NavButton>CTD</NavButton></Link></li>
+                        <li><Link to={"/talento_humano"}><NavButton>Talento Humano</NavButton></Link></li>
                     </NavList>
                 </nav>
             </HeaderDiv>
+            {menuOpen ? <MenuImage src="/images/menu_open.svg" onClick={()=> setMenuOpen(!menuOpen)}/> : <MenuImage src="/images/menu_closed.svg" onClick={()=> setMenuOpen(!menuOpen)}/>}
+            {menuOpen && <HeaderMenu setMenuOpen={setMenuOpen}/>}
         </StyledHeader>
     )
 }

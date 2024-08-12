@@ -12,14 +12,15 @@ const BugaDiv = styled.div`
 const ContentDiv = styled.div`
     width: 97%;
     height: 600px;
-    border-radius: 20px 150px 20px 150px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     display: grid;
     place-items: center;
     overflow: hidden;
     @media (max-width: 500px){
         width: 95%;
         height: 600px;
-        border-radius: 10px 70px 10px 70px;
+        
     }
     
 `
@@ -53,6 +54,7 @@ const InfoButon = styled.button`
     font-size: large;
     transition: ease-in-out 200ms;
     align-self: center;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     &:hover{
         background-color: #a7a7a7;
         font-weight: 600;

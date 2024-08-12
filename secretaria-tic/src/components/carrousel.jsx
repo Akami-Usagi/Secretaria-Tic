@@ -15,11 +15,11 @@ const CustomCarrousel = styled(Carousel)`
     display: grid;
     place-items: center;
     overflow: hidden;
-    border-radius: 20px 150px 20px 150px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     @media (max-width: 500px){
         width: 95%;
         height: 600px;
-        border-radius: 10px 70px 10px 70px;
     }
     
 `

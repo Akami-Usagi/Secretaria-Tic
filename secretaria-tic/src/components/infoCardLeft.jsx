@@ -78,6 +78,7 @@ const InfoButon = styled.button`
     border-radius: 20px;
     font-family: "Montserrat", sans-serif;
     font-size: large;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     transition: ease-in-out 200ms;
     &:hover{
         background-color: #a7a7a7;
