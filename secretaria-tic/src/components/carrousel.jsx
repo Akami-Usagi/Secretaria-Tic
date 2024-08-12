@@ -60,6 +60,12 @@ const ImageDiv3 = styled.div`
     color: white;
     font-size: larger;
 `
+const CarrouselTitle = styled.h1`
+    text-shadow: 3px 3px 5px rgba(0,0,0,1);
+`
+const CarrouselText = styled.h3`
+    text-shadow: 3px 3px 5px rgba(0,0,0,1);
+`
 
 
 export default function Carrousel(){
@@ -76,16 +82,16 @@ export default function Carrousel(){
             showIndicators={false}
             interval={4000}>    
                 <ImageDiv>
-                    <h1>placeholder title</h1>
-                    <h3>placeholder text</h3>
+                    <CarrouselTitle>placeholder title</CarrouselTitle>
+                    <CarrouselText>placeholder text</CarrouselText>
                 </ImageDiv>
                 <ImageDiv2>
-                    <h1>placeholder title</h1>
-                    <h3>placeholder text</h3>
+                    <CarrouselTitle>placeholder title</CarrouselTitle>
+                    <CarrouselText>placeholder text</CarrouselText>
                 </ImageDiv2>
                 <ImageDiv3>
-                    <h1>placeholder title</h1>
-                    <h3>placeholder text</h3>
+                    <CarrouselTitle>placeholder title</CarrouselTitle>
+                    <CarrouselText>placeholder text</CarrouselText>
                 </ImageDiv3>
                 
             </CustomCarrousel>
