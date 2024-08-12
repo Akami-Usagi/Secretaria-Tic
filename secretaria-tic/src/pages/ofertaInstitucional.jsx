@@ -11,8 +11,8 @@ const ContentDiv = styled.div`
 `
 const BannerDiv = styled.div`
     width: 97%;
-    height: 700px;
-    background-color: red;
+    height: 600px;
+    background-color: white;
     border-radius: 20px;
     display: grid;
     place-items: center;

@@ -10,7 +10,7 @@ const InfoBack = styled.div`
 const InfoContent = styled.div`
     width: 70%;
     height: 400px;
-    background-color: #e4f9ff;
+    background-color: #f2fcff;
     border-radius: 20px;
     display: flex;
     justify-content: center;

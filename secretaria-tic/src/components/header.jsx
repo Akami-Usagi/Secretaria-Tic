@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
     padding: 15px 0;
     display: flex;
     justify-content: center;
+    background-color: #dddddd;
 `
 const HeaderDiv = styled.div`
     width: 100%;
@@ -26,6 +27,10 @@ const NavList = styled.ul`
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 5px 10px;
+    
 `
 const NavButton = styled.button`
     width: 150px;
@@ -35,12 +40,13 @@ const NavButton = styled.button`
     font-weight: 400;
     border: none;
     border-radius: 30px;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     
     transition: ease-in-out 200ms;
     &:hover{
         background-color: #aee8ff;
         font-weight: 600;
+        width: 170px;
     }
 `
 

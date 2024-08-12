@@ -29,7 +29,8 @@ const FooterIcon = styled.a`
 export default function Footer(){
     return(
         <StyledFooter>
-            <FooterImage src="/images/logo_tic_footer.webp" alt="FooterImage" />
+            <FooterImage src="/images/logo_tic_footer.webp" alt="FooterTicImage" />
+            <FooterImage src="/images/logo_gob_footer.webp" alt="FooterGobImage" />
             <IconDiv>
                 <FooterIcon href="https://www.instagram.com/ticparaavanzar/" target="blank"><FaInstagram/></FooterIcon>
                 <FooterIcon href="https://www.facebook.com/SecretariaTICBuga" target="blank"><FaFacebookSquare/></FooterIcon>     

@@ -11,7 +11,7 @@ const BugaDiv = styled.div`
 `
 const ContentDiv = styled.div`
     width: 97%;
-    height: 500px;
+    height: 600px;
     background-color: red;
     border-radius: 20px;
     display: grid;
@@ -23,6 +23,7 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 `
 const TextDiv = styled.div`
     width: 70%;

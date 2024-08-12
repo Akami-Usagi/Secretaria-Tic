@@ -74,7 +74,7 @@ export default function Carrousel(){
             stopOnHover={false}
             showStatus={false}
             showIndicators={false}
-            interval={8000}>    
+            interval={5000}>    
                 <ImageDiv>
                     <h1>placeholder title</h1>
                     <h3>placeholder text</h3>
