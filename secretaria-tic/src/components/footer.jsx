@@ -27,7 +27,7 @@ const FooterIcon = styled.a`
     color: white;
     font-size: 50px;
     @media (max-width: 400px){
-        font-size: 40px;
+        font-size: 30px;
     }
 `
 

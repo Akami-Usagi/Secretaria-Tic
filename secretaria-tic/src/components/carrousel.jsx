@@ -17,7 +17,7 @@ const CustomCarrousel = styled(Carousel)`
     overflow: hidden;
     border-radius: 20px 150px 20px 150px;
     @media (max-width: 400px){
-        width: 92%;
+        width: 95%;
         height: 600px;
         border-radius: 10px 70px 10px 70px;
     }

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const BugaDiv = styled.div`
+const ContentDiv = styled.div`
     width: 100%;
     min-height: calc(100vh - 230px);
     display: flex;
@@ -9,18 +9,14 @@ const BugaDiv = styled.div`
     align-items: center;
     gap: 30px;
 `
-const ContentDiv = styled.div`
+const BannerDiv = styled.div`
     width: 97%;
     height: 600px;
+    background-color: white;
     border-radius: 20px 150px 20px 150px;
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 400px){
-        width: 95%;
-        height: 600px;
-        border-radius: 10px 70px 10px 70px;
-    }
     
 `
 const Image = styled.img`
@@ -32,58 +28,46 @@ const Image = styled.img`
 const TextDiv = styled.div`
     width: 70%;
     margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    
-    @media (max-width: 400px){
-        
-        width: 90%;
-        margin-bottom: 10px;
-    }
-    
 `
 const Title = styled.h1`
-@media (max-width: 400px){
-    text-align: center;
-}
-    
+    text-align: left;
+    font-size: 2.5rem;
+`
+const Text = styled.p`
+    font-size: 1.5rem;
 `
 const CousesDiv = styled.div`
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    @media (max-width: 400px){
-        gap: 30px;
-        width: 100%;
-    }
 `
 const CourseImage = styled.img`
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    @media (max-width: 400px){
-        width: 90%;
-    }
 `
-export default function BugaAvanza(){
+export default function OfertaInstitucional(){
     return(
-        <BugaDiv>
-            <ContentDiv>
-                <Image src="/images/banner/image_1.webp" alt="Imagen Noticia" />
-            </ContentDiv>
+        <ContentDiv>
+            <BannerDiv>
+                <Image src="/images/ofertaInstitucional/oferta_banner.png" alt="ImagenOferta" />
+            </BannerDiv>
             <TextDiv>
                 <Title>Nuestra Oferta Institucional</Title>
-                <p>
+                <Text>
                     La Secretaría de las Tecnologias de la Informacion y las Comunicaciones, ofrece a toda
                     la comunidad Bugueña una fuerte oferta educativa, con el objetivo de cerrar la gran brecha digital
                     que existe entre la poblacion bugueña. Estamos innovando cada día para asi lograr ofrecer
                     nuevos cursos a toda la comunidad, en los proximos meses, a parte de las formaciones en Ofimatica Basica,
                     cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en Manejo de Drones y en Fundamentos de Programacion.
-                </p>  
+                </Text>
+                <Text>
+                    Inscribete y se parte del proyecto Avanzando en lo Digital
+                </Text>
             </TextDiv>
             <CousesDiv>
                 <CourseImage src="/images/ofertaInstitucional/programacion.png" alt="Programacion" />
@@ -93,6 +77,6 @@ export default function BugaAvanza(){
                 <CourseImage src="/images/ofertaInstitucional/informatica.png" alt="Informatica" />
                 <CourseImage src="/images/ofertaInstitucional/marketing.png" alt="Marketing" />
             </CousesDiv>
-        </BugaDiv>
+        </ContentDiv>
     )
 }
