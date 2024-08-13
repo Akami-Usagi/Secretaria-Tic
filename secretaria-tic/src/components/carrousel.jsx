@@ -110,8 +110,8 @@ export default function Carrousel(){
             showIndicators={false}
             interval={4000}>    
                 <ImageDiv>
-                    <CarrouselTitle>placeholder title</CarrouselTitle>
-                    <CarrouselText>placeholder text</CarrouselText>
+                    <CarrouselTitle>Conoce a TIC-O</CarrouselTitle>
+                    <CarrouselText>La nueva mascota de la Secretaría de las Tecnologías de las Información y las Comunicaciónes</CarrouselText>
                 </ImageDiv>
                 <ImageDiv2>
                     <CarrouselTitle>placeholder title</CarrouselTitle>

@@ -86,12 +86,12 @@ export default function BugaAvanza(){
                 </p>  
             </TextDiv>
             <CousesDiv>
-                <CourseImage src="/images/ofertaInstitucional/programacion.png" alt="Programacion" />
-                <CourseImage src="/images/ofertaInstitucional/drones.png" alt="Drones" />
-                <CourseImage src="/images/ofertaInstitucional/excel.png" alt="Excel" />
-                <CourseImage src="/images/ofertaInstitucional/fotografia.png" alt="Fotografia" />
-                <CourseImage src="/images/ofertaInstitucional/informatica.png" alt="Informatica" />
-                <CourseImage src="/images/ofertaInstitucional/marketing.png" alt="Marketing" />
+                <CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" />
+                <CourseImage src="/images/ofertaInstitucional/drones.webp" alt="Drones" />
+                <CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" />
+                <CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia" />
+                <CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" />
+                <CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing" />
             </CousesDiv>
         </BugaDiv>
     )
