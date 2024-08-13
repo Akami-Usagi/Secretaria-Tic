@@ -39,11 +39,13 @@ const ImageDiv = styled.div`
     @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
+        background: url("/images/bannerMovil/image_1.webp");
     }
 `
 const ImageDiv2 = styled.div`
     background: url("/images/banner/image_2.webp");
     background-size: cover;
+    
     width: 100%;
     height: 700px;
     display: flex; 
@@ -82,7 +84,7 @@ const CarrouselTitle = styled.h1`
     @media (max-width: 500px){
         font-size: larger;
         position: relative;
-        bottom: 50px;
+        
     }
 `
 const CarrouselText = styled.h3`
@@ -90,7 +92,8 @@ const CarrouselText = styled.h3`
     @media (max-width: 500px){
         font-size: large;
         position: relative;
-        bottom: 50px;
+        
+        width: 150%;
 
     }
 `
@@ -101,7 +104,7 @@ export default function Carrousel(){
         <CarroulseDiv>
             <CustomCarrousel 
             showArrows={true} 
-            autoPlay={true}
+            autoPlay={false}
             infiniteLoop={true}
             preventMovementUntilSwipeScrollTolerance={true}
             showThumbs={false}
