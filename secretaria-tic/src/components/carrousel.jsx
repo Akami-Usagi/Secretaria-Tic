@@ -24,7 +24,7 @@ const CustomCarrousel = styled(Carousel)`
     
 `
 const ImageDiv = styled.div`
-    background: url("/images/banner/image_1.webp");
+    background: url("/images/banner/image_1.webp") no-repeat center;
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -39,7 +39,7 @@ const ImageDiv = styled.div`
     @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
-        background: url("/images/bannerMovil/image_1.webp");
+        background: url("/images/bannerMovil/image_1.webp") no-repeat center;
     }
 `
 const ImageDiv2 = styled.div`
