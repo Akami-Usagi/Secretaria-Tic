@@ -43,10 +43,17 @@ const TextDiv = styled.div`
     
 `
 const Title = styled.h1`
+font-size: 2.5em;
 @media (max-width: 500px){
     text-align: center;
+    font-size: 2.5em;
 }
-    
+`
+const Text = styled.p`
+    font-size: 1.4em;
+    @media (max-width: 500px){
+        font-size: 1.3em;
+    }
 `
 const CousesDiv = styled.div`
     width: 80%;
@@ -77,13 +84,13 @@ export default function BugaAvanza(){
             </ContentDiv>
             <TextDiv>
                 <Title>Nuestra Oferta Institucional</Title>
-                <p>
+                <Text>
                     La Secretaría de las Tecnologias de la Informacion y las Comunicaciones, ofrece a toda
                     la comunidad Bugueña una fuerte oferta educativa, con el objetivo de cerrar la gran brecha digital
                     que existe entre la poblacion bugueña. Estamos innovando cada día para asi lograr ofrecer
                     nuevos cursos a toda la comunidad, en los proximos meses, a parte de las formaciones en Ofimatica Basica,
                     cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en Manejo de Drones y en Fundamentos de Programacion.
-                </p>  
+                </Text>  
             </TextDiv>
             <CousesDiv>
                 <CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" />

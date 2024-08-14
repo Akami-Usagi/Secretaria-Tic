@@ -1,6 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -40,12 +41,14 @@ const ImageDiv = styled.div`
         justify-content: baseline;
         align-items: center;
         background: url("/images/bannerMovil/image_1.webp") no-repeat center;
+        
     }
 `
 const ImageDiv2 = styled.div`
     background: url("/images/banner/image_2.webp");
+    background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center;
     width: 100%;
     height: 700px;
     display: flex; 
@@ -53,17 +56,23 @@ const ImageDiv2 = styled.div`
     align-items: baseline;
     justify-content: end;
     overflow: hidden;
-    padding: 50px;
+    padding: 70px;
     color: white;
     font-size: larger;
     @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
+        background: url("/images/bannerMovil/image_2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 `
 const ImageDiv3 = styled.div`
-    background: url("/images/banner/image_3.webp");
+    background-image: url("/images/banner/image_3.webp");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 700px;
     display: flex; 
@@ -71,31 +80,37 @@ const ImageDiv3 = styled.div`
     align-items: baseline;
     justify-content: end;
     overflow: hidden;
-    padding: 50px;
+    padding: 70px;
     color: white;
     font-size: larger;
     @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
+        background: url("/images/bannerMovil/image_3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 `
 const CarrouselTitle = styled.h1`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
     @media (max-width: 500px){
-        font-size: larger;
         position: relative;
+        top: 30px;
+        width: 130%;
         
     }
 `
 const CarrouselText = styled.h3`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
     @media (max-width: 500px){
-        font-size: large;
-        position: relative;
-        
-        width: 150%;
+        font-size: large;        
+        width: 130%;
 
     }
+`
+const CustomLink = styled(Link)`
+    text-decoration: none;
 `
 
 
@@ -104,26 +119,33 @@ export default function Carrousel(){
         <CarroulseDiv>
             <CustomCarrousel 
             showArrows={true} 
-            autoPlay={false}
+            autoPlay={true}
             infiniteLoop={true}
             preventMovementUntilSwipeScrollTolerance={true}
             showThumbs={false}
             stopOnHover={false}
             showStatus={false}
             showIndicators={false}
-            interval={4000}>    
-                <ImageDiv>
-                    <CarrouselTitle>Conoce a TIC-O</CarrouselTitle>
-                    <CarrouselText>La nueva mascota de la Secretaría de las Tecnologías de las Información y las Comunicaciónes</CarrouselText>
-                </ImageDiv>
-                <ImageDiv2>
-                    <CarrouselTitle>placeholder title</CarrouselTitle>
-                    <CarrouselText>placeholder text</CarrouselText>
-                </ImageDiv2>
-                <ImageDiv3>
-                    <CarrouselTitle>placeholder title</CarrouselTitle>
-                    <CarrouselText>placeholder text</CarrouselText>
-                </ImageDiv3>
+            interval={4000}>
+                <CustomLink to={"/tico"}>
+                    <ImageDiv>
+                        <CarrouselTitle>Conoce a TIC-O</CarrouselTitle>
+                        <CarrouselText>La nueva mascota de la Secretaría de las Tecnologías de las Información y las Comunicaciónes</CarrouselText>
+                    </ImageDiv>
+                </CustomLink>    
+                <CustomLink to={"/oferta-institucional"}>
+                    <ImageDiv2>
+                        <CarrouselTitle>Estudia con Nosotros</CarrouselTitle>
+                        <CarrouselText>Enterate de toda la oferta educativa que la Secretaría TIC tiene para tí</CarrouselText>
+                    </ImageDiv2>
+                </CustomLink>
+                <CustomLink to={"/digicampus"}>
+                    <ImageDiv3>
+                        <CarrouselTitle>Encuentra tu pasión y construye tu futuro</CarrouselTitle>
+                        <CarrouselText>Busca y compara las opciones que pueden ofrecerte las 10 universidades más importantes de la región y encuentra la que mejor se adapte a ti.</CarrouselText>
+                    </ImageDiv3>
+                </CustomLink>
+               
                 
             </CustomCarrousel>
         </CarroulseDiv>
