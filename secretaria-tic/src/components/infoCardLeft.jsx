@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const InfoBack = styled.div`
     width: 100%;
@@ -46,8 +47,8 @@ const InfoImage = styled.img`
     overflow: hidden;
     transition: ease-in-out 200ms;
     &:hover{
-        width: 130%;
-        height: 130%;
+        width: 110%;
+        height: 110%;
     }
 `
 const TextDiv = styled.div`
@@ -90,8 +91,11 @@ const InfoButon = styled.button`
         margin-bottom: 30px;
     }
 `
+const CustomLink = styled(Link)`
+    text-decoration: none;
+`
 
-export default function InfoCardLeft({image}){
+export default function InfoCardLeft({image, link, title, text}){
     return(
         <InfoBack>
             <InfoContent>
@@ -99,9 +103,9 @@ export default function InfoCardLeft({image}){
                     <InfoImage src={image} alt="Tarjeta" />
                 </InfoImageDiv>
                 <TextDiv>
-                    <InfoTitle>placeholder title</InfoTitle>
-                    <InfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</InfoText>
-                    <InfoButon>Ver Mas</InfoButon>
+                    <InfoTitle>{title}</InfoTitle>
+                    <InfoText>{text}</InfoText>
+                    <CustomLink to={link}><InfoButon onClick={() => {window.scroll(0,0)}}>Ver Mas</InfoButon></CustomLink>
                 </TextDiv>    
             </InfoContent>
         </InfoBack>
