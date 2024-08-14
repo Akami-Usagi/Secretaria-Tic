@@ -42,10 +42,20 @@ const TextDiv = styled.div`
     
 `
 const Title = styled.h1`
-    
+font-size: 2.5em;
+@media (max-width: 500px){
+    text-align: center;
+    font-size: 2.5em;
+}
+`
+const Text = styled.p`
+    font-size: 1.4em;
+    @media (max-width: 500px){
+        font-size: 1.3em;
+    }
 `
 const InfoButon = styled.button`
-    width: 200px;
+    width: 300px;
     height: 50px;
     border: none;
     background-color: #e4e4e4;
@@ -58,24 +68,36 @@ const InfoButon = styled.button`
     &:hover{
         background-color: #a7a7a7;
         font-weight: 600;
-        width: 220px;
-        height: 60px;
+        width: 320px;
+        
         color: white;
     }
     @media (max-width: 500px){
         margin-top: 20px;
     }
 `
+const Anchor = styled.a`
+    align-self: center;
+    margin-top: 30px;
+`
 export default function AulaVirtual(){
     return(
         <BugaDiv>
             <ContentDiv>
-                <Image src="/images/banner/image_1.webp" alt="Imagen Noticia" />
+            <Image src={`${window.innerWidth <= 500 ? "/images/aulaVirtual/aula_virtual_movil.webp" : "/images/aulaVirtual/aula_virtual_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Aula Virtual</Title>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</p>
-                <InfoButon>Ver Mas</InfoButon>
+                <Text>
+                    ¡Transforma tu futuro con los cursos gratuitos de la Alcaldía de Guadalajara de Buga! No dejes pasar esta oportunidad de aprender y crecer desde la comodidad de tu hogar. Entra a nuestra aula virtual, descubre una amplia variedad de cursos diseñados para ti y adquiere nuevas habilidades que te abrirán puertas. ¡Inscríbete hoy y comienza tu camino hacia el éxito!
+                </Text>
+                <Text>
+                    ¡Es momento de invertir en ti! En el aula virtual de la Alcaldía de Guadalajara de Buga encontrarás cursos innovadores que te permitirán desarrollar competencias clave en diferentes áreas. Ya sea que quieras mejorar tu perfil profesional o aprender algo nuevo, nuestros cursos están diseñados para que avances a tu propio ritmo, con el apoyo de expertos. ¡No esperes más, el conocimiento está a solo un clic de distancia!
+                </Text>
+                <Text>
+                    Únete a nuestra comunidad de aprendizaje y sé parte del cambio. Al inscribirte en los cursos de la Alcaldía de Guadalajara de Buga, no solo estarás ampliando tus horizontes, sino también contribuyendo al desarrollo de nuestra ciudad. Cada nueva habilidad que adquieras es un paso hacia un futuro mejor, tanto para ti como para todos los que te rodean. ¡Tu éxito empieza aquí!
+                </Text>
+                <Anchor href="http://apropiatic.buga.gov.co:83/moodle/" target="_blank"><InfoButon>Ingresa al Aula Virtual</InfoButon></Anchor>
             </TextDiv>
         </BugaDiv>
     )

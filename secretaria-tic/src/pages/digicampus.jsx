@@ -42,10 +42,21 @@ const TextDiv = styled.div`
     
 `
 const Title = styled.h1`
+font-size: 2.5em;
+@media (max-width: 500px){
+    text-align: center;
+    font-size: 2.5em;
+}
+`
+const Text = styled.p`
+    font-size: 1.4em;
     
+    @media (max-width: 500px){
+        font-size: 1.3em;
+    }
 `
 const InfoButon = styled.button`
-    width: 200px;
+    width: 300px;
     height: 50px;
     border: none;
     background-color: #e4e4e4;
@@ -58,13 +69,16 @@ const InfoButon = styled.button`
     &:hover{
         background-color: #a7a7a7;
         font-weight: 600;
-        width: 220px;
-        height: 60px;
+        width: 320px;
         color: white;
     }
     @media (max-width: 500px){
         margin-top: 20px;
     }
+`
+const Anchor = styled.a`
+    margin-top: 30px;
+    align-self: center;
 `
 export default function Digicampus(){
     return(
@@ -73,9 +87,17 @@ export default function Digicampus(){
             <Image src={`${window.innerWidth <= 500 ? "/images/digicampus/digicampus_movil.webp" : "/images/digicampus/digicampus_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
-                <Title>Digicampus</Title>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo facilisis mi in ornare. Pellentesque rhoncus porttitor mauris, eu aliquet enim condimentum dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus luctus nisi ac dictum vulputate. Sed cursus nulla odio, quis egestas nunc consectetur nec. Mauris ultrices, purus eget aliquet euismod, odio eros rhoncus nisi, nec lobortis magna orci a sem. Mauris viverra odio velit, sit amet mollis turpis congue ut. Sed at nisl sed augue posuere rutrum.</p>
-                <InfoButon>Ver Mas</InfoButon>
+                <Title>¡Bienvenido a DigiCampus!</Title>
+                <Text>
+                    la puerta a tu futuro! Esta plataforma es más que un simple acceso a la educación, es la oportunidad que estabas esperando para transformar tu vida. Gracias al compromiso de la Gobernación del Valle, ahora tienes la posibilidad de acceder a becas universitarias que te permitirán alcanzar tus sueños.
+                </Text>
+                <Text>
+                    Imagina un lugar donde cada clic te acerca un paso más a la carrera de tus sueños, donde las barreras económicas ya no te detienen, y donde el esfuerzo es recompensado con oportunidades reales. En DigiCampus, el conocimiento está al alcance de todos, y con el apoyo de la Gobernación del Valle, esas metas que parecían inalcanzables están más cerca de lo que imaginas.
+                </Text>
+                <Text>
+                    No estás solo en este camino; una comunidad de estudiantes, docentes y profesionales te acompañará, inspirándote a dar lo mejor de ti. Es tu momento de brillar, de demostrar de lo que eres capaz. ¡Aprovecha esta oportunidad única! DigiCampus está aquí para impulsarte hacia el éxito. ¡El futuro es tuyo, y comienza ahora!
+                </Text>
+                <Anchor href="https://campusdigital.valledelcauca.gov.co/inicio" target="_blank"><InfoButon>Ingresa a Digicampus</InfoButon></Anchor>
             </TextDiv>
         </BugaDiv>
     )
