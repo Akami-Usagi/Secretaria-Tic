@@ -33,7 +33,6 @@ const InfoImageDiv = styled.div`
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     @media (max-width: 500px){
         width: 90%;
-        height: 200px;
         margin-top: 20px;
         margin-bottom: -40px;
     }
