@@ -70,7 +70,7 @@ export default function Digicampus(){
     return(
         <BugaDiv>
             <ContentDiv>
-                <Image src="/images/banner/image_1.webp" alt="Imagen Noticia" />
+            <Image src={`${window.innerWidth <= 500 ? "/images/digicampus/digicampus_movil.webp" : "/images/digicampus/digicampus_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Digicampus</Title>

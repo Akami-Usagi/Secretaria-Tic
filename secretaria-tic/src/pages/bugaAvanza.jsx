@@ -70,7 +70,7 @@ export default function BugaAvanza(){
     return(
         <BugaDiv>
             <ContentDiv>
-                <Image src="/images/banner/image_1.webp" alt="Imagen Noticia" />
+            <Image src={`${window.innerWidth <= 500 ? "/images/bugaAvanza/buga_avanza_movil.webp" : "/images/bugaAvanza/buga_avanza_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Buga Avanza</Title>

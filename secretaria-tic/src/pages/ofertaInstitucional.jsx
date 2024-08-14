@@ -84,7 +84,7 @@ export default function BugaAvanza(){
     return(
         <BugaDiv>
             <ContentDiv>
-                <Image src={`${window.innerWidth <= 400 ? "/images/ofertaInstitucional/oferta_movil.webp" : "/images/ofertaInstitucional/oferta_pc.webp"}`} alt="Imagen Noticia" />
+                <Image src={`${window.innerWidth <= 500 ? "/images/ofertaInstitucional/oferta_movil.webp" : "/images/ofertaInstitucional/oferta_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Nuestra Oferta Institucional</Title>
