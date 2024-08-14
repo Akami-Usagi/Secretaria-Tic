@@ -88,8 +88,8 @@ export default function Header(){
                         <li><Link to={"/digicampus"}><NavButton>Digicampus</NavButton></Link></li>
                         <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
                         <li><Link to={"/oferta-institucional"}><NavButton>Oferta Institucional</NavButton></Link></li>
-                        <li><Link to={"/centros_transfomacion_digital"}><NavButton>CTD</NavButton></Link></li>
-                        <li><Link to={"/talento_humano"}><NavButton>Talento Humano</NavButton></Link></li>
+                        <li><Link to={"/centros-transformacion-digital"}><NavButton>CTD</NavButton></Link></li>
+                        <li><Link to={"/talento-humano"}><NavButton>Talento Humano</NavButton></Link></li>
                     </NavList>
                 </nav>
             </HeaderDiv>

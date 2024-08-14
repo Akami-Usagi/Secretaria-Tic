@@ -55,7 +55,7 @@ export default function HeaderMenu({setMenuOpen}){
                     <li><Link to={"/digicampus"}><MenuButton onClick={()=> setMenuOpen(false)}>Digicampus</MenuButton></Link></li>
                     <li><Link to={"/aula-virtual"}><MenuButton onClick={()=> setMenuOpen(false)}>Aula Virtual</MenuButton></Link></li>
                     <li><Link to={"/oferta-institucional"}><MenuButton onClick={()=> setMenuOpen(false)}>Oferta Institucional</MenuButton></Link></li>                    
-                    <li><Link to={"/centros-transfomacion-digital"}><MenuButton onClick={()=> setMenuOpen(false)}>CTD</MenuButton></Link></li>   
+                    <li><Link to={"/centros-transformacion-digital"}><MenuButton onClick={()=> setMenuOpen(false)}>CTD</MenuButton></Link></li>   
                     <li><Link to={"/talento-humano"}><MenuButton onClick={()=> setMenuOpen(false)}>Talento Humano</MenuButton></Link></li> 
             </MenuList>
         </MenuDiv>

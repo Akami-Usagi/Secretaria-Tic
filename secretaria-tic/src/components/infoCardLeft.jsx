@@ -57,6 +57,9 @@ const TextDiv = styled.div`
 `
 const InfoTitle = styled.h2`
     text-align: center;
+    @media (max-width: 500px){
+        width: 80%;
+    }
 `
 const InfoText = styled.p`
     width: 500px;
@@ -94,7 +97,7 @@ const CustomLink = styled(Link)`
     text-decoration: none;
 `
 
-export default function InfoCardLeft({image, link, title, text}){
+export default function InfoCardLeft({image, link, title, text, target}){
     return(
         <InfoBack>
             <InfoContent>
@@ -104,7 +107,7 @@ export default function InfoCardLeft({image, link, title, text}){
                 <TextDiv>
                     <InfoTitle>{title}</InfoTitle>
                     <InfoText>{text}</InfoText>
-                    <CustomLink to={link}><InfoButon onClick={() => {window.scroll(0,0)}}>Ver Mas</InfoButon></CustomLink>
+                    <CustomLink to={link} target={target}><InfoButon onClick={() => {window.scroll(0,0)}}>Ver Mas</InfoButon></CustomLink>
                 </TextDiv>    
             </InfoContent>
         </InfoBack>
