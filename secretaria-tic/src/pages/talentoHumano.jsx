@@ -107,7 +107,7 @@ export default function TalentoHumano(){
             </BossDiv>
             <Divider></Divider>
             <SupporDiv>
-                <PersonCard/>
+                
             </SupporDiv>
         </BugaDiv>
     )
