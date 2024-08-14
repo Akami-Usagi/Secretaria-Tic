@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PersonCard from "../components/personCard";
 
 const BugaDiv = styled.div`
     width: 100%;
@@ -106,7 +107,7 @@ export default function TalentoHumano(){
             </BossDiv>
             <Divider></Divider>
             <SupporDiv>
-                
+                <PersonCard/>
             </SupporDiv>
         </BugaDiv>
     )
