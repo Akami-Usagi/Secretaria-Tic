@@ -76,11 +76,15 @@ const CourseImage = styled.img`
         width: 90%;
     }
 `
+
 export default function BugaAvanza(){
+
+    
+
     return(
         <BugaDiv>
             <ContentDiv>
-                <Image src="/images/banner/image_1.webp" alt="Imagen Noticia" />
+                <Image src={`${window.innerWidth <= 400 ? "/images/ofertaInstitucional/oferta_movil.webp" : "/images/ofertaInstitucional/oferta_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Nuestra Oferta Institucional</Title>
