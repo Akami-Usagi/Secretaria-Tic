@@ -150,7 +150,7 @@ export default function Carrousel(){
             stopOnHover={false}
             showStatus={false}
             showIndicators={false}
-            interval={4000}>
+            interval={3500}>
                 <CustomLink to={"/novedades"}>
                     <ImageNovedades>
                         <CarrouselTitle>Meetup Nido</CarrouselTitle>

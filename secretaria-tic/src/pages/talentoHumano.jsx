@@ -106,7 +106,7 @@ export default function TalentoHumano(){
                 <MainDescription>
                         <h3>Secretario de Tecnologías de la Información y las Comunicaciones - TIC</h3>
                         <h1>ING. Diego Fernando Carrillo Gómez</h1>
-                        <h3>MAGÍSTER EN GERENCIA DE PROYECTOSU - Universidad del Valle</h3>
+                        <h3>MAGÍSTER EN GERENCIA DE PROYECTOS - Universidad del Valle</h3>
                 </MainDescription>
             </BossDiv>
             <Divider></Divider>
