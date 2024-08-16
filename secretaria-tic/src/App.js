@@ -6,6 +6,7 @@ import Digicampus from './pages/digicampus';
 import AulaVirtual from './pages/aulaVirtual';
 import CTD from './pages/ctd';
 import TalentoHumano from './pages/talentoHumano';
+import Novedades from './pages/novedades';
 import Tico from './pages/tico';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -23,6 +24,7 @@ function App() {
         <Route path='/centros-transformacion-digital' element={<CTD/>}/>
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
         <Route path='/tico' element={<Tico/>}/>
+        <Route path='/novedades' element={<Novedades/>}/>
       </Routes>
       <Footer/>
     </Router>

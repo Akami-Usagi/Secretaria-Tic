@@ -92,6 +92,30 @@ const ImageDiv3 = styled.div`
         background-position: center;
     }
 `
+const ImageNovedades = styled.div`
+    background-image: url("/images/novedades/novedades_pc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    overflow: hidden;
+    padding: 70px;
+    color: white;
+    font-size: larger;
+    @media (max-width: 500px){
+        justify-content: baseline;
+        align-items: center;
+        background: url("/images/novedades/novedades_movil.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+`
 const CarrouselTitle = styled.h1`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
     @media (max-width: 500px){
@@ -127,6 +151,12 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={4000}>
+                <CustomLink to={"/novedades"}>
+                    <ImageNovedades>
+                        <CarrouselTitle>Meetup Nido</CarrouselTitle>
+                        <CarrouselText>Marco Osorio cautivó a los empresarios Bugueños con sus experiencias en el mundo del emprendimiento</CarrouselText>
+                    </ImageNovedades>
+                </CustomLink>    
                 <CustomLink to={"/tico"}>
                     <ImageDiv>
                         <CarrouselTitle>Conoce a TIC-O</CarrouselTitle>
