@@ -13,6 +13,9 @@ const ImageDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 100%;
+    
 `
 const Image = styled.img`
     width: 100%;
@@ -20,15 +23,21 @@ const Image = styled.img`
     object-fit: cover;
     overflow: hidden;
 `
-export default function PersonCard(){
+const Title = styled.h4`
+    margin-top: 5px;
+`
+const Text = styled.p`
+    margin-top: -20px;
+`
+export default function PersonCard({nombre, cargo, imagen}){
     return(
         <PersonDiv>
             <ImageDiv>
-                <Image/>
+                <Image src={imagen} alt={nombre}/>
             </ImageDiv>
             
-            <h4>Nombre</h4>
-            <p>Cargo</p>
+            <Title>{nombre}</Title>
+            <Text>{cargo}</Text>
         </PersonDiv>
     )
 }

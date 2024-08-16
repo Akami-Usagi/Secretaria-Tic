@@ -86,6 +86,10 @@ const SupporDiv = styled.div`
         flex-direction: column;
     }
 `
+const TeamTitle = styled.h2`
+    margin-top: -20px;
+    margin-bottom: -30px;
+`
 
 
 
@@ -102,11 +106,14 @@ export default function TalentoHumano(){
                 <MainDescription>
                         <h3>Secretario de Tecnologías de la Información y las Comunicaciones - TIC</h3>
                         <h1>ING. Diego Fernando Carrillo Gómez</h1>
-                        <h3>MAGÍSTER EN GERENCIA DE PROYECTOSU - niversidad del Valle</h3>
+                        <h3>MAGÍSTER EN GERENCIA DE PROYECTOSU - Universidad del Valle</h3>
                 </MainDescription>
             </BossDiv>
             <Divider></Divider>
+            <TeamTitle>Equipo de Soporte Tecnico</TeamTitle>
             <SupporDiv>
+                <PersonCard nombre={"Camila Gomez"} cargo={"Tecnica en Sistemas"} imagen={"/images/talentoHumano/support_2.webp"}/>
+                <PersonCard nombre={"Camilo Arango"} cargo={"Desarrollador de Software"} imagen={"/images/talentoHumano/support_1.webp"}/>
                 
             </SupporDiv>
         </BugaDiv>
