@@ -6,6 +6,12 @@ const PersonDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media (max-width: 500px){
+        width: 180px;
+        margin-bottom: -20px;
+    }
 `
 const ImageDiv = styled.div`
     width: 250px;
@@ -15,6 +21,10 @@ const ImageDiv = styled.div`
     overflow: hidden;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     border-radius: 100%;
+    @media (max-width: 500px){
+        width: 180px;
+        height: 180px;
+    }
     
 `
 const Image = styled.img`

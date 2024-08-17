@@ -49,8 +49,9 @@ const MainImageDiv = styled.div`
     border-radius: 100%;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     @media (max-width: 500px){
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: -30px;
         
     }
 `
@@ -78,12 +79,15 @@ const Divider = styled.div`
     border-radius: 3px;
 `
 const SupporDiv = styled.div`
+    width: 90%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
     margin: 30px;
     @media (max-width: 500px){
-        flex-direction: column;
+        gap: 20px;
     }
 `
 const TeamTitle = styled.h2`
@@ -117,6 +121,7 @@ export default function TalentoHumano(){
                 <PersonCard nombre={"Daniel Girón"} cargo={"Tecnico en Sistemas"} imagen={"/images/talentoHumano/support_4.webp"}/>
                 <PersonCard nombre={"Nicolas Valencia"} cargo={"Contratista"} imagen={"/images/talentoHumano/support_5.webp"}/>
                 <PersonCard nombre={"Dahiana Cardona"} cargo={"Aprendiz SENA"} imagen={"/images/talentoHumano/support_3.webp"}/>
+                
             </SupporDiv>
         </BugaDiv>
     )
