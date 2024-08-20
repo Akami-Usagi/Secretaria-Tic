@@ -25,7 +25,7 @@ const CustomCarrousel = styled(Carousel)`
     
 `
 const ImageDiv = styled.div`
-    background: url("/images/banner/image_1.webp") no-repeat center;
+    background: url("/images/banner/cine_pc.webp") no-repeat center;
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -40,7 +40,7 @@ const ImageDiv = styled.div`
     @media (max-width: 500px){
         justify-content: baseline;
         align-items: center;
-        background: url("/images/bannerMovil/image_1.webp") no-repeat center;
+        background: url("/images/bannerMovil/cine_movil.webp") no-repeat center;
         
     }
 `
@@ -151,17 +151,17 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={3500}>
+                <CustomLink to={"/cine-al-parque"}>
+                    <ImageDiv>
+                        <CarrouselTitle>Cine Al Parque</CarrouselTitle>
+                        <CarrouselText>Acompañanos en una tarde de Cine</CarrouselText>
+                    </ImageDiv>
+                </CustomLink>    
                 <CustomLink to={"/novedades"}>
                     <ImageNovedades>
                         <CarrouselTitle>Meetup Nido</CarrouselTitle>
                         <CarrouselText>Marco Osorio cautivó a los empresarios Bugueños con sus experiencias en el mundo del emprendimiento</CarrouselText>
                     </ImageNovedades>
-                </CustomLink>    
-                <CustomLink to={"/tico"}>
-                    <ImageDiv>
-                        <CarrouselTitle>Conoce a TIC-O</CarrouselTitle>
-                        <CarrouselText>La nueva mascota de la Secretaría de las Tecnologías de las Información y las Comunicaciónes</CarrouselText>
-                    </ImageDiv>
                 </CustomLink>    
                 <CustomLink to={"/oferta-institucional"}>
                     <ImageDiv2>
