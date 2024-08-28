@@ -81,10 +81,7 @@ const InfoButon = styled.button`
         margin-top: 20px;
     }
 `
-const Anchor = styled.a`
-    margin-top: 30px;
-    align-self: center;
-`
+
 
 const FormDiv = styled.div`
     display: flex;

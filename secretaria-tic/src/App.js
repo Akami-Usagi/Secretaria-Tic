@@ -9,6 +9,7 @@ import TalentoHumano from './pages/talentoHumano';
 import Novedades from './pages/novedades';
 import CineAlParque from './pages/cineAlParque';
 import Inscripciones from './pages/inscripciones';
+import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/cine-al-parque' element={<CineAlParque/>}/>
         <Route path='/novedades' element={<Novedades/>}/>
         <Route path='/inscripciones' element={<Inscripciones/>}/>
+        <Route path='/*' element={<Page404/>}/>
       </Routes>
       <Footer/>
     </Router>
