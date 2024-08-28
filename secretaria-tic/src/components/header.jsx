@@ -16,9 +16,13 @@ const StyledHeader = styled.header`
 const HeaderDiv = styled.div`
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
+    @media (max-width: 1270px){
+        justify-content: center;
+    }
 `
 const LogoImage = styled.img`
     height: 110px;
@@ -84,9 +88,8 @@ export default function Header(){
                     <NavList>
                         <li><Link to={"/"}><NavButton>Inicio</NavButton></Link></li>
                         <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>
-                        <li><Link to={"/digicampus"}><NavButton>Digicampus</NavButton></Link></li>
                         <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
-                        <li><Link to={"/oferta-institucional"}><NavButton>Oferta Institucional</NavButton></Link></li>
+                        <li><Link to={"/inscripciones"}><NavButton>Inscribete</NavButton></Link></li>
                         <li><Link to={"/centros-transformacion-digital"}><NavButton>CTD</NavButton></Link></li>
                         <li><Link to={"/talento-humano"}><NavButton>Talento Humano</NavButton></Link></li>
                     </NavList>

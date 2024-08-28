@@ -60,28 +60,6 @@ const Text = styled.p`
         font-size: 1.3em;
     }
 `
-const InfoButon = styled.button`
-    width: 300px;
-    height: 50px;
-    border: none;
-    background-color: #e4e4e4;
-    border-radius: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-size: large;
-    transition: ease-in-out 200ms;
-    align-self: center;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    &:hover{
-        background-color: #a7a7a7;
-        font-weight: 600;
-        width: 320px;
-        color: white;
-    }
-    @media (max-width: 500px){
-        margin-top: 20px;
-    }
-`
-
 
 const FormDiv = styled.div`
     display: flex;
@@ -105,7 +83,7 @@ const FormInput = styled.input`
     border: none;
     height: 40px;
     background-color: #e2e2e2;
-    font-size: large;
+    font-size: medium;
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -114,7 +92,7 @@ const FormSelect = styled.select`
     border: none;
     height: 60px;
     background-color: #e2e2e2;
-    font-size: large;
+    font-size: medium;
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -148,9 +126,10 @@ export default function Inscripciones(){
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
     const [programa, setPrograma] = useState("");
+    const [tipo, setTipo] = useState("");
 
-    async function sendData(nombre, documento, telefono, email, programa){
-        let data = {nombre, documento, telefono, email}
+    async function sendData(nombre, documento, tipo, telefono, email, programa){
+        let data = {nombre, documento, tipo, telefono, email}
         await addDoc(collection(db, programa), data)
         .then(
             alert("Registrado Satisfactoriamente")
@@ -159,11 +138,11 @@ export default function Inscripciones(){
     };
 
     function handleSendData(){
-        if (nombre === "" || documento === "" || telefono === "" || email === "" || programa === "") {
+        if (nombre === "" || documento === "" || tipo === "" || telefono === "" || email === "" || programa === "") {
             alert("Debe diligenciar todos los campos para completar el registro")
         }else{
-            sendData(nombre, documento, telefono, email, programa)
-            navigate("/")
+            sendData(nombre, documento, tipo, telefono, email, programa)
+            navigate(`/${programa}`)
         }
         
     };
@@ -173,18 +152,18 @@ export default function Inscripciones(){
     return(
         <BugaDiv>
             <ContentDiv>
-            <Image src={`${window.innerWidth <= 500 ? "/images/digicampus/digicampus_movil.webp" : "/images/digicampus/digicampus_pc.webp"}`} alt="Imagen Noticia" />
+            <Image src={`${window.innerWidth <= 500 ? "/images/inscripciones/inscripciones_movil.webp" : "/images/inscripciones/inscripciones_pc.webp"}`} alt="Inscripciones" />
             </ContentDiv>
             <TextDiv>
-                <Title>¡Bienvenido a DigiCampus!</Title>
+                <Title>Haz parte de la comunicad Tech del Valle del Cauca</Title>
                 <Text>
-                    la puerta a tu futuro! Esta plataforma es más que un simple acceso a la educación, es la oportunidad que estabas esperando para transformar tu vida. Gracias al compromiso de la Gobernación del Valle, ahora tienes la posibilidad de acceder a becas universitarias que te permitirán alcanzar tus sueños.
+                    La Secretaría TIC de Buga te invita a ser parte de la revolución tecnológica. Inscríbete en los programas de Talento Tech, Digicampus y la Oferta Institucional de la secretaria TIC y descubre un mundo de oportunidades. A través de cursos prácticos y talleres especializados, adquirirás las competencias necesarias para destacarte en el competitivo mercado laboral del siglo XXI. Desde programación y diseño web hasta inteligencia artificial y ciberseguridad, tenemos una amplia oferta educativa para todos los niveles y edades. ¡No te quedes atrás! ¡Conviértete en un experto en tecnología y construye tu futuro digital!
                 </Text>
                 <Text>
-                    Imagina un lugar donde cada clic te acerca un paso más a la carrera de tus sueños, donde las barreras económicas ya no te detienen, y donde el esfuerzo es recompensado con oportunidades reales. En DigiCampus, el conocimiento está al alcance de todos, y con el apoyo de la Gobernación del Valle, esas metas que parecían inalcanzables están más cerca de lo que imaginas.
+                    Porque creemos en el potencial de cada persona y queremos brindarte las herramientas para que puedas alcanzar tus metas. Nuestros programas son gratuitos, están diseñados por expertos en la materia y se adaptan a tus necesidades y horarios. Además, contarás con el acompañamiento de un equipo de tutores altamente capacitados que te guiarán en todo momento. No pierdas esta oportunidad de crecer profesionalmente y contribuir al desarrollo tecnológico del Valle del Cauca. ¡Inscríbete ya y sé parte de esta gran comunidad!
                 </Text>
                 <Text>
-                    No estás solo en este camino; una comunidad de estudiantes, docentes y profesionales te acompañará, inspirándote a dar lo mejor de ti. Es tu momento de brillar, de demostrar de lo que eres capaz. ¡Aprovecha esta oportunidad única! DigiCampus está aquí para impulsarte hacia el éxito. ¡El futuro es tuyo, y comienza ahora!
+                    ¡Completa el siguiente formulario y cambia tu futuro!
                 </Text>
                 <FormDiv>
                     
@@ -192,7 +171,18 @@ export default function Inscripciones(){
                     <FormInput type="text" id="nombre" placeholder="Ingrese su nombre" onChange={(event) => setNombre(event.target.value)}/>
 
                     <FormLabel htmlFor="documento">Documento</FormLabel>
-                    <FormInput type="text" id="documento" placeholder="Ingrese su numero de documento de identidad" onChange={(event) => setDocumento(event.target.value)}/>
+                    <FormInput type="text" id="documento" placeholder="Ingrese su numero de documento" onChange={(event) => setDocumento(event.target.value)}/>
+
+                    <FormLabel htmlFor="tipo">Tipo de Documento</FormLabel>
+                    <FormSelect name="tipo" id="tipo" onChange={(event) =>{
+                        setTipo(event.target.value);
+                    }}>
+                        <option value="">-- Seleccione --</option>
+                        <option value="cedula">Cedula</option>
+                        <option value="tarjeta identidad">Tarjeta de Identidad</option>
+                        <option value="cedula extrangeria">Cedula Extrangería</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </FormSelect>
 
                     <FormLabel htmlFor="telefono">Telefono</FormLabel>
                     <FormInput type="number" id="telefono" placeholder="Ingrese su numero de telefono" onChange={(event) => setTelefono(event.target.value)}/>
@@ -204,10 +194,10 @@ export default function Inscripciones(){
                     <FormSelect name="programa" id="programa" onChange={(event) =>{
                         setPrograma(event.target.value);
                     }}>
-                        <option value="">-- Seleccione el programa al que desea inscribirse --</option>
-                        <option value="Talento Tech">Talento Tech</option>
-                        <option value="Digicampus">Digicampus</option>
-                        <option value="Oferta TIC">Oferta Institucional Secretaría TIC</option>
+                        <option value="">-- Seleccione el programa --</option>
+                        <option value="talento-tech">Talento Tech</option>
+                        <option value="digicampus">Digicampus</option>
+                        <option value="oferta-institucional">Oferta Institucional Secretaría TIC</option>
                     </FormSelect>
 
                 </FormDiv>

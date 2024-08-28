@@ -8,8 +8,8 @@ export default function Main(){
 
     const titleBuga = "Buga Avanza";
     const textBuga = "En estos primeros 100 días de liderazgo, hemos visto cómo la visión y la determinación de nuestra alcaldesa han comenzado a transformar nuestra ciudad. Su compromiso inquebrantable con el bienestar de cada ciudadano ha sembrado las semillas de un futuro más próspero y equitativo. Sigamos adelante con la misma fuerza y unidad, porque este es solo el comienzo de un camino lleno de logros y esperanza para todos.";
-    const titleDigi = "¡Bienvenido a DigiCampus!";
-    const textDigi = "la puerta a tu futuro! Esta plataforma es más que un simple acceso a la educación, es la oportunidad que estabas esperando para transformar tu vida. Gracias al compromiso de la Gobernación del Valle, ahora tienes la posibilidad de acceder a becas universitarias que te permitirán alcanzar tus sueños.";
+    const titleDigi = "¡Aprende nuevas tecnologias con nosotros!";
+    const textDigi = "La Secretaría TIC de Buga te invita a ser parte de la revolución tecnológica. Inscríbete en los programas de Talento Tech, Digicampus y la Oferta Institucional de la secretaria TIC y descubre un mundo de oportunidades. A través de cursos prácticos y talleres especializados, adquirirás las competencias necesarias para destacarte en el competitivo mercado laboral del siglo XXI. Desde programación y diseño web hasta inteligencia artificial y ciberseguridad, tenemos una amplia oferta educativa para todos los niveles y edades. ¡No te quedes atrás! ¡Conviértete en un experto en tecnología y construye tu futuro digital!";
     const titleAula = "Aula Virtual";
     const textAula = "¡Transforma tu futuro con los cursos gratuitos de la Alcaldía de Guadalajara de Buga! No dejes pasar esta oportunidad de aprender y crecer desde la comodidad de tu hogar. Entra a nuestra aula virtual, descubre una amplia variedad de cursos diseñados para ti y adquiere nuevas habilidades que te abrirán puertas. ¡Inscríbete hoy y comienza tu camino hacia el éxito!";
     const titleOferta = "Nuestra Oferta Institucional";
@@ -19,7 +19,7 @@ export default function Main(){
         <div>
             <Carrousel/>
             <InfoCard image={"/images/bugaAvanza/buga_avanza_movil.webp"} link={"/buga-avanza"} title={titleBuga} text={textBuga}/>
-            <InfoCardLeft image={"/images/digicampus/digicampus_movil.webp"} link={"/digicampus"} title={titleDigi} text={textDigi}/>
+            <InfoCardLeft image={"/images/inscripciones/inscripciones_movil.webp"} link={"/inscripciones"} title={titleDigi} text={textDigi}/>
             <InfoCard image={"/images/aulaVirtual/aula_virtual_movil.webp"} link={"/aula-virtual"} title={titleAula} text={textAula}/>
             <InfoCardLeft image={"/images/ofertaInstitucional/oferta_movil.webp"} link={"/oferta-institucional"} title={titleOferta} text={textOferta}/>
         </div>

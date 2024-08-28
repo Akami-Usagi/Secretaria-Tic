@@ -52,9 +52,8 @@ export default function HeaderMenu({setMenuOpen}){
             <MenuList>
                     <li><Link to={"/"}><MenuButton onClick={()=> setMenuOpen(false)}>Inicio</MenuButton></Link></li>
                     <li><Link to={"/buga-avanza"}><MenuButton onClick={()=> setMenuOpen(false)}>Buga Avanza</MenuButton></Link></li>    
-                    <li><Link to={"/digicampus"}><MenuButton onClick={()=> setMenuOpen(false)}>Digicampus</MenuButton></Link></li>
                     <li><Link to={"/aula-virtual"}><MenuButton onClick={()=> setMenuOpen(false)}>Aula Virtual</MenuButton></Link></li>
-                    <li><Link to={"/oferta-institucional"}><MenuButton onClick={()=> setMenuOpen(false)}>Oferta Institucional</MenuButton></Link></li>                    
+                    <li><Link to={"/inscripciones"}><MenuButton onClick={()=> setMenuOpen(false)}>Inscribete</MenuButton></Link></li>                    
                     <li><Link to={"/centros-transformacion-digital"}><MenuButton onClick={()=> setMenuOpen(false)}>CTD</MenuButton></Link></li>   
                     <li><Link to={"/talento-humano"}><MenuButton onClick={()=> setMenuOpen(false)}>Talento Humano</MenuButton></Link></li> 
             </MenuList>
