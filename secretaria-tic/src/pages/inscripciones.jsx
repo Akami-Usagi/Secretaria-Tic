@@ -71,8 +71,11 @@ const FormDiv = styled.div`
     padding: 30px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    @media (max-width: 620px){
+        width: 100%;
+    }
     @media (max-width: 500px){
-        width: 80%;
+        width: 85%;
     }
 `
 const FormLabel = styled.label`
