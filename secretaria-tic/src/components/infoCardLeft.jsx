@@ -9,7 +9,7 @@ const InfoBack = styled.div`
     margin: 30px 0;
 `
 const InfoContent = styled.div`
-    width: 70%;
+    width: 1400px;
     height: 400px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -18,6 +18,12 @@ const InfoContent = styled.div`
     justify-content: center;
     align-items: center;
     gap: 50px;
+    @media (max-width: 1440px){
+        width: 90%;
+        flex-wrap: wrap;
+        height: fit-content;
+        padding: 30px 0;
+    }
     @media (max-width: 500px){
         flex-direction: column;
         height: fit-content;
@@ -32,7 +38,7 @@ const InfoImageDiv = styled.div`
     overflow: hidden;
     border-radius: 10px 80px 10px 80px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 500px){
+    @media (max-width: 600px){
         width: 90%;
         margin-top: 20px;
         margin-bottom: -40px;
@@ -57,13 +63,13 @@ const TextDiv = styled.div`
 `
 const InfoTitle = styled.h2`
     text-align: center;
-    @media (max-width: 500px){
+    @media (max-width: 600px){
         width: 80%;
     }
 `
 const InfoText = styled.p`
     width: 500px;
-    @media (max-width: 500px){
+    @media (max-width: 600px){
         width: 80%;
         margin-bottom: 30px;
         overflow: hidden;

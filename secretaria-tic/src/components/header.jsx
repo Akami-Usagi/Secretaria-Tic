@@ -23,6 +23,9 @@ const HeaderDiv = styled.div`
     @media (max-width: 1270px){
         justify-content: center;
     }
+    @media (max-width: 600px){
+        justify-content: space-between;
+    }
 `
 const LogoImage = styled.img`
     height: 110px;
@@ -41,7 +44,7 @@ const NavList = styled.ul`
     border-radius: 30px;
     padding: 5px 10px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 500px){
+    @media (max-width: 600px){
         display: none;
     }
     
@@ -68,7 +71,7 @@ const MenuImage = styled.img`
         width: 50px;
         display: none;
         transition: ease-in-out 200ms;
-        @media (max-width: 500px){
+        @media (max-width: 600px){
             display: block;
             position: absolute;
             right: 30px;
