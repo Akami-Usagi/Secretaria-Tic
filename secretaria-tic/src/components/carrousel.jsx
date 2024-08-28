@@ -68,30 +68,7 @@ const ImageDiv2 = styled.div`
         background-position: center;
     }
 `
-const ImageDiv3 = styled.div`
-    background-image: url("/images/banner/image_3.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 500px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/bannerMovil/image_3.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-`
+
 const ImageNovedades = styled.div`
     background-image: url("/images/novedades/novedades_pc.webp");
     background-repeat: no-repeat;
@@ -169,12 +146,7 @@ export default function Carrousel(){
                         <CarrouselText>Enterate de toda la oferta educativa que la Secretaría TIC tiene para tí</CarrouselText>
                     </ImageDiv2>
                 </CustomLink>
-                <CustomLink to={"/digicampus"}>
-                    <ImageDiv3>
-                        <CarrouselTitle>Encuentra tu pasión y construye tu futuro</CarrouselTitle>
-                        <CarrouselText>Busca y compara las opciones que pueden ofrecerte las 10 universidades más importantes de la región y encuentra la que mejor se adapte a ti.</CarrouselText>
-                    </ImageDiv3>
-                </CustomLink>
+                
                
                 
             </CustomCarrousel>
