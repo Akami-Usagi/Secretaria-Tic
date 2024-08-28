@@ -8,6 +8,7 @@ import CTD from './pages/ctd';
 import TalentoHumano from './pages/talentoHumano';
 import Novedades from './pages/novedades';
 import CineAlParque from './pages/cineAlParque';
+import Inscripciones from './pages/inscripciones';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
         <Route path='/cine-al-parque' element={<CineAlParque/>}/>
         <Route path='/novedades' element={<Novedades/>}/>
+        <Route path='/inscripciones' element={<Inscripciones/>}/>
       </Routes>
       <Footer/>
     </Router>
