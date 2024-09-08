@@ -121,6 +121,11 @@ const FormButton = styled.button`
         margin-top: 20px;
     }
 `
+const CheckDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 export default function TalentoTic(){
 
     const navigate = useNavigate();
@@ -128,7 +133,7 @@ export default function TalentoTic(){
     const [documento, setDocumento] = useState("");
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
-    const [programa, setPrograma] = useState("");
+    const [terminos, setTerminos] = useState(false);
     const [tipo, setTipo] = useState("");
 
     async function sendData(nombre, documento, tipo, telefono, email, programa){
@@ -141,15 +146,16 @@ export default function TalentoTic(){
     };
 
     function handleSendData(){
-        if (nombre === "" || documento === "" || tipo === "" || telefono === "" || email === "" || programa === "") {
+        if (nombre === "" || documento === "" || tipo === "" || telefono === "" || email === "" || terminos === false) {
             alert("Debe diligenciar todos los campos para completar el registro")
         }else{
-            sendData(nombre, documento, tipo, telefono, email, programa)
-            navigate(`/${programa}`)
+            sendData(nombre, documento, tipo, telefono, email, "talento-tic")
+            navigate(`/`)
         }
         
     };
 
+   
     
 
     return(
@@ -166,9 +172,11 @@ export default function TalentoTic(){
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </Text>
                 <Text>
-                    Conoce las condiciones y restricciones en el siguiente <strong>Enlace</strong>
+                    Conoce las condiciones y restricciones en el siguiente <a href="/terminos.pdf" target="blank"><strong>enlace</strong></a>
                 </Text>
-                <Title>{`Completa el siguiente formulario de inscripcion`}</Title>
+                <Text>
+                    Una vez leidos los terminos y condiciones, envia los documentos requeridos al correo <a href="mailto:email@test.com.co" target="blank"><strong>email@test.com.co</strong></a> y luego completa el siguiente formulario de inscripcion.
+                </Text>
                 <FormDiv>
                     
                     <FormLabel htmlFor="nombre">Nombre</FormLabel>
@@ -183,7 +191,6 @@ export default function TalentoTic(){
                     }}>
                         <option value="">-- Seleccione --</option>
                         <option value="cedula">Cedula</option>
-                        <option value="tarjeta identidad">Tarjeta de Identidad</option>
                         <option value="cedula extrangeria">Cedula Extrangería</option>
                         <option value="pasaporte">Pasaporte</option>
                     </FormSelect>
@@ -194,15 +201,13 @@ export default function TalentoTic(){
                     <FormLabel htmlFor="email">Email</FormLabel>
                     <FormInput type="email" id="email" placeholder="Ingrese su correo electronico" onChange={(event) => setEmail(event.target.value)}/>
 
-                    <FormLabel htmlFor="Programa">Programa</FormLabel>
-                    <FormSelect name="programa" id="programa" onChange={(event) =>{
-                        setPrograma(event.target.value);
-                    }}>
-                        <option value="">-- Seleccione el programa --</option>
-                        <option value="talento-tech">Talento Tech</option>
-                        <option value="digicampus">Digicampus</option>
-                        <option value="oferta-institucional">Oferta Institucional Secretaría TIC</option>
-                    </FormSelect>
+                    <CheckDiv>
+                        <FormInput type="checkbox" id="terminos" name="terminos" onChange={(event) => {
+                            setTerminos(event.target.checked)
+                        }}/>
+                        <FormLabel htmlFor="terminos">Confirmo que e leido los terminos y condiciones del concurso</FormLabel>
+                    </CheckDiv>
+                    
 
                 </FormDiv>
                 <FormButton onClick={handleSendData}>Registrarse</FormButton>
