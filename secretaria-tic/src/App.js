@@ -7,7 +7,7 @@ import AulaVirtual from './pages/aulaVirtual';
 import CTD from './pages/ctd';
 import TalentoHumano from './pages/talentoHumano';
 import Novedades from './pages/novedades';
-import CineAlParque from './pages/cineAlParque';
+//import CineAlParque from './pages/cineAlParque';
 import Inscripciones from './pages/inscripciones';
 import TalentoTech from './pages/talentoTech';
 import Page404 from './pages/page404';
@@ -21,15 +21,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/buga-avanza' element={<BugaAvanza/>}/>
-        <Route path='/oferta-institucional' element={<OfertaInstitucional/>}/>
-        <Route path='/digicampus' element={<Digicampus/>}/>
         <Route path='/aula-virtual' element={<AulaVirtual/>}/>
         <Route path='/centros-transformacion-digital' element={<CTD/>}/>
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
-        <Route path='/cine-al-parque' element={<CineAlParque/>}/>
         <Route path='/novedades' element={<Novedades/>}/>
         <Route path='/inscripciones' element={<Inscripciones/>}/>
+        <Route path='/oferta-institucional' element={<OfertaInstitucional/>}/>
         <Route path='/talento-tech' element={<TalentoTech/>}/>
+        <Route path='/digicampus' element={<Digicampus/>}/>
         <Route path='/*' element={<Page404/>}/>
       </Routes>
       <Footer/>

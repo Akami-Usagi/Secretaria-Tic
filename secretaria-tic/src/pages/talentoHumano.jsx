@@ -18,7 +18,7 @@ const ContentDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 95%;
         height: 600px;
         
@@ -36,7 +36,7 @@ const BossDiv = styled.div`
     align-items: center;
     gap: 50px;
     margin: 30px;
-    @media (max-width: 500px){
+    @media (max-width: 1150px){
         flex-direction: column;
     }
 `
@@ -48,7 +48,7 @@ const MainImageDiv = styled.div`
     overflow: hidden;
     border-radius: 100%;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 100%;
         height: 100%;
         margin-bottom: -30px;
@@ -63,7 +63,7 @@ const MainImage = styled.img`
 `
 const MainDescription = styled.div`
     width: 700px;
-    @media (max-width: 500px){
+    @media (max-width: 1150px){
         width: 85%;
         display: flex;
         flex-direction: column;
@@ -86,7 +86,7 @@ const SupporDiv = styled.div`
     justify-content: center;
     gap: 50px;
     margin: 30px;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         gap: 20px;
     }
 `
@@ -101,7 +101,7 @@ export default function TalentoHumano(){
     return(
         <BugaDiv>
             <ContentDiv>
-            <Image src={`${window.innerWidth <= 500 ? "/images/talentoHumano/talento_movil.webp" : "/images/talentoHumano/talento_pc.webp"}`} alt="Imagen Noticia" />
+            <Image src={`${window.innerWidth <= 700 ? "/images/talentoHumano/talento_movil.webp" : "/images/talentoHumano/talento_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <BossDiv>
                 <MainImageDiv>

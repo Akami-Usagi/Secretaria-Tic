@@ -18,34 +18,14 @@ const CustomCarrousel = styled(Carousel)`
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 95%;
         height: 600px;
     }
     
 `
 const ImageDiv = styled.div`
-    background: url("/images/inscripciones/inscripciones_pc.webp") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 500px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/inscripciones/inscripciones_movil.webp") no-repeat center;
-        
-    }
-`
-const ImageDiv2 = styled.div`
-    background: url("/images/banner/image_2.webp");
+    background: url("/images/inscripciones/inscripciones_pc.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -59,10 +39,34 @@ const ImageDiv2 = styled.div`
     padding: 70px;
     color: white;
     font-size: larger;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         justify-content: baseline;
         align-items: center;
-        background: url("/images/bannerMovil/image_2.webp");
+        background: url("/images/inscripciones/inscripciones_movil.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+`
+const ImageDiv2 = styled.div`
+    background: url("/images/ofertaInstitucional/oferta_pc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    overflow: hidden;
+    padding: 70px;
+    color: white;
+    font-size: larger;
+    @media (max-width: 700px){
+        justify-content: baseline;
+        align-items: center;
+        background: url("/images/ofertaInstitucional/oferta_movil.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -84,7 +88,7 @@ const ImageNovedades = styled.div`
     padding: 70px;
     color: white;
     font-size: larger;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         justify-content: baseline;
         align-items: center;
         background: url("/images/novedades/novedades_movil.webp");
@@ -95,18 +99,23 @@ const ImageNovedades = styled.div`
 `
 const CarrouselTitle = styled.h1`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
-    @media (max-width: 500px){
+    position: relative;
+    top: 60px;
+    @media (max-width: 700px){
         position: relative;
         top: 30px;
-        width: 130%;
+        width: 120%;
         
     }
 `
 const CarrouselText = styled.h3`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
-    @media (max-width: 500px){
+    position: relative;
+    top: 30px;
+    @media (max-width: 700px){
         font-size: large;        
-        width: 130%;
+        width: 120%;
+        top: initial;
 
     }
 `
@@ -120,7 +129,7 @@ export default function Carrousel(){
         <CarroulseDiv>
             <CustomCarrousel 
             showArrows={true} 
-            autoPlay={true}
+            autoPlay={false}
             infiniteLoop={true}
             preventMovementUntilSwipeScrollTolerance={true}
             showThumbs={false}

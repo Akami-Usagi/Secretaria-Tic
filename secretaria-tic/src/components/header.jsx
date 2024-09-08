@@ -20,16 +20,16 @@ const HeaderDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
-    @media (max-width: 1270px){
+    @media (max-width: 1500px){
         justify-content: center;
     }
-    @media (max-width: 600px){
+    @media (max-width: 700px){
         justify-content: space-between;
     }
 `
 const LogoImage = styled.img`
     height: 110px;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         height: 80px;
     }
 `
@@ -44,7 +44,7 @@ const NavList = styled.ul`
     border-radius: 30px;
     padding: 5px 10px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 600px){
+    @media (max-width: 700px){
         display: none;
     }
     
@@ -71,7 +71,7 @@ const MenuImage = styled.img`
         width: 50px;
         display: none;
         transition: ease-in-out 200ms;
-        @media (max-width: 600px){
+        @media (max-width: 700px){
             display: block;
             position: absolute;
             right: 30px;
@@ -93,6 +93,7 @@ export default function Header(){
                         <li><Link to={"/inscripciones"}><NavButton>Oferta Educativa</NavButton></Link></li>
                         <li><Link to={"/centros-transformacion-digital"}><NavButton>CTD</NavButton></Link></li>
                         <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
+                        <li><Link to={"/oferta-institucional"}><NavButton>Oferta Institucional</NavButton></Link></li>
                         <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>             
                         <li><Link to={"/talento-humano"}><NavButton>Talento Humano</NavButton></Link></li>
                     </NavList>

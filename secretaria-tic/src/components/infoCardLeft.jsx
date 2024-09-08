@@ -69,6 +69,11 @@ const InfoTitle = styled.h2`
 `
 const InfoText = styled.p`
     width: 500px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+    line-clamp: 7; 
+    -webkit-box-orient: vertical;
     @media (max-width: 600px){
         width: 80%;
         margin-bottom: 30px;

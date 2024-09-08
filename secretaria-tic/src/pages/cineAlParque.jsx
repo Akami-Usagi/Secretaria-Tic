@@ -18,7 +18,7 @@ const ContentDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 95%;
         height: 600px;
         
@@ -37,7 +37,7 @@ const TextDiv = styled.div`
     display: flex;
     flex-direction: column;
     
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 90%;
         margin-bottom: 10px;
     }
@@ -45,7 +45,7 @@ const TextDiv = styled.div`
 `
 const Title = styled.h1`
 font-size: 2.5em;
-@media (max-width: 500px){
+@media (max-width: 700px){
     text-align: center;
     font-size: 2.5em;
 }
@@ -53,7 +53,7 @@ font-size: 2.5em;
 const Text = styled.p`
     font-size: 1.4em;
     margin-bottom: 10px;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         font-size: 1.3em;
     }
 `
@@ -66,7 +66,7 @@ export default function CineAlParque(){
     return(
         <BugaDiv>
             <ContentDiv>
-                <Image src={`${window.innerWidth <= 500 ? "/images/bannerMovil/cine_movil.webp" : "/images/banner/cine_pc.webp"}`} alt="Imagen Noticia" />
+                <Image src={`${window.innerWidth <= 700 ? "/images/bannerMovil/cine_movil.webp" : "/images/banner/cine_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Cine al Parque se toma el barrio La Merced</Title>

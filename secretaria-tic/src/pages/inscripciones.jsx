@@ -22,7 +22,7 @@ const ContentDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 95%;
         height: 600px;
         
@@ -40,7 +40,7 @@ const TextDiv = styled.div`
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         align-items: center;
         width: 85%;
     }
@@ -48,7 +48,7 @@ const TextDiv = styled.div`
 `
 const Title = styled.h1`
 font-size: 2.5em;
-@media (max-width: 500px){
+@media (max-width: 700px){
     text-align: center;
     font-size: 2.5em;
 }
@@ -56,7 +56,7 @@ font-size: 2.5em;
 const Text = styled.p`
     font-size: 1.4em;
     
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         font-size: 1.3em;
     }
 `
@@ -74,7 +74,7 @@ const FormDiv = styled.div`
     @media (max-width: 620px){
         width: 100%;
     }
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 85%;
     }
 `
@@ -117,7 +117,7 @@ const FormButton = styled.button`
         width: 320px;
         color: white;
     }
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         margin-top: 20px;
     }
 `
@@ -155,7 +155,7 @@ export default function Inscripciones(){
     return(
         <BugaDiv>
             <ContentDiv>
-            <Image src={`${window.innerWidth <= 500 ? "/images/inscripciones/inscripciones_movil.webp" : "/images/inscripciones/inscripciones_pc.webp"}`} alt="Inscripciones" />
+            <Image src={`${window.innerWidth <= 700 ? "/images/inscripciones/inscripciones_movil.webp" : "/images/inscripciones/inscripciones_pc.webp"}`} alt="Inscripciones" />
             </ContentDiv>
             <TextDiv>
                 <Title>Haz parte de la comunicad Tech del Valle del Cauca</Title>

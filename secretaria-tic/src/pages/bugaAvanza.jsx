@@ -17,7 +17,7 @@ const ContentDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         width: 95%;
         height: 600px;
         
@@ -35,7 +35,7 @@ const TextDiv = styled.div`
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         align-items: center;
         width: 85%;
     }
@@ -43,14 +43,14 @@ const TextDiv = styled.div`
 `
 const Title = styled.h1`
 font-size: 2.5em;
-@media (max-width: 500px){
+@media (max-width: 700px){
     text-align: center;
     font-size: 2.5em;
 }
 `
 const Text = styled.p`
     font-size: 1.4em;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         font-size: 1.3em;
     }
 `
@@ -71,7 +71,7 @@ const InfoButon = styled.button`
         width: 320px;
         color: white;
     }
-    @media (max-width: 500px){
+    @media (max-width: 700px){
         margin-top: 20px;
     }
 `
@@ -83,7 +83,7 @@ export default function BugaAvanza(){
     return(
         <BugaDiv>
             <ContentDiv>
-            <Image src={`${window.innerWidth <= 500 ? "/images/bugaAvanza/buga_avanza_movil.webp" : "/images/bugaAvanza/buga_avanza_pc.webp"}`} alt="Imagen Noticia" />
+            <Image src={`${window.innerWidth <= 700 ? "/images/bugaAvanza/buga_avanza_movil.webp" : "/images/bugaAvanza/buga_avanza_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
                 <Title>Buga Avanza</Title>
