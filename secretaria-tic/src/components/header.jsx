@@ -90,10 +90,10 @@ export default function Header(){
                 <nav>
                     <NavList>
                         <li><Link to={"/"}><NavButton>Inicio</NavButton></Link></li>
-                        <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>
-                        <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
-                        <li><Link to={"/inscripciones"}><NavButton>Inscribete</NavButton></Link></li>
+                        <li><Link to={"/inscripciones"}><NavButton>Oferta Educativa</NavButton></Link></li>
                         <li><Link to={"/centros-transformacion-digital"}><NavButton>CTD</NavButton></Link></li>
+                        <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
+                        <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>             
                         <li><Link to={"/talento-humano"}><NavButton>Talento Humano</NavButton></Link></li>
                     </NavList>
                 </nav>

@@ -89,7 +89,7 @@ export default function TalentoTech(){
             <TextDiv>
                 <Title>¡Haz parte de nuestro Talento Tech!</Title>
                 <Text>
-                    ¿Quieres impulsar tu carrera en el mundo digital? ¡Inscribete en los programas de <strong>Talento Tech</strong> de la gobernacion del Valle del Cauca! Aprende las habilidades mas demandadas en el mercado laboral actual, como programacion, inteligencia artificial y ciberseguridad. ¡Es tu oportunidad de adquirir conocimientos en alta calidad y abrirte puertas a nuevas oportunidades laborales!
+                    ¿Quieres impulsar tu carrera en el mundo digital? ¡Inscribete en los programas de <strong>Talento Tech</strong> de la gobernacion del Valle del Cauca! Aprende las habilidades más demandadas en el mercado laboral actual, como programación, inteligencia artificial y ciberseguridad. ¡Es tu oportunidad de adquirir conocimientos en alta calidad y abrirte puertas a nuevas oportunidades laborales!
                 </Text>
                 <Text>
                     No esperes más y sé árte de esta gran iniciativa que busca formar a los futuros lideres en tecnología 

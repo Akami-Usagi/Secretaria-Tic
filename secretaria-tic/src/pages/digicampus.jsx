@@ -89,7 +89,7 @@ export default function Digicampus(){
             <TextDiv>
                 <Title>¡Bienvenido a DigiCampus!</Title>
                 <Text>
-                    la puerta a tu futuro! Esta plataforma es más que un simple acceso a la educación, es la oportunidad que estabas esperando para transformar tu vida. Gracias al compromiso de la Gobernación del Valle, ahora tienes la posibilidad de acceder a becas universitarias que te permitirán alcanzar tus sueños.
+                    !La puerta a tu futuro! Esta plataforma es más que un simple acceso a la educación, es la oportunidad que estabas esperando para transformar tu vida. Gracias al compromiso de la Gobernación del Valle, ahora tienes la posibilidad de acceder a becas universitarias que te permitirán alcanzar tus sueños.
                 </Text>
                 <Text>
                     Imagina un lugar donde cada clic te acerca un paso más a la carrera de tus sueños, donde las barreras económicas ya no te detienen, y donde el esfuerzo es recompensado con oportunidades reales. En DigiCampus, el conocimiento está al alcance de todos, y con el apoyo de la Gobernación del Valle, esas metas que parecían inalcanzables están más cerca de lo que imaginas.

@@ -113,7 +113,7 @@ export default function InfoCardLeft({image, link, title, text, target}){
                 <TextDiv>
                     <InfoTitle>{title}</InfoTitle>
                     <InfoText>{text}</InfoText>
-                    <CustomLink to={link} target={target}><InfoButon onClick={() => {window.scroll(0,0)}}>Ver Mas</InfoButon></CustomLink>
+                    <CustomLink to={link} target={target}><InfoButon onClick={() => {window.scroll(0,0)}}>Ver Más</InfoButon></CustomLink>
                 </TextDiv>    
             </InfoContent>
         </InfoBack>

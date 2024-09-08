@@ -91,9 +91,9 @@ export default function BugaAvanza(){
                 <Text>
                     La Secretaría de las Tecnologias de la Informacion y las Comunicaciones, ofrece a toda
                     la comunidad Bugueña una fuerte oferta educativa, con el objetivo de cerrar la gran brecha digital
-                    que existe entre la poblacion bugueña. Estamos innovando cada día para asi lograr ofrecer
+                    que existe entre la poblacion bugueña. Estamos innovando cada día para así lograr ofrecer
                     nuevos cursos a toda la comunidad, en los proximos meses, a parte de las formaciones en Ofimatica Basica,
-                    cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en Manejo de Drones y en Fundamentos de Programacion.
+                    cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en manejo de Drones y en Fundamentos de Programacion.
                 </Text>  
             </TextDiv>
             <CousesDiv>
