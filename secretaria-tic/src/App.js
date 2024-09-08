@@ -20,16 +20,20 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Main/>}/>
-        <Route path='/buga-avanza' element={<BugaAvanza/>}/>
-        <Route path='/aula-virtual' element={<AulaVirtual/>}/>
-        <Route path='/centros-transformacion-digital' element={<CTD/>}/>
-        <Route path='/talento-humano' element={<TalentoHumano/>}/>
-        <Route path='/novedades' element={<Novedades/>}/>
         <Route path='/inscripciones' element={<Inscripciones/>}/>
-        <Route path='/oferta-institucional' element={<OfertaInstitucional/>}/>
+        <Route path='/centros-transformacion-digital' element={<CTD/>}/>
+        <Route path='/aula-virtual' element={<AulaVirtual/>}/>
+        <Route path='/formacion-tic' element={<OfertaInstitucional/>}/>
+        <Route path='/buga-avanza' element={<BugaAvanza/>}/>
+        <Route path='/talento-humano' element={<TalentoHumano/>}/>
+
+        <Route path='/novedades' element={<Novedades/>}/>
+                
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
+
         <Route path='/*' element={<Page404/>}/>
+        
       </Routes>
       <Footer/>
     </Router>

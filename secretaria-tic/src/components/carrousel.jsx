@@ -129,14 +129,14 @@ export default function Carrousel(){
         <CarroulseDiv>
             <CustomCarrousel 
             showArrows={true} 
-            autoPlay={false}
+            autoPlay={true}
             infiniteLoop={true}
             preventMovementUntilSwipeScrollTolerance={true}
             showThumbs={false}
             stopOnHover={false}
             showStatus={false}
             showIndicators={false}
-            interval={3500}>
+            interval={3000}>
                 <CustomLink to={"/inscripciones"}>
                     <ImageDiv>
                         <CarrouselTitle>Haz parte de la revolucion digital</CarrouselTitle>
