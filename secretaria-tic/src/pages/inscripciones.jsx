@@ -158,7 +158,7 @@ export default function Inscripciones(){
             <Image src={`${window.innerWidth <= 700 ? "/images/inscripciones/inscripciones_movil.webp" : "/images/inscripciones/inscripciones_pc.webp"}`} alt="Inscripciones" />
             </ContentDiv>
             <TextDiv>
-                <Title>Haz parte de la comunicad Tech del Valle del Cauca</Title>
+                <Title>Haz parte de la comunidad Tech del Valle del Cauca</Title>
                 <Text>
                     La Secretaría TIC de Buga te invita a ser parte de la revolución tecnológica. Inscríbete en los programas de Talento Tech, Digicampus y la Oferta Institucional de la secretaría TIC y descubre un mundo de oportunidades. A través de cursos prácticos y talleres especializados, adquirirás las competencias necesarias para destacarte en el competitivo mercado laboral del siglo XXI. Desde programación y diseño web hasta inteligencia artificial y ciberseguridad, tenemos una amplia oferta educativa para todos los niveles y edades. ¡No te quedes atrás! ¡Conviértete en un experto en tecnología y construye tu futuro digital!
                 </Text>
