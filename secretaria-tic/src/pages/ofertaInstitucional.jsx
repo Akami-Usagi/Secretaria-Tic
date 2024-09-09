@@ -89,11 +89,11 @@ export default function BugaAvanza(){
             <TextDiv>
                 <Title>Nuestra Oferta Institucional</Title>
                 <Text>
-                    La Secretaría de las Tecnologias de la Informacion y las Comunicaciones, ofrece a toda
+                    La Secretaría de las Tecnologias de la Información y las Comunicaciones, ofrece a toda
                     la comunidad Bugueña una fuerte oferta educativa, con el objetivo de cerrar la gran brecha digital
-                    que existe entre la poblacion bugueña. Estamos innovando cada día para así lograr ofrecer
-                    nuevos cursos a toda la comunidad, en los proximos meses, a parte de las formaciones en Ofimatica Basica,
-                    cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en manejo de Drones y en Fundamentos de Programacion.
+                    que existe entre la población bugueña. Estamos innovando cada día para así lograr ofrecer
+                    nuevos cursos a toda la comunidad, en los proximos meses, a parte de las formaciones en Ofimática Básica,
+                    cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en manejo de Drones y en Fundamentos de Programación.
                 </Text>  
             </TextDiv>
             <CousesDiv>
