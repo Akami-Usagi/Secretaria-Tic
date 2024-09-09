@@ -96,7 +96,7 @@ export default function BugaAvanza(){
                 <Text>
                     Estos 100 días han sido un testimonio de lo que se puede lograr cuando una líder valiente se compromete a servir con integridad y dedicación. Nuestra alcaldesa ha inspirado a muchos, no solo por su capacidad de tomar decisiones difíciles, sino por su habilidad para unir a nuestra ciudad en torno a una visión compartida de progreso. Con ella al timón, no hay duda de que lo mejor está por venir.
                 </Text>
-                <Anchor href="https://pdf-flipbook-beta.vercel.app/" target="_blank"><InfoButon>Ver Mas</InfoButon></Anchor>
+                <Anchor href="https://pdf-flipbook-beta.vercel.app/" target="_blank"><InfoButon>Ver Más</InfoButon></Anchor>
             </TextDiv>
         </BugaDiv>
     )
