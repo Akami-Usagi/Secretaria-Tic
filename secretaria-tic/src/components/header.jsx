@@ -93,7 +93,7 @@ export default function Header(){
                         <li><Link to={"/inscripciones"}><NavButton>Oferta Educativa</NavButton></Link></li>
                         <li><Link to={"/centros-transformacion-digital"}><NavButton>CTD</NavButton></Link></li>
                         <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>
-                        <li><Link to={"/formacion-tic"}><NavButton>Formacion TIC</NavButton></Link></li>
+                        <li><Link to={"/formacion-tic"}><NavButton>Formación TIC</NavButton></Link></li>
                         <li><Link to={"/buga-avanza"}><NavButton>Buga Avanza</NavButton></Link></li>             
                         <li><Link to={"/talento-humano"}><NavButton>Talento Humano</NavButton></Link></li>
                     </NavList>
