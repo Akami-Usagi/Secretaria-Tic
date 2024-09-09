@@ -74,7 +74,7 @@ export default function CTD(){
             <Image src={`${window.innerWidth <= 700 ? "/images/centrosTransformacion/ctd_movil.webp" : "/images/centrosTransformacion/ctd_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
-                <Title>¡Conoce nuestros Centros de Transformacion Digital!</Title>
+                <Title>¡Conoce nuestros Centros de Transformación Digital!</Title>
                 <Text>
                     En Guadalajara de Buga, la tecnología está al alcance de todos. Gracias a los puntos de transformación digital, impulsados por la Secretaría de las Tecnologías de la Información y las Comunicaciones, ahora tienes la oportunidad de adquirir nuevas habilidades digitales y mejorar tu calidad de vida.
                 </Text>
