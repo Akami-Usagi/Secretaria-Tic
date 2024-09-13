@@ -175,7 +175,7 @@ export default function TalentoTic(){
                     Conoce las condiciones y restricciones en el siguiente <a href="/terminos.pdf" target="blank"><strong>enlace</strong></a>
                 </Text>
                 <Text>
-                    Una vez leidos los terminos y condiciones, envia los documentos requeridos al correo <a href="mailto:email@test.com.co" target="blank"><strong>email@test.com.co</strong></a> y luego completa el siguiente formulario de inscripcion.
+                    Una vez leidos los terminos y condiciones, envia los documentos requeridos al correo <a href="mailto:tic@buga.gov.co" target="blank"><strong>tic@buga.gov.co</strong></a> y luego completa el siguiente formulario de inscripcion.
                 </Text>
                 <FormDiv>
                     
