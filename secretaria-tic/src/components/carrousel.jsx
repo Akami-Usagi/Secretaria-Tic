@@ -152,7 +152,7 @@ export default function Carrousel(){
                 <CustomLink to={"/oferta-institucional"}>
                     <ImageDiv2>
                         <CarrouselTitle>Estudia con Nosotros</CarrouselTitle>
-                        <CarrouselText>Enterate de toda la oferta educativa que la Secretaría TIC tiene para tí</CarrouselText>
+                        <CarrouselText>Entérate de toda la oferta educativa que la Secretaría TIC tiene para tí</CarrouselText>
                     </ImageDiv2>
                 </CustomLink>
                 
