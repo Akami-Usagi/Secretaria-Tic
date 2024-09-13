@@ -90,7 +90,7 @@ export default function Header(){
                 <nav>
                     <NavList>
                         <li><Link to={"/"}><NavButton>Inicio</NavButton></Link></li>
-                        <li><Link to={"/talento-tic"}><NavButton>Talento TIC Creativo</NavButton></Link></li>
+                        <li><Link to={"/tic-talent"}><NavButton>TIC Talent Creativo</NavButton></Link></li>
                         <li><Link to={"/inscripciones"}><NavButton>Oferta Educativa</NavButton></Link></li>
                         <li><Link to={"/centros-transformacion-digital"}><NavButton>CTD</NavButton></Link></li>
                         <li><Link to={"/aula-virtual"}><NavButton>Aula Virtual</NavButton></Link></li>

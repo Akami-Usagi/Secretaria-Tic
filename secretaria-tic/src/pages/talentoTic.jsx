@@ -140,7 +140,7 @@ export default function TalentoTic(){
         let data = {nombre, documento, tipo, telefono, email}
         await addDoc(collection(db, programa), data)
         .then(
-            alert("Registrado Satisfactoriamente")
+            alert("Registrado Satisfactoriamente, muy pronto nos comunicaremos contigo.")
             
         )
     };
@@ -161,15 +161,15 @@ export default function TalentoTic(){
     return(
         <BugaDiv>
             <ContentDiv>
-            <Image src={`${window.innerWidth <= 700 ? "/images/talentoTic/placeholder_movil.png" : "/images/talentoTic/placeholder.png"}`} alt="Inscripciones" />
+            <Image src={`${window.innerWidth <= 700 ? "/images/ticTalent/talent_movil.webp" : "/images/ticTalent/talent_pc.webp"}`} alt="Inscripciones" />
             </ContentDiv>
             <TextDiv>
-                <Title>{`<< TITULO INVITANDO AL PUBLICO A INSCRIBIRSE >>`}</Title>
+                <Title>¡Descubre tu Potencial Creativo con TIC Talent Creativo!</Title>
                 <Text>
-                    {`<< PARRAFO DE INVITACION >>`}
+                    Si eres de Buga y sientes pasión por la producción de contenido digital, ¡esta es tu oportunidad! La convocatoria TIC Talent Creativo te invita a mostrar tu ingenio y habilidades en el mundo digital. Ya seas diseñador, creador de contenido, editor de video, o amante de las artes digitales, este es tu momento para brillar. Comparte tu talento y conviértete en un referente de creatividad en nuestra ciudad.
                 </Text>
                 <Text>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    No dejes pasar esta oportunidad única de desarrollar tu carrera artistica. Inscríbete ahora y únete a una comunidad vibrante de jóvenes talentosos que, como tú, quieren dejar su huella en la ciudad. ¡Inspírate, crea y transforma tu futuro con TIC Talent Creativo!
                 </Text>
                 <Text>
                     Conoce las condiciones y restricciones en el siguiente <a href="/terminos.pdf" target="blank"><strong>enlace</strong></a>

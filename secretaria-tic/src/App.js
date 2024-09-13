@@ -28,7 +28,7 @@ function App() {
         <Route path='/buga-avanza' element={<BugaAvanza/>}/>
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
 
-        <Route path='/talento-tic' element={<TalentoTic/>}/>
+        <Route path='/tic-talent' element={<TalentoTic/>}/>
 
         <Route path='/novedades' element={<Novedades/>}/>
                 
