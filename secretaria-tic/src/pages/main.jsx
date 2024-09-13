@@ -18,10 +18,11 @@ export default function Main(){
     return(
         <div>
             <Carrousel/>
-            <InfoCard image={"/images/bugaAvanza/buga_avanza_movil.webp"} link={"/buga-avanza"} title={titleBuga} text={textBuga}/>
-            <InfoCardLeft image={"/images/inscripciones/inscripciones_movil.webp"} link={"/inscripciones"} title={titleDigi} text={textDigi}/>
-            <InfoCard image={"/images/aulaVirtual/aula_virtual_movil.webp"} link={"/aula-virtual"} title={titleAula} text={textAula}/>
+            
+            <InfoCard image={"/images/inscripciones/inscripciones_movil.webp"} link={"/inscripciones"} title={titleDigi} text={textDigi}/>
             <InfoCardLeft image={"/images/ofertaInstitucional/oferta_movil.webp"} link={"/formacion-tic"} title={titleOferta} text={textOferta}/>
+            <InfoCard image={"/images/aulaVirtual/aula_virtual_movil.webp"} link={"/aula-virtual"} title={titleAula} text={textAula}/>
+            <InfoCardLeft image={"/images/bugaAvanza/buga_avanza_movil.webp"} link={"/buga-avanza"} title={titleBuga} text={textBuga}/>
         </div>
         
     )
