@@ -10,6 +10,7 @@ import Novedades from './pages/novedades';
 //import CineAlParque from './pages/cineAlParque';
 import Inscripciones from './pages/inscripciones';
 import TalentoTech from './pages/talentoTech';
+import TalentoTic from './pages/talentoTic';
 import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -26,6 +27,8 @@ function App() {
         <Route path='/formacion-tic' element={<OfertaInstitucional/>}/>
         <Route path='/buga-avanza' element={<BugaAvanza/>}/>
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
+
+        <Route path='/tic-talent' element={<TalentoTic/>}/>
 
         <Route path='/novedades' element={<Novedades/>}/>
                 
