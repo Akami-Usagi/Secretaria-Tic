@@ -72,6 +72,30 @@ const ImageDiv2 = styled.div`
         background-position: center;
     }
 `
+const ImageDiv3 = styled.div`
+    background: url("/images/ticTalent/talent_pc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    overflow: hidden;
+    padding: 70px;
+    color: white;
+    font-size: larger;
+    @media (max-width: 700px){
+        justify-content: baseline;
+        align-items: center;
+        background: url("/images/ticTalent/talent_movil.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+`
 
 const ImageNovedades = styled.div`
     background-image: url("/images/novedades/novedades_pc.webp");
@@ -137,6 +161,12 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={3000}>
+                <CustomLink to={"/tic-talent"}>
+                    <ImageDiv3>
+                        <CarrouselTitle>¡Descubre tu Potencial Creativo con TIC Talent Creativo!</CarrouselTitle>
+                        <CarrouselText>Inscribete y participa del primer TIC Talent Creativo</CarrouselText>
+                    </ImageDiv3>
+                </CustomLink> 
                 <CustomLink to={"/inscripciones"}>
                     <ImageDiv>
                         <CarrouselTitle>Haz parte de la revolucion digital</CarrouselTitle>
