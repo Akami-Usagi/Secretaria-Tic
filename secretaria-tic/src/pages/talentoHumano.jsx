@@ -46,20 +46,22 @@ const MainImageDiv = styled.div`
     display: grid;
     place-items: center;
     overflow: hidden;
-    border-radius: 100%;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    @media (max-width: 700px){
-        width: 100%;
-        height: 100%;
+    border-radius: 100%;
+    @media (max-width: 1150px){
         margin-bottom: -30px;
+    }
+    @media (max-width: 450px){
+        width: 90vw;
+        height: 90vw;
         
     }
 `
 const MainImage = styled.img`
     width: 100%;
     height: 100%;
-    overflow: hidden;
     object-fit: cover;
+    overflow: hidden;
 `
 const MainDescription = styled.div`
     width: 700px;
@@ -93,6 +95,8 @@ const SupporDiv = styled.div`
 const TeamTitle = styled.h2`
     margin-top: -20px;
     margin-bottom: -30px;
+    text-align: center;
+    padding: 0 20px;
 `
 
 
@@ -114,7 +118,7 @@ export default function TalentoHumano(){
                 </MainDescription>
             </BossDiv>
             <Divider></Divider>
-            <TeamTitle>Equipo de Soporte Tecnico</TeamTitle>
+            <TeamTitle>Equipo de Asistencia Tecnológica Avanzada</TeamTitle>
             <SupporDiv>
                 <PersonCard nombre={"Camila Gomez"} cargo={"Tecnica en Sistemas"} imagen={"/images/talentoHumano/support_2.webp"}/>
                 <PersonCard nombre={"Camilo Arango"} cargo={"Desarrollador de Software"} imagen={"/images/talentoHumano/support_1.webp"}/>
