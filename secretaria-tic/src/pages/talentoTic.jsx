@@ -172,7 +172,7 @@ export default function TalentoTic(){
                     No dejes pasar esta oportunidad única de desarrollar tu carrera artistica. Inscríbete ahora y únete a una comunidad vibrante de jóvenes talentosos que, como tú, quieren dejar su huella en la ciudad. ¡Inspírate, crea y transforma tu futuro con TIC Talent Creativo!
                 </Text>
                 <Text>
-                    Conoce las condiciones y restricciones en el siguiente <a href="/terminos.pdf" target="blank"><strong>enlace</strong></a>
+                    Conoce las condiciones y restricciones en el siguiente <a href="/Terminos y Condiciones.pdf" target="blank"><strong>enlace</strong></a>
                 </Text>
                 <Text>
                     Una vez leidos los terminos y condiciones, envia los documentos requeridos al correo <a href="mailto:tic@buga.gov.co" target="blank"><strong>tic@buga.gov.co</strong></a> y luego completa el siguiente formulario de inscripcion.
