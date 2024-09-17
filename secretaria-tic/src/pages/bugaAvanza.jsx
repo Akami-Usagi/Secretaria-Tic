@@ -86,7 +86,7 @@ export default function BugaAvanza(){
             <Image src={`${window.innerWidth <= 700 ? "/images/bugaAvanza/buga_avanza_movil.webp" : "/images/bugaAvanza/buga_avanza_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
-                <Title>Buga Avanza</Title>
+                <Title>Buga Avanza En Lo Digital</Title>
                 <Text>
                     En estos primeros 100 días de liderazgo, hemos visto cómo la visión y la determinación de nuestra alcaldesa han comenzado a transformar nuestra ciudad. Su compromiso inquebrantable con el bienestar de cada ciudadano ha sembrado las semillas de un futuro más próspero y equitativo. Sigamos adelante con la misma fuerza y unidad, porque este es solo el comienzo de un camino lleno de logros y esperanza para todos.
                 </Text>
