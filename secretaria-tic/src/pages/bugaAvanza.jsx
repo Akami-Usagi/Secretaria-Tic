@@ -75,10 +75,10 @@ const InfoButon = styled.button`
         margin-top: 20px;
     }
 `
-const Anchor = styled.a`
+/*const Anchor = styled.a`
     align-self: center;
     margin-top: 30px;
-`
+`*/
 export default function BugaAvanza(){
     return(
         <BugaDiv>
