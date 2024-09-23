@@ -75,10 +75,10 @@ const InfoButon = styled.button`
         margin-top: 20px;
     }
 `
-/*const Anchor = styled.a`
+const Anchor = styled.a`
     align-self: center;
     margin-top: 30px;
-`*/
+`
 export default function BugaAvanza(){
     return(
         <BugaDiv>
@@ -99,7 +99,7 @@ export default function BugaAvanza(){
                 <Text>
                     Gracias a estas iniciativas y la constante inversión en la capacitación tecnológica, Karol Martínez ha empoderado a los ciudadanos de Buga, preparándolos para enfrentar los retos de un mundo en constante evolución digital. Su compromiso con la formación y el desarrollo de competencias digitales ha sido crucial para la inclusión de todos en esta nueva era tecnológica, sentando las bases para que Guadalajara de Buga sea una ciudad más conectada, inclusiva y preparada para el futuro.
                 </Text>
-                {/*<Anchor href="https://pdf-flipbook-beta.vercel.app/" target="_blank"><InfoButon>Ver Más</InfoButon></Anchor>*/}
+                <Anchor href="https://pdf-flipbook-beta.vercel.app/" target="_blank"><InfoButon>Ver Más</InfoButon></Anchor>
             </TextDiv>
         </BugaDiv>
     )
