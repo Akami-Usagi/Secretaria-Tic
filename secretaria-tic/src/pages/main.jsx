@@ -20,9 +20,9 @@ export default function Main(){
         <div>
             <Carrousel/>
             <InfoCardLeft image={"/images/ofertaInstitucional/oferta_movil.webp"} link={"/formacion-tic"} title={titleOferta} text={textOferta}/>
-            <InfoCard image={"/images/aulaVirtual/aula_virtual_movil.webp"} link={"/aula-virtual"} title={titleAula} text={textAula}/>
-            <InfoCardLeft image={"/images/talentoTech/tech_movil.webp"} link={"/talento-tech"} title={titleTech} text={textTech}/>
             <InfoCard image={"/images/digicampus/digicampus_movil.webp"} link={"/digicampus"} title={titleDigi} text={textDigi}/>
+            <InfoCardLeft image={"/images/talentoTech/tech_movil.webp"} link={"/talento-tech"} title={titleTech} text={textTech}/>
+            <InfoCard image={"/images/aulaVirtual/aula_virtual_movil.webp"} link={"/aula-virtual"} title={titleAula} text={textAula}/>
             
             
             <InfoCardLeft image={"/images/bugaAvanza/buga_avanza_movil.webp"} link={"/buga-avanza"} title={titleBuga} text={textBuga}/>
