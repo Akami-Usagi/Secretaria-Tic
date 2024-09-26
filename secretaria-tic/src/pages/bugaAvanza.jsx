@@ -88,17 +88,12 @@ export default function BugaAvanza(){
             <TextDiv>
                 <Title>Buga Avanza En Lo Digital</Title>
                 <Text>
-                    La alcaldesa Karol Martínez ha sido una pieza clave en la transformación digital de Guadalajara de Buga, priorizando la inclusión tecnológica de todos los ciudadanos y cerrando la brecha digital que existía en la ciudad. Su enfoque ha sido claro: que todos los bugueños, sin importar su situación económica o nivel educativo, tengan acceso a las herramientas necesarias para desenvolverse en un mundo cada vez más digital. Gracias a su liderazgo y con el apoyo de la Secretaría TIC, se han desarrollado iniciativas que permiten el acceso equitativo a la tecnología, poniendo a la ciudad a la vanguardia en términos de conectividad y formación digital.
+                    La alcaldesa Karol Martínez ha liderado con éxito la transformación digital de Guadalajara de Buga, enfocándose en cerrar la brecha digital y garantizar que todos los ciudadanos tengan acceso a herramientas tecnológicas. Con el apoyo de la Secretaría TIC, ha impulsado la implementación de programas gratuitos de capacitación en áreas clave como marketing digital, ofimática básica, Excel básico, informática básica, fotografía, fundamentos de programación y vuelo básico de drones. Estos cursos han sido fundamentales para brindar nuevas oportunidades a los ciudadanos, mejorando su empleabilidad y acceso a la información.
                 </Text>
                 <Text>
-                    Uno de los mayores avances en este sentido ha sido el apoyo incondicional a los cursos ofrecidos por la Secretaría TIC, los cuales están diseñados para proporcionar habilidades esenciales a los ciudadanos. Estos programas incluyen capacitación en marketing digital, ofimática básica, Excel básico, informática básica, fotografía, fundamentos de programación y vuelo básico de drones. Estos cursos han sido fundamentales para que muchas personas, especialmente aquellas en situación de vulnerabilidad, puedan adquirir competencias que les permitan mejorar sus oportunidades laborales y estar a la altura de las demandas del mercado actual.
+                    Gracias a su visión inclusiva, Martínez ha logrado que personas de todas las edades y niveles educativos puedan acceder a estas formaciones, reduciendo las barreras que antes limitaban el acceso a la tecnología en la ciudad. Su compromiso con la educación digital ha preparado a Buga para enfrentar los desafíos de un mundo cada vez más tecnológico, promoviendo una mayor equidad y fomentando el desarrollo económico y social.
                 </Text>
-                <Text>
-                    Bajo el liderazgo de Karol Martínez, el acceso a estas formaciones ha sido ampliamente promovido, asegurando que todos los ciudadanos puedan beneficiarse, independientemente de su nivel de conocimiento previo. La alcaldesa ha trabajado activamente para que estos cursos sean accesibles y gratuitos, de manera que tanto jóvenes como adultos tengan la posibilidad de aprender y aplicar nuevas tecnologías en sus vidas diarias. Esto no solo ha contribuido a reducir la brecha digital, sino que también ha fomentado el desarrollo de una cultura de innovación en la ciudad.
-                </Text>
-                <Text>
-                    Gracias a estas iniciativas y la constante inversión en la capacitación tecnológica, Karol Martínez ha empoderado a los ciudadanos de Buga, preparándolos para enfrentar los retos de un mundo en constante evolución digital. Su compromiso con la formación y el desarrollo de competencias digitales ha sido crucial para la inclusión de todos en esta nueva era tecnológica, sentando las bases para que Guadalajara de Buga sea una ciudad más conectada, inclusiva y preparada para el futuro.
-                </Text>
+                
                 <Anchor href="https://pdf-flipbook-beta.vercel.app/" target="_blank"><InfoButon>Ver Más</InfoButon></Anchor>
             </TextDiv>
         </BugaDiv>

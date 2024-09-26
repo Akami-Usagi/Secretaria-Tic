@@ -7,7 +7,7 @@ import InfoCardLeft from "../components/infoCardLeft";
 export default function Main(){
 
     const titleBuga = "¡Buga Avanza En Lo Digital!";
-    const textBuga = "En estos primeros 100 días de liderazgo, hemos visto cómo la visión y la determinación de nuestra alcaldesa han comenzado a transformar nuestra ciudad. Su compromiso inquebrantable con el bienestar de cada ciudadano ha sembrado las semillas de un futuro más próspero y equitativo. Sigamos adelante con la misma fuerza y unidad, porque este es solo el comienzo de un camino lleno de logros y esperanza para todos.";
+    const textBuga = "La alcaldesa Karol Martínez ha liderado con éxito la transformación digital de Guadalajara de Buga, enfocándose en cerrar la brecha digital y garantizar que todos los ciudadanos tengan acceso a herramientas tecnológicas. Con el apoyo de la Secretaría TIC, ha impulsado la implementación de programas gratuitos de capacitación en áreas clave como marketing digital, ofimática básica, Excel básico, informática básica, fotografía, fundamentos de programación y vuelo básico de drones. Estos cursos han sido fundamentales para brindar nuevas oportunidades a los ciudadanos, mejorando su empleabilidad y acceso a la información.";
     const titleDigi = "Ingresa al Digicampus";
     const textDigi = "!La puerta a tu futuro! Esta plataforma es más que un simple acceso a la educación, es la oportunidad que estabas esperando para transformar tu vida. Gracias al compromiso de la Gobernación del Valle, ahora tienes la posibilidad de acceder a becas universitarias que te permitirán alcanzar tus sueños.";
     const titleAula = "Aula Virtual";
