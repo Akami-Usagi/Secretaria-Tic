@@ -97,7 +97,7 @@ export default function TalentoTech(){
                 <Text>
                     Haz click en el siguiente boton y descubre como Talento Tech puede transformar tu vida.
                 </Text>
-                <Anchor href="https://talentotech.gov.co/portal/" target="_blank"><InfoButon>Ingresa a Talento Tech</InfoButon></Anchor>
+                <Anchor href="https://talentotechvalledelcauca.co/" target="_blank"><InfoButon>Ingresa a Talento Tech</InfoButon></Anchor>
             </TextDiv>
         </BugaDiv>
     )
