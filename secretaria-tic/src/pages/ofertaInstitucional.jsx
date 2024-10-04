@@ -76,7 +76,11 @@ const CourseImage = styled.img`
         width: 90%;
     }
 `
-
+const Anchor = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 export default function BugaAvanza(){
 
     
@@ -97,12 +101,12 @@ export default function BugaAvanza(){
                 </Text>  
             </TextDiv>
             <CousesDiv>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdX8gU0rIkeehzPpVWq7UQMwIold_QZG8BgLc39p2g-OiHVOQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXkjfOGVgdSnAe23W2fr-up1ES_V9EXGUuryFMXsYkM4FSSA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones.webp" alt="Drones" /></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdR-dLjJqKNaxSeIQzolltsP6oGqD8CnjGABPgAm62i8PtlXg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdczGhT_TDY6Gil6kSrmOceSSG1RyINJ2FbvXxEODl6JhEUjA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia" /></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAKXSDcR2EY3jKCT_40o57m9FIwgOaC30AUNvvm_hkHzjXPQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUCJmZmHSnE-FL72BYZ04x_15MmzvjpoaGbyFvu6dl7b_new/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing" /></a>
+                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdX8gU0rIkeehzPpVWq7UQMwIold_QZG8BgLc39p2g-OiHVOQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
+                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSeXkjfOGVgdSnAe23W2fr-up1ES_V9EXGUuryFMXsYkM4FSSA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones.webp" alt="Drones" /></Anchor>
+                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdR-dLjJqKNaxSeIQzolltsP6oGqD8CnjGABPgAm62i8PtlXg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
+                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdczGhT_TDY6Gil6kSrmOceSSG1RyINJ2FbvXxEODl6JhEUjA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia" /></Anchor>
+                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdAKXSDcR2EY3jKCT_40o57m9FIwgOaC30AUNvvm_hkHzjXPQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
+                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSfUCJmZmHSnE-FL72BYZ04x_15MmzvjpoaGbyFvu6dl7b_new/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )
