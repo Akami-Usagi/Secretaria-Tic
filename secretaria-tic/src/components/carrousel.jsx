@@ -3,9 +3,11 @@ import "react-responsive-carousel/lib/styles/carousel.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 
-const CarroulseDiv = styled.div`
+
+const CarroulseDiv = styled(motion.div)`
     width: 100%;
     display: grid;
     place-items: center;
@@ -150,7 +152,9 @@ const CustomLink = styled(Link)`
 
 export default function Carrousel(){
     return (
-        <CarroulseDiv>
+        <CarroulseDiv 
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}>
             <CustomCarrousel 
             showArrows={true} 
             autoPlay={true}

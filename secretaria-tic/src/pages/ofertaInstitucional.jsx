@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const BugaDiv = styled.div`
     width: 100%;
@@ -76,7 +77,7 @@ const CourseImage = styled.img`
         width: 90%;
     }
 `
-const Anchor = styled.a`
+const Anchor = styled(motion.a)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +102,24 @@ export default function BugaAvanza(){
                 </Text>  
             </TextDiv>
             <CousesDiv>
-                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdX8gU0rIkeehzPpVWq7UQMwIold_QZG8BgLc39p2g-OiHVOQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
-                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSeXkjfOGVgdSnAe23W2fr-up1ES_V9EXGUuryFMXsYkM4FSSA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones.webp" alt="Drones" /></Anchor>
-                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdR-dLjJqKNaxSeIQzolltsP6oGqD8CnjGABPgAm62i8PtlXg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
-                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdczGhT_TDY6Gil6kSrmOceSSG1RyINJ2FbvXxEODl6JhEUjA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia" /></Anchor>
-                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSdAKXSDcR2EY3jKCT_40o57m9FIwgOaC30AUNvvm_hkHzjXPQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
-                <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSfUCJmZmHSnE-FL72BYZ04x_15MmzvjpoaGbyFvu6dl7b_new/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}} href="https://docs.google.com/forms/d/e/1FAIpQLSdX8gU0rIkeehzPpVWq7UQMwIold_QZG8BgLc39p2g-OiHVOQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}} href="https://docs.google.com/forms/d/e/1FAIpQLSeXkjfOGVgdSnAe23W2fr-up1ES_V9EXGUuryFMXsYkM4FSSA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones.webp" alt="Drones" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}} href="https://docs.google.com/forms/d/e/1FAIpQLSdR-dLjJqKNaxSeIQzolltsP6oGqD8CnjGABPgAm62i8PtlXg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}} href="https://docs.google.com/forms/d/e/1FAIpQLSdczGhT_TDY6Gil6kSrmOceSSG1RyINJ2FbvXxEODl6JhEUjA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}} href="https://docs.google.com/forms/d/e/1FAIpQLSdAKXSDcR2EY3jKCT_40o57m9FIwgOaC30AUNvvm_hkHzjXPQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}} href="https://docs.google.com/forms/d/e/1FAIpQLSfUCJmZmHSnE-FL72BYZ04x_15MmzvjpoaGbyFvu6dl7b_new/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )
