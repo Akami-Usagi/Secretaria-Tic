@@ -166,6 +166,12 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={3000}>
+                <CustomLink to={"/novedades"}>
+                    <ImageNovedades>
+                        <CarrouselTitle>Graduacion Avanzando en lo Digital</CarrouselTitle>
+                        <CarrouselText>Más de 250 ciudadanos se graduaron en cursos de tecnología gracias al programa "Avanzando en lo Digital"</CarrouselText>
+                    </ImageNovedades>
+                </CustomLink>   
                 <CustomLink to={"/tic-talent"}>
                     <ImageDiv3>
                         <CarrouselTitle>¡Descubre tu Potencial Creativo con TIC Talent Creativo!</CarrouselTitle>
@@ -178,12 +184,7 @@ export default function Carrousel(){
                         <CarrouselText>Talento Tech, Digicampus y la Secretaría TIC te ofrecen multiples oportunidades de estudio</CarrouselText>
                     </ImageDiv>
                 </CustomLink>    
-                <CustomLink to={"/novedades"}>
-                    <ImageNovedades>
-                        <CarrouselTitle>Meetup Nido</CarrouselTitle>
-                        <CarrouselText>Marco Osorio cautivó a los empresarios Bugueños con sus experiencias en el mundo del emprendimiento</CarrouselText>
-                    </ImageNovedades>
-                </CustomLink>    
+                 
                 <CustomLink to={"/oferta-institucional"}>
                     <ImageDiv2>
                         <CarrouselTitle>Estudia con Nosotros</CarrouselTitle>
