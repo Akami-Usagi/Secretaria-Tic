@@ -41,7 +41,7 @@ const BossDiv = styled.div`
         flex-direction: column;
     }
 `
-const MainImageDiv = styled.div`
+const MainImageDiv = styled(motion.div)`
     width: 400px;
     height: 400px;
     display: grid;
@@ -112,7 +112,11 @@ export default function TalentoHumano(){
             <Image src={`${window.innerWidth <= 700 ? "/images/talentoHumano/talento_movil.webp" : "/images/talentoHumano/talento_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <BossDiv>
-                <MainImageDiv>
+                <MainImageDiv
+                initial={{ opacity: 0, scale:0 }}
+                whileInView={{ opacity: 1, scale:1 }}
+                viewport={{once: true, amount: .5}}
+                transition={{ duration: .7 }}>
                     <MainImage src="/images/talentoHumano/secretario.webp" alt="Secretario TIC"/>
                 </MainImageDiv>
                 <MainDescription>
