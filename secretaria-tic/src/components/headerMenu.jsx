@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 
-const MenuDiv = styled.div`
+const MenuDiv = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +49,10 @@ const MenuButton = styled.button`
 
 export default function HeaderMenu({setMenuOpen}){
     return(
-        <MenuDiv>
+        <MenuDiv
+        initial={{ opacity: 0,  y: -100 }}
+        animate={{ opacity: 1,  y: 0}}
+        transition={{ duration: .5 }}>
             <MenuList>
                     <li><Link to={"/"}><MenuButton onClick={()=> setMenuOpen(false)}>Inicio</MenuButton></Link></li>
                     <li><Link to={"/tic-talent"}><MenuButton onClick={()=> setMenuOpen(false)}>TIC Talent Creativo</MenuButton></Link></li>

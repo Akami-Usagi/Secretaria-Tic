@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-const InfoBack = styled.div`
+const InfoBack = styled(motion.div)`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -112,7 +113,11 @@ const CustomLink = styled(Link)`
 
 export default function InfoCard({image, link, title, text, target}){
     return(
-        <InfoBack>
+        <InfoBack 
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{once: true, amount: .5}}
+        transition={{ duration: .7 }}>
             <InfoContent>
                 <InfoImageDiv>
                     <InfoImage src={image} alt="Tarjeta" />

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const BugaDiv = styled.div`
     width: 100%;
@@ -11,7 +12,7 @@ const BugaDiv = styled.div`
     gap: 30px;
 `
 
-const Image = styled.img`
+const Image = styled(motion.img)`
     width: 350px;
     @media (max-width: 500px){
         width: 70%;
@@ -59,7 +60,10 @@ export default function Page404(){
     return(
         <BugaDiv>
             <Title>Error 404 - Pagina no Encontrada</Title>
-            <Image src={"/images/404.webp"} alt="Error 404" />
+            <Image src={"/images/404.webp"} alt="Error 404" 
+            initial={{ opacity: 0,  y: -100 }}
+            animate={{ opacity: 1,  y: 0}}
+            transition={{ duration: .8 }}/>
             <Text>
                 La pagina que estas buscando no se encuentra disponible
             </Text>

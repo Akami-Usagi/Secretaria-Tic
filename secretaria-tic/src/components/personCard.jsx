@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const PersonDiv = styled.div`
+const PersonDiv = styled(motion.div)`
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,11 @@ const Text = styled.p`
 `
 export default function PersonCard({nombre, cargo, imagen}){
     return(
-        <PersonDiv>
+        <PersonDiv
+        initial={{ opacity: 0, scale:0 }}
+        whileInView={{ opacity: 1, scale:1 }}
+        viewport={{once: true, amount: .5}}
+        transition={{ duration: .7 }}>
             <ImageDiv>
                 <Image src={imagen} alt={nombre}/>
             </ImageDiv>

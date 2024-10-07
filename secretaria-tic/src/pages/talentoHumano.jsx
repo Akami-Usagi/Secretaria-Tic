@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PersonCard from "../components/personCard";
+import { motion } from "framer-motion";
 
 const BugaDiv = styled.div`
     width: 100%;
@@ -10,7 +11,7 @@ const BugaDiv = styled.div`
     align-items: center;
     gap: 30px;
 `
-const ContentDiv = styled.div`
+const ContentDiv = styled(motion.div)`
     width: 97%;
     height: 600px;
     border-radius: 20px;
@@ -40,7 +41,7 @@ const BossDiv = styled.div`
         flex-direction: column;
     }
 `
-const MainImageDiv = styled.div`
+const MainImageDiv = styled(motion.div)`
     width: 400px;
     height: 400px;
     display: grid;
@@ -104,11 +105,18 @@ const TeamTitle = styled.h2`
 export default function TalentoHumano(){
     return(
         <BugaDiv>
-            <ContentDiv>
+            <ContentDiv
+            initial={{ opacity: 0,  y: -100 }}
+            animate={{ opacity: 1,  y: 0}}
+            transition={{ duration: .8 }}>
             <Image src={`${window.innerWidth <= 700 ? "/images/talentoHumano/talento_movil.webp" : "/images/talentoHumano/talento_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <BossDiv>
-                <MainImageDiv>
+                <MainImageDiv
+                initial={{ opacity: 0, scale:0 }}
+                whileInView={{ opacity: 1, scale:1 }}
+                viewport={{once: true, amount: .5}}
+                transition={{ duration: .7 }}>
                     <MainImage src="/images/talentoHumano/secretario.webp" alt="Secretario TIC"/>
                 </MainImageDiv>
                 <MainDescription>
