@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const BugaDiv = styled.div`
     width: 100%;
@@ -9,7 +10,7 @@ const BugaDiv = styled.div`
     align-items: center;
     gap: 30px;
 `
-const ContentDiv = styled.div`
+const ContentDiv = styled(motion.div)`
     width: 97%;
     height: 600px;
     border-radius: 20px;
@@ -83,7 +84,10 @@ const Anchor = styled.a`
 export default function TalentoTech(){
     return(
         <BugaDiv>
-            <ContentDiv>
+            <ContentDiv
+            initial={{ opacity: 0,  y: -100 }}
+            animate={{ opacity: 1,  y: 0}}
+            transition={{ duration: .8 }}>
             <Image src={`${window.innerWidth <= 700 ? "/images/talentoTech/tech_movil.webp" : "/images/talentoTech/tech_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>

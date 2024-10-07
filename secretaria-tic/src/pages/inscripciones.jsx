@@ -4,6 +4,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 const BugaDiv = styled.div`
@@ -14,7 +15,7 @@ const BugaDiv = styled.div`
     align-items: center;
     gap: 30px;
 `
-const ContentDiv = styled.div`
+const ContentDiv = styled(motion.div)`
     width: 97%;
     height: 600px;
     border-radius: 20px;
@@ -154,7 +155,10 @@ export default function Inscripciones(){
 
     return(
         <BugaDiv>
-            <ContentDiv>
+            <ContentDiv
+            initial={{ opacity: 0,  y: -100 }}
+            animate={{ opacity: 1,  y: 0}}
+            transition={{ duration: .8 }}>
             <Image src={`${window.innerWidth <= 700 ? "/images/inscripciones/inscripciones_movil.webp" : "/images/inscripciones/inscripciones_pc.webp"}`} alt="Inscripciones" />
             </ContentDiv>
             <TextDiv>

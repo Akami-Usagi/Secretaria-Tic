@@ -153,8 +153,9 @@ const CustomLink = styled(Link)`
 export default function Carrousel(){
     return (
         <CarroulseDiv 
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}>
+        initial={{ opacity: 0,  y: -100 }}
+        animate={{ opacity: 1,  y: 0}}
+        transition={{ duration: .8 }}>
             <CustomCarrousel 
             showArrows={true} 
             autoPlay={true}
