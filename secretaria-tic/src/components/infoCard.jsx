@@ -117,7 +117,7 @@ export default function InfoCard({image, link, title, text, target}){
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{once: true, amount: .5}}
-        transition={{ duration: .7 }}>
+        transition={{ duration: .5 }}>
             <InfoContent>
                 <InfoImageDiv>
                     <InfoImage src={image} alt="Tarjeta" />
