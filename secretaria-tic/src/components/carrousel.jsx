@@ -123,6 +123,30 @@ const ImageNovedades = styled.div`
         background-position: center;
     }
 `
+const ImageDiv4 = styled.div`
+    background: url("/images/helpPeople/helppeople_pc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    overflow: hidden;
+    padding: 70px;
+    color: white;
+    font-size: larger;
+    @media (max-width: 700px){
+        justify-content: baseline;
+        align-items: center;
+        background: url("/images/helpPeople/helppeople_movil.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+`
 const CarrouselTitle = styled.h1`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
     position: relative;
@@ -166,18 +190,27 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={3000}>
+                <CustomLink to={"/helppeople"}>
+                    <ImageDiv4>
+                        <CarrouselTitle>Potencia tu futuro tecnológico</CarrouselTitle>
+                        <CarrouselText>¡Es tu momento de transformar tu futuro y abrir las puertas a un mundo lleno de oportunidades!</CarrouselText>
+                    </ImageDiv4>
+                </CustomLink>
+
                 <CustomLink to={"/novedades"}>
                     <ImageNovedades>
                         <CarrouselTitle>Graduacion Avanzando en lo Digital</CarrouselTitle>
                         <CarrouselText>Más de 250 ciudadanos se graduaron en cursos de tecnología gracias al programa "Avanzando en lo Digital"</CarrouselText>
                     </ImageNovedades>
                 </CustomLink>   
+
                 <CustomLink to={"/tic-talent"}>
                     <ImageDiv3>
                         <CarrouselTitle>¡Descubre tu Potencial Creativo con TIC Talent Creativo!</CarrouselTitle>
                         <CarrouselText>Inscribete y participa del primer TIC Talent Creativo</CarrouselText>
                     </ImageDiv3>
                 </CustomLink> 
+
                 <CustomLink to={"/inscripciones"}>
                     <ImageDiv>
                         <CarrouselTitle>Haz parte de la revolucion digital</CarrouselTitle>
