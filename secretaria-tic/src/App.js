@@ -15,6 +15,7 @@ import HelpPeople from './pages/helpPeople';
 import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
+import ChatBot from './components/chatBot';
 
 function App() {
   return (
@@ -44,5 +45,7 @@ function App() {
     </Router>
   );
 }
+
+ChatBot()
 
 export default App;
