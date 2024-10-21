@@ -209,7 +209,7 @@ export default function TalentoTic(){
                         <FormInput type="checkbox" id="terminos" name="terminos" onChange={(event) => {
                             setTerminos(event.target.checked)
                         }}/>
-                        <FormLabel htmlFor="terminos">Confirmo que e leido los terminos y condiciones del concurso</FormLabel>
+                        <FormLabel htmlFor="terminos">Confirmo que he leído los términos y condiciones del concurso</FormLabel>
                     </CheckDiv>
                     
 
