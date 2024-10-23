@@ -82,6 +82,9 @@ export default function Eventos(){
                 <Title>Entrevista al Secretario TIC Diego Carrillo</Title>
                 <Text>
                     En una reciente entrevista realizada por los estudiantes del Colegio Académico de Buga, Diego Fernando Carrillo, secretario de las TIC del municipio, abordó los avances y desafíos de la transformación digital en la región. Durante la conversación, Carrillo destacó la implementación de nuevas tecnologías en servicios públicos y educativos, así como el impulso al acceso a Internet para mejorar la conectividad en zonas rurales. También enfatizó la importancia de la capacitación digital para los ciudadanos, con el fin de fomentar una sociedad más inclusiva y preparada para los retos tecnológicos del futuro.
+                </Text>
+                <Text>
+                    Puedes ver la entrevista completa a continuación
                 </Text>  
             </TextDiv>
             <VideoPlayer  src="https://www.youtube.com/embed/nxTFBs3Q2kI?si=Q_Jts3dxrxoX2MEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></VideoPlayer>
