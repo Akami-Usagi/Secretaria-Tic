@@ -12,6 +12,7 @@ import Inscripciones from './pages/inscripciones';
 import TalentoTech from './pages/talentoTech';
 import TalentoTic from './pages/talentoTic';
 import HelpPeople from './pages/helpPeople';
+import Eventos from './pages/eventos';
 import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -34,6 +35,7 @@ function App() {
         <Route path='/tic-talent' element={<TalentoTic/>}/>
 
         <Route path='/novedades' element={<Novedades/>}/>
+        <Route path='/eventos' element={<Eventos/>}/>
                 
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
