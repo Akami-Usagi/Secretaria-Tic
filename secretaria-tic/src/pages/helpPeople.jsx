@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { addDoc, collection } from "firebase/firestore";
+/*import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";*/
 import { motion } from "framer-motion";
 
 
@@ -58,7 +58,7 @@ const Text = styled.p`
         font-size: 1.3em;
     }
 `
-const FormDiv = styled.div`
+/*const FormDiv = styled.div`
     display: flex;
     width: 500px;
     margin: 50px;
@@ -117,7 +117,7 @@ const FormButton = styled.button`
     @media (max-width: 700px){
         margin-top: 20px;
     }
-`
+`*/
 
 export default function HelpPeople(){
 
