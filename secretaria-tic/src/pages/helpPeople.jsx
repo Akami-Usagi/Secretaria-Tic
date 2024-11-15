@@ -181,6 +181,7 @@ export default function HelpPeople(){
                     }}>
                         <option value="">-- Seleccione --</option>
                         <option value="cedula">Cedula</option>
+                        <option value="tarjeta identidad">Tarjera de Identidad</option>
                         <option value="cedula extrangeria">Cedula Extrangería</option>
                         <option value="pasaporte">Pasaporte</option>
                     </FormSelect>
