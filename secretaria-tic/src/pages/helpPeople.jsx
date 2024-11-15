@@ -121,7 +121,7 @@ const FormButton = styled.button`
 
 export default function HelpPeople(){
 
-    const navigate = useNavigate();
+    /*const navigate = useNavigate();
     const [nombre, setNombre] = useState("");
     const [documento, setDocumento] = useState("");
     const [telefono, setTelefono] = useState("");
@@ -146,7 +146,7 @@ export default function HelpPeople(){
             navigate(`/`)
         }
         
-    };
+    };*/
 
    
     
@@ -162,12 +162,12 @@ export default function HelpPeople(){
             <TextDiv>
                 <Title>Potencia tu futuro tecnológico Gracias a HelpPeople y la Secretaría TIC</Title>
                 <Text>
-                    ¡Es tu momento de transformar tu futuro y abrir las puertas a un mundo lleno de oportunidades! HelpPeople está ofreciendo becas para estudiar carreras con énfasis en tecnología, y tú puedes ser uno de los beneficiarios. Estas becas están diseñadas para impulsar el talento y permitir a personas como tú adquirir las habilidades necesarias para destacar en el ámbito tecnológico, uno de los sectores más prometedores y en crecimiento. No dejes pasar la oportunidad de formarte en una carrera que te abrirá las puertas a empleos bien remunerados y te permitirá desarrollar proyectos innovadores que impacten al mundo.
+                    Queremos expresar nuestro más sincero agradecimiento a todos los que participaron en la convocatoria de becas de HelpPeople. La masiva respuesta y entusiasmo de cada uno de ustedes nos llena de alegría y reafirma nuestro compromiso de seguir apoyando el talento y la educación en el área tecnológica. Su interés demuestra que juntos podemos construir un futuro lleno de oportunidades e innovación.
                 </Text>
                 <Text>
-                    Inscribirte y postularte para una de estas becas es el primer paso hacia un futuro lleno de posibilidades. No importa tu experiencia previa, HelpPeople está aquí para apoyarte en cada paso del camino, brindándote las herramientas y el acompañamiento necesarios para que alcances tu máximo potencial. Este es el momento de tomar las riendas de tu educación y prepararte para un futuro tecnológico brillante. ¡No esperes más y postúlate hoy mismo para ser parte de una comunidad que transforma vidas a través de la educación!
+                    Les invitamos a estar atentos a nuestras próximas comunicaciones, donde daremos a conocer la lista de los ganadores de estas becas transformadoras. Mientras tanto, recuerden que cada paso que den hacia sus metas cuenta y que HelpPeople siempre estará aquí para apoyarles en el camino hacia el éxito. ¡Gracias por creer en esta iniciativa y ser parte de esta comunidad que busca transformar vidas a través del conocimiento!
                 </Text>
-                <FormDiv>
+                {/*<FormDiv>
                     
                     <FormLabel htmlFor="nombre">Nombre</FormLabel>
                     <FormInput type="text" id="nombre" placeholder="Ingrese su nombre" onChange={(event) => setNombre(event.target.value)}/>
@@ -198,7 +198,7 @@ export default function HelpPeople(){
                     
 
                 </FormDiv>
-                <FormButton onClick={handleSendData}>Registrarse</FormButton>
+                <FormButton onClick={handleSendData}>Registrarse</FormButton>*/}
                 
             </TextDiv>
         </BugaDiv>
