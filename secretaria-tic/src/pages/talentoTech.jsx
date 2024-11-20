@@ -81,6 +81,27 @@ const Anchor = styled.a`
     margin-top: 30px;
     align-self: center;
 `
+const CoursesDiv = styled.div`
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    @media (max-width: 700px){
+        gap: 30px;
+        width: 100%;
+    }
+`
+const CourseImage = styled.img`
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    @media (max-width: 700px){
+        width: 90%;
+    }
+`
 export default function TalentoTech(){
     return(
         <BugaDiv>
@@ -101,8 +122,18 @@ export default function TalentoTech(){
                 <Text>
                     Haz click en el siguiente boton y descubre como Talento Tech puede transformar tu vida.
                 </Text>
+                
                 <Anchor href="https://talentotechvalledelcauca.co/" target="_blank"><InfoButon>Ingresa a Talento Tech</InfoButon></Anchor>
+                <Text>
+                    Si tienes problemas al momento de realizar la inscripción, puedes comunicarte con la mesa de ayuda por medio de uno de nuestros canales habilitados.
+                </Text>
             </TextDiv>
+            <CoursesDiv>
+                    <CourseImage src="/images/talentoTech/suport_1.jpg" alt="Soporte 1"/>
+                    <CourseImage src="/images/talentoTech/suport_2.jpg" alt="Soporte 2"/>
+                    <CourseImage src="/images/talentoTech/suport_3.jpg" alt="Soporte 3"/>
+                    <CourseImage src="/images/talentoTech/suport_4.jpg" alt="Soporte 4"/>
+                </CoursesDiv>
         </BugaDiv>
     )
 }
