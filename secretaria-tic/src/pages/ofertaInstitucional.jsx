@@ -112,7 +112,7 @@ export default function BugaAvanza(){
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSeXkjfOGVgdSnAe23W2fr-up1ES_V9EXGUuryFMXsYkM4FSSA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones.webp" alt="Drones" /></Anchor>
+                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSc2mnzz7rXfGglR5N8Wgul-IEKh8q15N35DCK9mc0USP0e2Jg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones_gov.webp" alt="Drones" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
