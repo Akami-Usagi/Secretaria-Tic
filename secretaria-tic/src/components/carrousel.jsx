@@ -22,7 +22,7 @@ const CustomCarrousel = styled(Carousel)`
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     @media (max-width: 700px){
         width: 95%;
-        height: 600px;
+        height: 800px;
     }
     
 `
