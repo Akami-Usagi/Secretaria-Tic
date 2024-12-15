@@ -48,6 +48,7 @@ const ImageDiv = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 800px;
     }
 `
 const ImageDiv2 = styled.div`
@@ -72,6 +73,7 @@ const ImageDiv2 = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 800px;
     }
 `
 const ImageDiv3 = styled.div`
@@ -96,6 +98,7 @@ const ImageDiv3 = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 800px;
     }
 `
 const ImageDiv4 = styled.div`
@@ -120,6 +123,7 @@ const ImageDiv4 = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 800px;
     }
 `
 
@@ -145,6 +149,7 @@ const ImageNovedades = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height:800px;
     }
 `
 const ImageEventos = styled.div`
@@ -169,6 +174,7 @@ const ImageEventos = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 800px;
     }
 `
 const ImageNavidad = styled.div`
@@ -193,6 +199,7 @@ const ImageNavidad = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 800px;
     }
 `
 
