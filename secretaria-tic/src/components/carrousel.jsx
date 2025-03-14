@@ -177,56 +177,7 @@ const ImageEventos = styled.div`
         height: 800px;
     }
 `
-const ImageNavidad = styled.div`
-    background-image: url("/images/eventos/navidad_pc.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 700px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/eventos/navidad_movil.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 800px;
-    }
-`
-const ImageNew = styled.div`
-    background-image: url("/images/eventos/new_pc.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 700px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/eventos/new_movil.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 800px;
-    }
-`
+
 
 const CarrouselTitle = styled.h1`
     text-shadow: 3px 3px 5px rgba(0,0,0,1);
@@ -271,16 +222,6 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={3000}>
-
-                <CustomLink to={"/"}>
-                    <ImageNew>
-                    </ImageNew>
-                </CustomLink>
-
-                <CustomLink to={"/"}>
-                    <ImageNavidad>
-                    </ImageNavidad>
-                </CustomLink>
 
                 <CustomLink to={"/eventos"}>
                     <ImageEventos>

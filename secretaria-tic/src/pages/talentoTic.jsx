@@ -61,7 +61,6 @@ const Text = styled.p`
         font-size: 1.3em;
     }
 `
-
 const FormDiv = styled.div`
     display: flex;
     width: 500px;
