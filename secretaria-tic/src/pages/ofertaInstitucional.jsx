@@ -70,7 +70,7 @@ const CousesDiv = styled.div`
     }
 `
 const CourseImage = styled.img`
-    width: 350px;
+    width: 300px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     @media (max-width: 700px){
