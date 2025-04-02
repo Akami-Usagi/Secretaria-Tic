@@ -109,35 +109,35 @@ export default function BugaAvanza(){
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/ciberseguridad.webp" alt="Ciberseguridad" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/ciberseguridad.webp" alt="Ciberseguridad" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="Inteligencia Artificial" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="Inteligencia Artificial" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
+                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )
