@@ -129,9 +129,9 @@ export default function TalentoHumano(){
             <TeamTitle>Equipo de Asistencia Tecnológica Avanzada</TeamTitle>
             <SupporDiv>
                 <PersonCard nombre={"Camila Gomez"} cargo={"Tecnica en Sistemas"} imagen={"/images/talentoHumano/support_2.webp"}/>
-                <PersonCard nombre={"Camilo Arango"} cargo={"Desarrollador de Software"} imagen={"/images/talentoHumano/support_1.webp"}/>
+                <PersonCard nombre={"Camilo Arango"} cargo={"Analista y Desarrollador de Software"} imagen={"/images/talentoHumano/support_1.webp"}/>
                 <PersonCard nombre={"Nicolas Valencia"} cargo={"Contratista"} imagen={"/images/talentoHumano/support_5.webp"}/>
-                <PersonCard nombre={"Dahiana Cardona"} cargo={"Aprendiz SENA"} imagen={"/images/talentoHumano/support_3.webp"}/>
+                
                 
             </SupporDiv>
         </BugaDiv>

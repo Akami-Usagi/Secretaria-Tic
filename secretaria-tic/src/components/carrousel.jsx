@@ -27,31 +27,6 @@ const CustomCarrousel = styled(Carousel)`
     
 `
 const ImageDiv = styled.div`
-    background: url("/images/inscripciones/inscripciones_pc.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 700px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/inscripciones/inscripciones_movil.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 800px;
-    }
-`
-const ImageDiv2 = styled.div`
     background: url("/images/ofertaInstitucional/oferta_pc.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,32 +51,7 @@ const ImageDiv2 = styled.div`
         height: 800px;
     }
 `
-const ImageDiv3 = styled.div`
-    background: url("/images/ticTalent/talent_pc.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 700px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/ticTalent/talent_movil.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 800px;
-    }
-`
-const ImageDiv4 = styled.div`
+const ImageDiv2 = styled.div`
     background: url("/images/helpPeople/helppeople_pc.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,56 +77,6 @@ const ImageDiv4 = styled.div`
     }
 `
 
-const ImageNovedades = styled.div`
-    background-image: url("/images/novedades/novedades_pc.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 700px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/novedades/novedades_movil.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height:800px;
-    }
-`
-const ImageEventos = styled.div`
-    background-image: url("/images/eventos/eventos_pc.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    display: flex; 
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: end;
-    overflow: hidden;
-    padding: 70px;
-    color: white;
-    font-size: larger;
-    @media (max-width: 700px){
-        justify-content: baseline;
-        align-items: center;
-        background: url("/images/eventos/eventos_movil.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 800px;
-    }
-`
 
 
 const CarrouselTitle = styled.h1`
@@ -222,46 +122,18 @@ export default function Carrousel(){
             showStatus={false}
             showIndicators={false}
             interval={3000}>
-
-                <CustomLink to={"/eventos"}>
-                    <ImageEventos>
-                        <CarrouselTitle>Entrevista Secretario TIC Diego Carrillo</CarrouselTitle>
-                        <CarrouselText>Estudiantes del colegio Académico de la ciudad de Buga indagaron sobre la transformación digital del municipio</CarrouselText>
-                    </ImageEventos>
+                
+                <CustomLink to={"/formacion-tic"}>
+                    <ImageDiv>
+                        <CarrouselTitle>¡Avanzando en lo Digital se renueva!</CarrouselTitle>
+                        <CarrouselText>La secretaría TIC trae para ti nuevas capacitaciones tecnologicas.</CarrouselText>
+                    </ImageDiv>
                 </CustomLink>
 
                 <CustomLink to={"/helppeople"}>
-                    <ImageDiv4>
-                        <CarrouselTitle>Potencia tu futuro tecnológico</CarrouselTitle>
-                        <CarrouselText>¡Es tu momento de transformar tu futuro y abrir las puertas a un mundo lleno de oportunidades!</CarrouselText>
-                    </ImageDiv4>
-                </CustomLink>
-
-                <CustomLink to={"/novedades"}>
-                    <ImageNovedades>
-                        <CarrouselTitle>Graduacion Avanzando en lo Digital</CarrouselTitle>
-                        <CarrouselText>Más de 250 ciudadanos se graduaron en cursos de tecnología gracias al programa "Avanzando en lo Digital"</CarrouselText>
-                    </ImageNovedades>
-                </CustomLink>   
-
-                <CustomLink to={"/tic-talent"}>
-                    <ImageDiv3>
-                        <CarrouselTitle>¡Descubre tu Potencial Creativo con TIC Talent Creativo!</CarrouselTitle>
-                        <CarrouselText>Inscribete y participa del primer TIC Talent Creativo</CarrouselText>
-                    </ImageDiv3>
-                </CustomLink> 
-
-                <CustomLink to={"/inscripciones"}>
-                    <ImageDiv>
-                        <CarrouselTitle>Haz parte de la revolucion digital</CarrouselTitle>
-                        <CarrouselText>Talento Tech, Digicampus y la Secretaría TIC te ofrecen multiples oportunidades de estudio</CarrouselText>
-                    </ImageDiv>
-                </CustomLink>    
-                 
-                <CustomLink to={"/oferta-institucional"}>
                     <ImageDiv2>
-                        <CarrouselTitle>Estudia con Nosotros</CarrouselTitle>
-                        <CarrouselText>Entérate de toda la oferta educativa que la Secretaría TIC tiene para tí</CarrouselText>
+                        <CarrouselTitle>¡Muy pronto se celebrará la entrega de las becas!</CarrouselTitle>
+                        <CarrouselText>La secretaría TIC junto a HelpPeople transformaran la vida de 50 beneficiarios.</CarrouselText>
                     </ImageDiv2>
                 </CustomLink>
                 

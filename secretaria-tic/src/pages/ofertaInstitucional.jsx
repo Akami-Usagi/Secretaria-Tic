@@ -70,7 +70,7 @@ const CousesDiv = styled.div`
     }
 `
 const CourseImage = styled.img`
-    width: 400px;
+    width: 350px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     @media (max-width: 700px){
@@ -95,40 +95,49 @@ export default function BugaAvanza(){
                 <Image src={`${window.innerWidth <= 700 ? "/images/ofertaInstitucional/oferta_movil.webp" : "/images/ofertaInstitucional/oferta_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
-                <Title>Nuestra Oferta Institucional</Title>
+                <Title>¡Avanzando en lo Digital se renueva!</Title>
                 <Text>
-                    La Secretaría de las Tecnologias de la Información y las Comunicaciones, ofrece a toda
-                    la comunidad Bugueña una fuerte oferta educativa, con el objetivo de cerrar la gran brecha digital
-                    que existe entre la población bugueña. Estamos innovando cada día para así lograr ofrecer
-                    nuevos cursos a toda la comunidad, en los proximos meses, a parte de las formaciones en Ofimática Básica,
-                    cursos de Excel y Office, se anexan a nuestro portafolio nuevos cursos en manejo de Drones y en Fundamentos de Programación.
+                La Secretaría de Tecnologías de la Información y las Comunicaciones sigue fortaleciendo su compromiso 
+                con la comunidad bugueña a través de "Avanzando en lo Digital 2.0", una estrategia renovada para continuar 
+                cerrando la brecha digital. Además de nuestros cursos en Ofimática Básica, Excel, Office, Manejo de Drones 
+                y Fundamentos de Programación, ahora incorporamos <strong>Ciberseguridad, Introducción a la Realidad Extendida y 
+                Manejo de Plataformas Digitales.</strong> Seguimos innovando para ofrecer oportunidades de formación accesibles y 
+                alineadas con las necesidades del mundo digital. ¡Prepárate para potenciar tus habilidades con nosotros!
                 </Text>  
             </TextDiv>
             <CousesDiv>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdX8gU0rIkeehzPpVWq7UQMwIold_QZG8BgLc39p2g-OiHVOQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSc2mnzz7rXfGglR5N8Wgul-IEKh8q15N35DCK9mc0USP0e2Jg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/drones_gov.webp" alt="Drones" /></Anchor>
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdR-dLjJqKNaxSeIQzolltsP6oGqD8CnjGABPgAm62i8PtlXg/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdczGhT_TDY6Gil6kSrmOceSSG1RyINJ2FbvXxEODl6JhEUjA/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia" /></Anchor>
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/ciberseguridad.webp" alt="Ciberseguridad" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdAKXSDcR2EY3jKCT_40o57m9FIwgOaC30AUNvvm_hkHzjXPQ/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="Inteligencia Artificial" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 1 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfUCJmZmHSnE-FL72BYZ04x_15MmzvjpoaGbyFvu6dl7b_new/viewform?usp=sf_link" target="blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing" /></Anchor>
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
+                        transition={{ duration: 1 }} href="#"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )

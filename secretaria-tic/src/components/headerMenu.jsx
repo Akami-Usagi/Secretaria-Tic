@@ -56,7 +56,6 @@ export default function HeaderMenu({setMenuOpen}){
             <MenuList>
                     <li><Link to={"/"}><MenuButton onClick={()=> setMenuOpen(false)}>Inicio</MenuButton></Link></li>
                     <li><Link to={"/tic-talent"}><MenuButton onClick={()=> setMenuOpen(false)}>TIC Talent Creativo</MenuButton></Link></li>
-                    <li><Link to={"/inscripciones"}><MenuButton onClick={()=> setMenuOpen(false)}>Oferta Educativa</MenuButton></Link></li>   
                     <li><Link to={"/centros-transformacion-digital"}><MenuButton onClick={()=> setMenuOpen(false)}>CTD</MenuButton></Link></li>   
                     <li><Link to={"/aula-virtual"}><MenuButton onClick={()=> setMenuOpen(false)}>Aula Virtual</MenuButton></Link></li>
                     <li><Link to={"/formacion-tic"}><MenuButton onClick={()=> setMenuOpen(false)}>Formación TIC</MenuButton></Link></li>  
