@@ -126,12 +126,15 @@ export default function TalentoHumano(){
                 </MainDescription>
             </BossDiv>
             <Divider></Divider>
-            <TeamTitle>Equipo de Asistencia Tecnológica Avanzada</TeamTitle>
+            <TeamTitle>Equipo de Promotores Digitales</TeamTitle>
             <SupporDiv>
-                <PersonCard nombre={"Camila Gomez"} cargo={"Tecnica en Sistemas"} imagen={"/images/talentoHumano/support_2.webp"}/>
-                <PersonCard nombre={"Camilo Arango"} cargo={"Analista y Desarrollador de Software"} imagen={"/images/talentoHumano/support_1.webp"}/>
-                <PersonCard nombre={"Nicolas Valencia"} cargo={"Contratista"} imagen={"/images/talentoHumano/support_5.webp"}/>
-                
+                <PersonCard nombre={"Julio Villaquiran"} cargo={"Piloto Comercial de Avión"} imagen={"/images/talentoHumano/julio.webp"}/>
+                <PersonCard nombre={"Harold Toro"} cargo={"Técnico en Sistemas"} imagen={"/images/talentoHumano/harold.webp"}/>
+                <PersonCard nombre={"Gustavo Rodriguez"} cargo={"Tecnólogo en Sistemas"} imagen={"/images/talentoHumano/gustavo.webp"}/>
+                <PersonCard nombre={"Maribel Peñaranda"} cargo={"Ingeniera de Sistemas"} imagen={"/images/talentoHumano/maribel.webp"}/>
+                <PersonCard nombre={"Sandra Fernandez"} cargo={"Ingeniera de Sistemas"} imagen={"/images/talentoHumano/sandra.webp"}/>
+                <PersonCard nombre={"James Sanchez"} cargo={"Ingeniero de Sistemas / Magister en Ciberseguridad"} imagen={"/images/talentoHumano/james.webp"}/>
+                <PersonCard nombre={"Camilo Arango"} cargo={"Analista y Desarrollador de Software"} imagen={"/images/talentoHumano/camilo.webp"}/>
                 
             </SupporDiv>
         </BugaDiv>
