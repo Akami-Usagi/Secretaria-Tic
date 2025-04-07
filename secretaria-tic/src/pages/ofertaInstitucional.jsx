@@ -73,14 +73,17 @@ const CourseImage = styled.img`
     width: 300px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    transition: 200ms ease-in-out;
     @media (max-width: 700px){
         width: 90%;
     }
+    
 `
 const Anchor = styled(motion.a)`
     display: flex;
     justify-content: center;
     align-items: center;
+    
 `
 export default function BugaAvanza(){
 
@@ -109,35 +112,35 @@ export default function BugaAvanza(){
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSeP1086aoDjwa1Mg7DVvvET5Sa2MtatPGoilvTKzIEpZpxQgA/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSf_IATgBVletsRUOAzl089zrc_dRZ20S_f3ivjNiiEnqvtccg/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfaf-CtoCnp4y0cOXXioGgXTXrngwZBM-dgLMWZnXUq0X9bPQ/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/ciberseguridad.webp" alt="Ciberseguridad" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSchyNt__o7Yi_f1mth7j9h3tvYpoZApQSXJuFepGagtiXTF2A/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/ciberseguridad.webp" alt="Ciberseguridad" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="Inteligencia Artificial" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSe3zF6riloblJ4KeVc6ZLHAyO06OX7NFPqtLhBWJ6PRnQcf3g/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="Inteligencia Artificial" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLScNZFiPvF2oT_76GW0pajJ9hkWu3HCVGPnPOM_N91a3jB9OJw/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLScAlgp8UtYkx7qrnOtqctKD1-7YhTNT_iXFQts_vzrYGdjU3w/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="#"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSegPCkf2BCFeiOzmrrhWXJWbGoUShPcOcfOTgHJToSWgFTU6A/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )
