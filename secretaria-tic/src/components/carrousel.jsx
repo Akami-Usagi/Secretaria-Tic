@@ -76,7 +76,31 @@ const ImageDiv2 = styled.div`
         height: 800px;
     }
 `
-
+const ImageDiv3 = styled.div`
+    background: url("/images/ondasTic/ondas_tic_pc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    overflow: hidden;
+    padding: 70px;
+    color: white;
+    font-size: larger;
+    @media (max-width: 700px){
+        justify-content: baseline;
+        align-items: center;
+        background: url("/images/ondasTic/ondas_tic_movil.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+    }
+`
 
 
 const CarrouselTitle = styled.h1`
@@ -135,6 +159,13 @@ export default function Carrousel(){
                         <CarrouselTitle>¡Muy pronto se celebrará la entrega de las becas!</CarrouselTitle>
                         <CarrouselText>La secretaría TIC junto a HelpPeople transformaran la vida de 50 beneficiarios.</CarrouselText>
                     </ImageDiv2>
+                </CustomLink>
+
+                <CustomLink to={"/ondas-tic"}>
+                    <ImageDiv3>
+                        <CarrouselTitle>Podcast Tecnologico</CarrouselTitle>
+                        <CarrouselText>Escucha el primer Podcast tecnologico de Guadalajara de Buga</CarrouselText>
+                    </ImageDiv3>
                 </CustomLink>
                 
                
