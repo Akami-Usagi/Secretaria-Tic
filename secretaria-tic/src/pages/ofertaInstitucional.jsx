@@ -140,6 +140,10 @@ export default function BugaAvanza(){
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSe9c7dQGZmlzeDSfEFpF29CF51FHoqvVQ86IWPcKfT3_k0m7Q/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
                         transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSegPCkf2BCFeiOzmrrhWXJWbGoUShPcOcfOTgHJToSWgFTU6A/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
             </CousesDiv>
         </BugaDiv>
