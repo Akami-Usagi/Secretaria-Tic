@@ -79,7 +79,7 @@ export default function OndasTic(){
                     Escucha el episodio de esta semana a continuacion.
                 </Text>
                 
-                <Video width="560" height="315" src="https://www.youtube.com/embed/QBzNkzlrJ8w?si=HqmT6JdxP7SFpt8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></Video>
+                <Video width="560" height="315" src="https://www.youtube.com/embed/YPbSFQuRQes?si=QnJ6voXKR4ZHaCyz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></Video>
                 
                 
             </TextDiv>
