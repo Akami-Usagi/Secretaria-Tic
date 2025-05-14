@@ -15,7 +15,6 @@ Sitio web institucional de la Secretaría TIC de la Alcaldía de Guadalajara de 
 - **Framer Motion** – Animaciones fluidas y personalizadas
 - **Hosting** – Vercel
 - **Firebase**:
-  - 
   - **Firestore** – Base de datos en tiempo real
 
 ---
@@ -28,10 +27,7 @@ Sitio web institucional de la Secretaría TIC de la Alcaldía de Guadalajara de 
   /assets             → Imágenes, íconos y recursos estáticos
   /components         → Componentes reutilizables
   /pages              → Páginas principales del sitio
-  /routes             → Configuración de rutas con React Router
-  /styles             → Temas y estilos globales con Styled Components
   /firebase           → Configuración e inicialización de Firebase
-  /utils              → Funciones auxiliares y hooks
   App.jsx             → Componente raíz
   main.jsx            → Punto de entrada
 ```
