@@ -14,6 +14,9 @@ import OndasTic from './pages/ondasTic';
 import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
+import OfertaInterna from './pages/ofertaInterna';
+
+
 
 
 function App() {
@@ -32,6 +35,7 @@ function App() {
         <Route path='/tic-talent' element={<TalentoTic/>}/>   
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
+        <Route path='/oferta-educativa-alcaldia' element={<OfertaInterna/>}/>
 
         <Route path='/*' element={<Page404/>}/>
       </Routes>
