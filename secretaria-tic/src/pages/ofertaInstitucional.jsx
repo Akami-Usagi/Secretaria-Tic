@@ -85,7 +85,7 @@ const Anchor = styled(motion.a)`
     align-items: center;
     
 `
-export default function BugaAvanza(){
+export default function OfertaInstitucional(){
 
     
 
