@@ -118,9 +118,9 @@ export default function OfertaInterna(){
                     Fecha de Inicio: 12 de Junio de 2025
                 </Text>
                 
-                <Text>
+                <h1>
                     Da click sobre cualquiera de los cursos a continuación e inscribete!
-                </Text>
+                </h1>
             </TextDiv>
             <CousesDiv>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
