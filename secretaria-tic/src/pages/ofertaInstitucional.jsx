@@ -157,6 +157,10 @@ export default function OfertaInstitucional(){
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
                         transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSeM1JDQFRhO0kTTKhH0a2DXlnHg35_XV2p4mkROu3qpucTObQ/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing Digital" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdeIAQgzR8WhAvNyisQJEqum7GG_yjFXsusUv_trpzN-7LXIg/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia Movil" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )
