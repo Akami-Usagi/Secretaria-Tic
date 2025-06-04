@@ -145,6 +145,14 @@ export default function OfertaInstitucional(){
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
                         transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSegPCkf2BCFeiOzmrrhWXJWbGoUShPcOcfOTgHJToSWgFTU6A/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfGjd_TlcxrDPPtCqnrnBgDNnY7jopflS9xXd-cpawlpYpDuw/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/audio.webp" alt="Audio Digital" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdJRskSI_LFqzHom3lUj4DBKc1Zj9fFDqeYqfyPo8SAg91e9Q/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/gestion.webp" alt="Gestion Documental" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )

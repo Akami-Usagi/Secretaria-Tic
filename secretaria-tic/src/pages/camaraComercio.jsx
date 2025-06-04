@@ -56,29 +56,7 @@ const Text = styled.p`
         font-size: 1.3em;
     }
 `
-const CousesDiv = styled.div`
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    @media (max-width: 700px){
-        gap: 30px;
-        width: 100%;
-    }
-`
-const CourseImage = styled.img`
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-    transition: 200ms ease-in-out;
-    @media (max-width: 700px){
-        width: 90%;
-    }
-    
-`
+
 const Anchor = styled(motion.a)`
     display: flex;
     justify-content: center;
