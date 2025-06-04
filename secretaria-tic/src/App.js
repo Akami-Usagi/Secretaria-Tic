@@ -15,6 +15,7 @@ import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
 import OfertaInterna from './pages/ofertaInterna';
+import CamaraComercio from './pages/camaraComercio';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
         <Route path='/oferta-educativa-alcaldia' element={<OfertaInterna/>}/>
+        <Route path='/camara-de-comercio' element={<CamaraComercio/>}/>
 
         <Route path='/*' element={<Page404/>}/>
       </Routes>
