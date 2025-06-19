@@ -33,7 +33,7 @@ function App() {
         <Route path='/ondas-tic' element={<OndasTic/>}/>
         <Route path='/buga-avanza' element={<BugaAvanza/>}/>
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
-        <Route path='/tic-talent' element={<TalentoTic/>}/>   
+         
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
         <Route path='/oferta-educativa-alcaldia' element={<OfertaInterna/>}/>
