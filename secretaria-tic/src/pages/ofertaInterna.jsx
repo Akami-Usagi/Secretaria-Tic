@@ -86,6 +86,10 @@ const Anchor = styled(motion.a)`
     
 `
 export default function OfertaInterna(){
+    const QrCode = styled.img`
+        width: 300px
+        border-radius: 20px
+    `
 
     
 
@@ -135,7 +139,7 @@ export default function OfertaInterna(){
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
                         transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSesB04OYYAmbA1MHf_uUf08Fc6zfBTUzF-leOEp5zdatwKbbA/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="IA" /></Anchor>
-                
+                <QrCode src="/images/ofertaInstitucional/qr-code.png" alt="Codigo QR"/>
                 
             </CousesDiv>
         </BugaDiv>
