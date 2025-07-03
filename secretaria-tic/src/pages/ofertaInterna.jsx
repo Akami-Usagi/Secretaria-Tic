@@ -85,11 +85,13 @@ const Anchor = styled(motion.a)`
     align-items: center;
     
 `
-export default function OfertaInterna(){
-    const QrCode = styled.img`
-        width: 300px
-        border-radius: 20px
+const QrCode = styled.img`
+        width: 300px;
+        border-radius: 20px;
     `
+
+export default function OfertaInterna(){
+    
 
     
 

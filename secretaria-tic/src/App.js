@@ -8,7 +8,7 @@ import CTD from './pages/ctd';
 import TalentoHumano from './pages/talentoHumano';
 //import CineAlParque from './pages/cineAlParque';
 import TalentoTech from './pages/talentoTech';
-import TalentoTic from './pages/talentoTic';
+//import TalentoTic from './pages/talentoTic';
 import HelpPeople from './pages/helpPeople';
 import OndasTic from './pages/ondasTic';
 import Page404 from './pages/page404';
@@ -16,6 +16,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import OfertaInterna from './pages/ofertaInterna';
 import CamaraComercio from './pages/camaraComercio';
+import Satelite from './pages/satelite';
 
 
 
@@ -33,12 +34,11 @@ function App() {
         <Route path='/ondas-tic' element={<OndasTic/>}/>
         <Route path='/buga-avanza' element={<BugaAvanza/>}/>
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
-         
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
         <Route path='/oferta-educativa-alcaldia' element={<OfertaInterna/>}/>
         <Route path='/camara-de-comercio' element={<CamaraComercio/>}/>
-
+        <Route path='/satelite' element={<Satelite/>}/>
         <Route path='/*' element={<Page404/>}/>
       </Routes>
       <Footer/>
