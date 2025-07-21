@@ -8,7 +8,7 @@ import CTD from './pages/ctd';
 import TalentoHumano from './pages/talentoHumano';
 //import CineAlParque from './pages/cineAlParque';
 import TalentoTech from './pages/talentoTech';
-//import TalentoTic from './pages/talentoTic';
+import Ciberacoso from './pages/ciberacoso';
 import HelpPeople from './pages/helpPeople';
 import OndasTic from './pages/ondasTic';
 import Page404 from './pages/page404';
@@ -39,6 +39,7 @@ function App() {
         <Route path='/oferta-educativa-alcaldia' element={<OfertaInterna/>}/>
         <Route path='/camara-de-comercio' element={<CamaraComercio/>}/>
         <Route path='/satelite' element={<Satelite/>}/>
+        <Route path='/ciberacoso' element={<Ciberacoso/>}/>
         <Route path='/*' element={<Page404/>}/>
       </Routes>
       <Footer/>

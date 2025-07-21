@@ -102,7 +102,7 @@ const ImageDiv3 = styled.div`
     }
 `
 const ImageDiv4 = styled.div`
-    background: url("/images/talentoHumano/talento_pc.webp");
+    background: url("/images/ciberacoso/acoso_pc.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ const ImageDiv4 = styled.div`
     @media (max-width: 700px){
         justify-content: baseline;
         align-items: center;
-        background: url("/images/talentoHumano/talento_movil.webp");
+        background: url("/images/ciberacoso/acoso_movil.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -175,10 +175,10 @@ export default function Carrousel(){
 
                 
 
-                <CustomLink to={"/oferta-educativa-alcaldia"}>
+                <CustomLink to={"/ciberacoso"}>
                     <ImageDiv4>
-                        <CarrouselTitle>Impulsa tu Futuro Digital</CarrouselTitle>
-                        <CarrouselText>Inscribete en cursos especializados para el personal de la administración municipal</CarrouselText>
+                        <CarrouselTitle>Alto al Ciberacoso</CarrouselTitle>
+                        <CarrouselText>Habla, no estás solo. Te escuchamos y te acompañamos.</CarrouselText>
                     </ImageDiv4>
                 </CustomLink>
                 
@@ -191,7 +191,7 @@ export default function Carrousel(){
 
                 <CustomLink to={"/helppeople"}>
                     <ImageDiv2>
-                        <CarrouselTitle>¡Muy pronto se celebrará la entrega de las becas!</CarrouselTitle>
+                        <CarrouselTitle>Impulsando el futuro digital de Buga</CarrouselTitle>
                         <CarrouselText>La secretaría TIC junto a HelpPeople transformaran la vida de 50 beneficiarios.</CarrouselText>
                     </ImageDiv2>
                 </CustomLink>
