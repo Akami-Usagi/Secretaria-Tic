@@ -230,6 +230,10 @@ export default function Ciberacoso(){
                 <Text>
                     Te invitamos a llenar el formulario con tus datos y una descripción del caso. Esta información será enviada directamente a nuestro equipo de psicología, quien se comunicará contigo para brindarte un acompañamiento cercano, humano y completamente confidencial. Queremos escucharte, ayudarte a comprender lo que estás viviendo y caminar contigo en este proceso, ofreciéndote el respaldo que mereces desde el primer contacto.
                 </Text>
+                <Text>
+                    *Antes de completar el formulario Consulte los términos de nuestra política de tratamiento de datos personales en el siguiente <a href="https://guadalajaradebugavalledelcauca.micolombiadigital.gov.co/sites/guadalajaradebugavalledelcauca/content/files/001619/80928_politica-de-tratamiento-de-datos-personales-v2.pdf " target="blank"> Enlace</a> 
+
+                </Text>
           
                 <FormDiv>
                     
@@ -266,7 +270,7 @@ export default function Ciberacoso(){
                         <FormCheck type="checkbox" id="terminos" name="terminos" onChange={(event) => {
                             setTerminos(event.target.checked)
                         }}/>
-                        <FormLabel htmlFor="terminos">Confirmo que quiero recibir acompañamiento por profesionales en ciberacoso</FormLabel>
+                        <FormLabel htmlFor="terminos">Confirmo que estoy de acuerdo con los términos de la política de tratamiento de datos personales</FormLabel>
                     </CheckDiv>
                     
 
