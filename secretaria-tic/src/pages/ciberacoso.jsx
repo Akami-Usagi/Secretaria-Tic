@@ -201,7 +201,7 @@ export default function Ciberacoso(){
         if (nombre === "" || mensaje === "" || telefono === "" || email === "" || tipo === "" || documento === "" || eps === "") {
             alert("Debe diligenciar todos los campos para completar el registro")
         }else if (terminos === false){
-            alert("Confirma la casilla de acompañamiento profesional")
+            alert("Debes confirmar que aceptas los términos de la política de tratamiento de datos personales")
         }else{
             enviarCorreo({nombre, tipo, documento, eps, email, telefono, mensaje})
             sendData(nombre, tipo, documento, eps, email, telefono, mensaje, "ciberacoso")
