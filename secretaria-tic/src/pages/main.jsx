@@ -18,10 +18,12 @@ export default function Main(){
     const textTech = "¿Quieres impulsar tu carrera en el mundo digital? ¡Inscribete en los programas de Talento Tech de la gobernacion del Valle del Cauca! Aprende las habilidades más demandadas en el mercado laboral actual, como programación, inteligencia artificial y ciberseguridad. ¡Es tu oportunidad de adquirir conocimientos en alta calidad y abrirte puertas a nuevas oportunidades laborales!"
     const titleHelp = "Impulsando el futuro digital de Buga";
     const textHelp = "La transformación digital de Guadalajara de Buga avanza con pasos firmes, y ahora damos un nuevo impulso con la entrega de 50 becas para formación en programación, gracias a la alianza entre la Secretaría TIC y HelpPeople. Esta iniciativa representa una oportunidad única para que más personas adquieran habilidades tecnológicas clave, fomentando el desarrollo profesional y fortaleciendo el ecosistema digital de nuestra ciudad.";
-
+    const titleAcoso = "Ruta de Atención contra el Ciberacoso y el Ciberbullying"
+    const textAcoso = "¿Has sido víctima o conoces a alguien que esté atravesando una situación de ciberacoso o ciberbullying? No estás solo. En la Secretaría TIC trabajamos por una comunidad digital más segura, respetuosa y empática. Sabemos que estas situaciones pueden generar miedo, confusión o aislamiento, y por eso hemos creado esta ruta de atención como un espacio seguro donde puedas expresar lo que estás viviendo y recibir apoyo profesional."
     return(
         <div>
             <Carrousel/>
+            <InfoCard image={"/images/ciberacoso/acoso_movil.webp"} link={"/ciberacoso"} title={titleAcoso} text={textAcoso}/>
             <InfoCardLeft image={"/images/ofertaInstitucional/oferta_movil.webp"} link={"/formacion-tic"} title={titleOferta} text={textOferta}/>
             <InfoCard image={"/images/helpPeople/helppeople_movil.webp"} link={"/helppeople"} title={titleHelp} text={textHelp}/>
             <InfoCardLeft image={"/images/digicampus/digicampus_movil.webp"} link={"/digicampus"} title={titleDigi} text={textDigi}/>

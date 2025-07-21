@@ -5,6 +5,7 @@ import { db } from "../firebase";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
 
 const BugaDiv = styled.div`
@@ -91,14 +92,16 @@ const FormInput = styled.input`
     border-radius: 15px;
     margin-bottom: 15px;
 `
-const FormSelect = styled.select`
+const FormCheck = styled.input`
     border: none;
-    height: 60px;
+    height: 35px;
+    width: 35px;
     background-color: #e2e2e2;
     font-size: medium;
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 15px;
+    margin-right: 15px;
 `
 const FormButton = styled.button`
     width: 300px;
@@ -126,30 +129,68 @@ const CheckDiv = styled.div`
     justify-content: center;
     align-items: center;
 `
-export default function TalentoTic(){
+const FormText = styled.textarea`
+    border: none;
+    height: 140px;
+    background-color: #e2e2e2;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+`
+
+export default function Ciberacoso(){
 
     const navigate = useNavigate();
     const [nombre, setNombre] = useState("");
-    const [documento, setDocumento] = useState("");
+    const [mensaje, setMensaje] = useState("");
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
     const [terminos, setTerminos] = useState(false);
-    const [tipo, setTipo] = useState("");
+    
 
-    async function sendData(nombre, documento, tipo, telefono, email, programa){
-        let data = {nombre, documento, tipo, telefono, email}
+    async function sendData(nombre, mensaje, telefono, email, programa){
+        let data = {nombre, mensaje, telefono, email}
         await addDoc(collection(db, programa), data)
         .then(
-            alert("Registrado Satisfactoriamente, muy pronto nos comunicaremos contigo.")
+            alert("Tu caso a sido Registrado Satisfactoriamente, muy pronto nos comunicaremos contigo.")
             
         )
     };
 
+    const enviarCorreo = async ({ nombre, email, mensaje, telefono }) => {
+        try {
+            const serviceID = 'service_0fx412n';
+            const templateID = 'template_0l6et13';
+            const publicKey = 'vrOjicKcsIpsOaPRz'; 
+
+            const templateParams = {
+                nombre: nombre,
+                email: email,
+                telefono: telefono,
+                mensaje: mensaje,    
+            };
+        console.log(templateParams);
+            
+        const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+            console.log('✅ Correo enviado', response.status, response.text);
+            return true;
+        } catch (error) {
+            console.error('❌ Error al enviar correo', error);
+            return false;
+        }
+        };
+
     function handleSendData(){
-        if (nombre === "" || documento === "" || tipo === "" || telefono === "" || email === "" || terminos === false) {
+        if (nombre === "" || mensaje === "" || telefono === "" || email === "" ) {
             alert("Debe diligenciar todos los campos para completar el registro")
+        }else if (terminos === false){
+            alert("Confirma la casilla de acompañamiento profesional")
         }else{
-            sendData(nombre, documento, tipo, telefono, email, "talento-tic")
+            enviarCorreo({nombre, email, mensaje, telefono})
+            sendData(nombre, mensaje, telefono, email, "ciberacoso")
+            
             navigate(`/`)
         }
         
@@ -164,39 +205,25 @@ export default function TalentoTic(){
             initial={{ opacity: 0,  y: -100 }}
             animate={{ opacity: 1,  y: 0}}
             transition={{ duration: .8 }}>
-            <Image src={`${window.innerWidth <= 700 ? "/images/ticTalent/talent_movil.webp" : "/images/ticTalent/talent_pc.webp"}`} alt="Inscripciones" />
+            <Image src={`${window.innerWidth <= 700 ? "/images/ciberacoso/acoso_movil.webp" : "/images/ciberacoso/acoso_pc.webp"}`} alt="Ciberacoso" />
             </ContentDiv>
             <TextDiv>
-                <Title>¡Descubre tu Potencial Creativo con TIC Talent Creativo!</Title>
+                <Title>Ruta de Atención contra el Ciberacoso y el Ciberbullying</Title>
                 <Text>
-                    Si eres de Buga y sientes pasión por la producción de contenido digital, ¡esta es tu oportunidad! La convocatoria TIC Talent Creativo te invita a mostrar tu ingenio y habilidades en el mundo digital. Ya seas diseñador, creador de contenido, editor de video, o amante de las artes digitales, este es tu momento para brillar. Comparte tu talento y conviértete en un referente de creatividad en nuestra ciudad.
+                    ¿Has sido víctima o conoces a alguien que esté atravesando una situación de ciberacoso o ciberbullying? No estás solo. En la Secretaría TIC trabajamos por una comunidad digital más segura, respetuosa y empática. Sabemos que estas situaciones pueden generar miedo, confusión o aislamiento, y por eso hemos creado esta ruta de atención como un espacio seguro donde puedas expresar lo que estás viviendo y recibir apoyo profesional.
                 </Text>
                 <Text>
-                    No dejes pasar esta oportunidad única de desarrollar tu carrera artistica. Inscríbete ahora y únete a una comunidad vibrante de jóvenes talentosos que, como tú, quieren dejar su huella en la ciudad. ¡Inspírate, crea y transforma tu futuro con TIC Talent Creativo!
+                    Te invitamos a llenar el formulario con tus datos y una descripción del caso. Esta información será enviada directamente a nuestro equipo de psicología, quien se comunicará contigo para brindarte un acompañamiento cercano, humano y completamente confidencial. Queremos escucharte, ayudarte a comprender lo que estás viviendo y caminar contigo en este proceso, ofreciéndote el respaldo que mereces desde el primer contacto.
                 </Text>
-                <Text>
-                    Conoce las condiciones y restricciones en el siguiente <a href="/Terminos y Condiciones.pdf" target="blank"><strong>enlace</strong></a>
-                </Text>
-                <Text>
-                    Una vez leidos los terminos y condiciones, envia los documentos requeridos al correo <a href="mailto:tic@buga.gov.co" target="blank"><strong>tic@buga.gov.co</strong></a> y luego completa el siguiente formulario de inscripcion.
-                </Text>
+          
                 <FormDiv>
                     
                     <FormLabel htmlFor="nombre">Nombre</FormLabel>
                     <FormInput type="text" id="nombre" placeholder="Ingrese su nombre" onChange={(event) => setNombre(event.target.value)}/>
 
-                    <FormLabel htmlFor="documento">Documento</FormLabel>
-                    <FormInput type="text" id="documento" placeholder="Ingrese su numero de documento" onChange={(event) => setDocumento(event.target.value)}/>
 
-                    <FormLabel htmlFor="tipo">Tipo de Documento</FormLabel>
-                    <FormSelect name="tipo" id="tipo" onChange={(event) =>{
-                        setTipo(event.target.value);
-                    }}>
-                        <option value="">-- Seleccione --</option>
-                        <option value="cedula">Cedula</option>
-                        <option value="cedula extrangeria">Cedula Extrangería</option>
-                        <option value="pasaporte">Pasaporte</option>
-                    </FormSelect>
+                    <FormLabel htmlFor="mensaje">Mensaje</FormLabel>
+                    <FormText type="text" id="mensaje" placeholder="Cuentanos tu caso" onChange={(event) => setMensaje(event.target.value)}/>
 
                     <FormLabel htmlFor="telefono">Telefono</FormLabel>
                     <FormInput type="number" id="telefono" placeholder="Ingrese su numero de telefono" onChange={(event) => setTelefono(event.target.value)}/>
@@ -205,15 +232,15 @@ export default function TalentoTic(){
                     <FormInput type="email" id="email" placeholder="Ingrese su correo electronico" onChange={(event) => setEmail(event.target.value)}/>
 
                     <CheckDiv>
-                        <FormInput type="checkbox" id="terminos" name="terminos" onChange={(event) => {
+                        <FormCheck type="checkbox" id="terminos" name="terminos" onChange={(event) => {
                             setTerminos(event.target.checked)
                         }}/>
-                        <FormLabel htmlFor="terminos">Confirmo que he leído los términos y condiciones del concurso</FormLabel>
+                        <FormLabel htmlFor="terminos">Confirmo que quiero recibir acompañamiento por profesionales en ciberacoso</FormLabel>
                     </CheckDiv>
                     
 
                 </FormDiv>
-                <FormButton onClick={handleSendData}>Registrarse</FormButton>
+                <FormButton onClick={handleSendData}>Registra tu Caso</FormButton>
                 
             </TextDiv>
         </BugaDiv>
