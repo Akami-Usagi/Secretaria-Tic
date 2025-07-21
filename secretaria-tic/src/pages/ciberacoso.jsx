@@ -139,6 +139,15 @@ const FormText = styled.textarea`
     margin-bottom: 15px;
     font-family: "Montserrat", sans-serif;
 `
+const FormSelect = styled.select`
+    border: none;
+    height: 55px;
+    background-color: #e2e2e2;
+    font-size: medium;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+`
 
 export default function Ciberacoso(){
 
@@ -147,11 +156,14 @@ export default function Ciberacoso(){
     const [mensaje, setMensaje] = useState("");
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
+    const [documento, setDocumento] = useState("");
+    const [eps, setEps] = useState("");
+    const [tipo, setTipo] = useState("");
     const [terminos, setTerminos] = useState(false);
     
 
-    async function sendData(nombre, mensaje, telefono, email, programa){
-        let data = {nombre, mensaje, telefono, email}
+    async function sendData(nombre, tipo, documento, eps, email, telefono, mensaje, programa){
+        let data = {nombre, tipo, documento, eps, email, telefono, mensaje}
         await addDoc(collection(db, programa), data)
         .then(
             alert("Tu caso a sido Registrado Satisfactoriamente, muy pronto nos comunicaremos contigo.")
@@ -159,7 +171,7 @@ export default function Ciberacoso(){
         )
     };
 
-    const enviarCorreo = async ({ nombre, email, mensaje, telefono }) => {
+    const enviarCorreo = async ({ nombre, email, mensaje, telefono, documento, eps, tipo }) => {
         try {
             const serviceID = 'service_0fx412n';
             const templateID = 'template_0l6et13';
@@ -167,6 +179,9 @@ export default function Ciberacoso(){
 
             const templateParams = {
                 nombre: nombre,
+                tipo: tipo,
+                documento: documento,
+                eps: eps,
                 email: email,
                 telefono: telefono,
                 mensaje: mensaje,    
@@ -183,13 +198,13 @@ export default function Ciberacoso(){
         };
 
     function handleSendData(){
-        if (nombre === "" || mensaje === "" || telefono === "" || email === "" ) {
+        if (nombre === "" || mensaje === "" || telefono === "" || email === "" || tipo === "" || documento === "" || eps === "") {
             alert("Debe diligenciar todos los campos para completar el registro")
         }else if (terminos === false){
             alert("Confirma la casilla de acompañamiento profesional")
         }else{
-            enviarCorreo({nombre, email, mensaje, telefono})
-            sendData(nombre, mensaje, telefono, email, "ciberacoso")
+            enviarCorreo({nombre, tipo, documento, eps, email, telefono, mensaje})
+            sendData(nombre, tipo, documento, eps, email, telefono, mensaje, "ciberacoso")
             
             navigate(`/`)
         }
@@ -221,15 +236,31 @@ export default function Ciberacoso(){
                     <FormLabel htmlFor="nombre">Nombre</FormLabel>
                     <FormInput type="text" id="nombre" placeholder="Ingrese su nombre" onChange={(event) => setNombre(event.target.value)}/>
 
+                    <FormLabel htmlFor="tipo">Tipo de Documento</FormLabel>
+                    <FormSelect id="tipo" onChange={(event) =>{
+                        setTipo(event.target.value)
+                    }}>
+                        <option value="">-- Seleccione --</option>
+                        <option value="Tarjeta Identidad">Tarjeta de Identidad</option>
+                        <option value="Cedula">Cedula de Ciudadanía</option>
+                        <option value="Registro Civil">Registro Civil</option>
+                    </FormSelect>
 
-                    <FormLabel htmlFor="mensaje">Mensaje</FormLabel>
-                    <FormText type="text" id="mensaje" placeholder="Cuentanos tu caso" onChange={(event) => setMensaje(event.target.value)}/>
+                    <FormLabel htmlFor="documento">Numero de Documento</FormLabel>
+                    <FormInput type="number" id="documento" placeholder="Ingrese su numero de Documento" onChange={(event) => setDocumento(event.target.value)}/>
+                        
+                    <FormLabel htmlFor="eps">EPS</FormLabel>
+                    <FormInput type="text" id="eps" placeholder="Ingrese su EPS" onChange={(event) => setEps(event.target.value)}/>
+                    
 
                     <FormLabel htmlFor="telefono">Telefono</FormLabel>
                     <FormInput type="number" id="telefono" placeholder="Ingrese su numero de telefono" onChange={(event) => setTelefono(event.target.value)}/>
 
                     <FormLabel htmlFor="email">Email</FormLabel>
                     <FormInput type="email" id="email" placeholder="Ingrese su correo electronico" onChange={(event) => setEmail(event.target.value)}/>
+
+                    <FormLabel htmlFor="mensaje">Mensaje</FormLabel>
+                    <FormText type="text" id="mensaje" placeholder="Cuentanos tu caso" onChange={(event) => setMensaje(event.target.value)}/>
 
                     <CheckDiv>
                         <FormCheck type="checkbox" id="terminos" name="terminos" onChange={(event) => {
