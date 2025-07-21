@@ -154,7 +154,7 @@ export default function Ciberacoso(){
         let data = {nombre, mensaje, telefono, email}
         await addDoc(collection(db, programa), data)
         .then(
-            alert("Registrado Satisfactoriamente, muy pronto nos comunicaremos contigo.")
+            alert("Tu caso a sido Registrado Satisfactoriamente, muy pronto nos comunicaremos contigo.")
             
         )
     };
@@ -183,8 +183,10 @@ export default function Ciberacoso(){
         };
 
     function handleSendData(){
-        if (nombre === "" || mensaje === "" || telefono === "" || email === "" || terminos === false) {
+        if (nombre === "" || mensaje === "" || telefono === "" || email === "" ) {
             alert("Debe diligenciar todos los campos para completar el registro")
+        }else if (terminos === false){
+            alert("Confirma la casilla de acompañamiento profesional")
         }else{
             enviarCorreo({nombre, email, mensaje, telefono})
             sendData(nombre, mensaje, telefono, email, "ciberacoso")
