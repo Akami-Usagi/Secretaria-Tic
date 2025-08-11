@@ -52,7 +52,7 @@ const ImageDiv = styled.div`
     }
 `
 const ImageDiv2 = styled.div`
-    background: url("/images/helpPeople/helppeople_pc.webp");
+    background: url("/images/bugaConectada/conectada_pc.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -69,7 +69,7 @@ const ImageDiv2 = styled.div`
     @media (max-width: 700px){
         justify-content: baseline;
         align-items: center;
-        background: url("/images/helpPeople/helppeople_movil.webp");
+        background: url("/images/bugaConectada/conectada_movil.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -173,7 +173,12 @@ export default function Carrousel(){
             showIndicators={false}
             interval={3000}>
 
-                
+                <CustomLink to={"/buga-conectada"}>
+                    <ImageDiv2>
+                        <CarrouselTitle>Parques Conectados en Buga</CarrouselTitle>
+                        <CarrouselText>Disfruta internet gratis en los espacios públicos de tu ciudad. ¡Ubica el más cercano y conéctate!</CarrouselText>
+                    </ImageDiv2>
+                </CustomLink>
 
                 <CustomLink to={"/ciberacoso"}>
                     <ImageDiv4>
@@ -189,12 +194,7 @@ export default function Carrousel(){
                     </ImageDiv>
                 </CustomLink>
 
-                <CustomLink to={"/helppeople"}>
-                    <ImageDiv2>
-                        <CarrouselTitle>Impulsando el futuro digital de Buga</CarrouselTitle>
-                        <CarrouselText>La secretaría TIC junto a HelpPeople transformaran la vida de 50 beneficiarios.</CarrouselText>
-                    </ImageDiv2>
-                </CustomLink>
+                
 
                 <CustomLink to={"/ondas-tic"}>
                     <ImageDiv3>
