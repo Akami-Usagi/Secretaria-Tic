@@ -109,19 +109,19 @@ export default function OfertaInterna(){
                     Prepárate para afrontar los retos de la transformación digital con nuestras formaciones especializadas para el personal de la administracion municipal. Ofrecemos el curso Ofimática 4.0, dirigido al personal asistencial (30 cupos disponibles), ideal para fortalecer las competencias en herramientas ofimáticas modernas. El curso de Inteligencia Artificial Aplicada está orientado a personal técnico (30 cupos), y te permitirá entender y aplicar conceptos clave de la IA en tu labor diaria. Finalmente, el curso de Ciberseguridad para Entornos Públicos está diseñado para profesionales que deseen proteger la información institucional y enfrentar los riesgos digitales con conocimientos actualizados. ¡Capacítate, crece y transforma tu rol en la era digital!
                 </Text>
                 <Text>
-                    <strong>Curso de Ofimatica 4.0 para Asistenciales:</strong><br/> Horario: Martes de 8:00am a 10:00am<br/>
+                    <strong>Curso de Ofimatica 4.0 para Asistenciales:</strong><br/> Horario: Martes de 8:00am a 12:00m<br/>
                     Lugar: CTD Colegio Académico<br/>
-                    Fecha de Inicio: 10 de Junio de 2025
+                    Fecha de Inicio: 26 de Agosto de 2025
                 </Text>  
                 <Text>
-                    <strong>Curso de Ciberseguridad para Profesionales:</strong><br/> Horario: Miércoles de 8:00am a 10:00am<br/>
+                    <strong>Curso de Ciberseguridad para Profesionales:</strong><br/> Horario: Miércoles de 8:00am a 12:00m<br/>
                     Lugar: CTD Colegio Académico<br/>
-                    Fecha de Inicio: 11 de Junio de 2025
+                    Fecha de Inicio: 27 de Agosto de 2025
                 </Text> 
                 <Text>
-                    <strong>Curso de Inteligencia Artificial para Tecnicos:</strong><br/> Horario: Jueves de 8:00am a 10:00am<br/>
+                    <strong>Curso de Inteligencia Artificial para Tecnicos:</strong><br/> Horario: Jueves de 8:00am a 12:00am<br/>
                     Lugar: CTD Colegio Académico<br/>
-                    Fecha de Inicio: 12 de Junio de 2025
+                    Fecha de Inicio: 04 de Septiembre de 2025
                 </Text>
                 
                 <h1>
