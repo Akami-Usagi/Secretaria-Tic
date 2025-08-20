@@ -103,7 +103,7 @@ export default function OfertaInstitucional(){
                 La Secretaría de Tecnologías de la Información y las Comunicaciones sigue fortaleciendo su compromiso 
                 con la comunidad bugueña a través de "Avanzando en lo Digital 2.0", una estrategia renovada para continuar 
                 cerrando la brecha digital. Además de nuestros cursos en Ofimática Básica, Excel, Office, Manejo de Drones 
-                y Fundamentos de Programación, ahora incorporamos <strong>Ciberseguridad, Introducción a la Realidad Extendida y 
+                y Fundamentos de Programación, ahora incorporamos <strong>Ciberseguridad, Introducción a la Realidad Extendida, Audio Digital, Vuelo de DRON Avanzado y 
                 Manejo de Plataformas Digitales.</strong> Seguimos innovando para ofrecer oportunidades de formación accesibles y 
                 alineadas con las necesidades del mundo digital. ¡Prepárate para potenciar tus habilidades con nosotros!
                 </Text>  
@@ -161,6 +161,10 @@ export default function OfertaInstitucional(){
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
                         transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdeIAQgzR8WhAvNyisQJEqum7GG_yjFXsusUv_trpzN-7LXIg/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia Movil" /></Anchor>
+                <Anchor initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{once: true, amount: .5}}
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdlctYBUWTRjOMSJoJou2lxTcv4LjVoJpP3bDoscX63D2Z64Q/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/dron_avanzado.webp" alt="Dron Avanzado" /></Anchor>
             </CousesDiv>
         </BugaDiv>
     )
