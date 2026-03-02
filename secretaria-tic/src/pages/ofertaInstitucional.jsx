@@ -110,8 +110,12 @@ export default function OfertaInstitucional(){
                 </Text>
                 <Text>
                     Seguimos avanzando, innovando y generando oportunidades reales de crecimiento para nuestra comunidad.
-¡Inscríbete         y sé parte de <strong>Avanzando en lo Digital 2026!</strong>
+                    ¡Inscríbete y sé parte de <strong>Avanzando en lo Digital 2026!</strong>
                 </Text>
+                <Text>
+                    Presiona la imagen del curso al que quieras inscribirte y completa el formulario.
+                </Text>
+
             </TextDiv>
             <CousesDiv>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
