@@ -14,9 +14,9 @@ import OndasTic from './pages/ondasTic';
 import Page404 from './pages/page404';
 import Header from './components/header';
 import Footer from './components/footer';
-import OfertaInterna from './pages/ofertaInterna';
+//import OfertaInterna from './pages/ofertaInterna';
 import CamaraComercio from './pages/camaraComercio';
-import Satelite from './pages/satelite';
+//import Satelite from './pages/satelite';
 import BugaConectada from './pages/bugaConectada';
 
 
@@ -37,9 +37,9 @@ function App() {
         <Route path='/talento-humano' element={<TalentoHumano/>}/>
         <Route path='/talento-tech' element={<TalentoTech/>}/>
         <Route path='/digicampus' element={<Digicampus/>}/>
-        <Route path='/oferta-educativa-alcaldia' element={<OfertaInterna/>}/>
+        
         <Route path='/camara-de-comercio' element={<CamaraComercio/>}/>
-        <Route path='/satelite' element={<Satelite/>}/>
+        
         <Route path='/ciberacoso' element={<Ciberacoso/>}/>
         <Route path='/buga-conectada' element={<BugaConectada/>}/>
         <Route path='/*' element={<Page404/>}/>

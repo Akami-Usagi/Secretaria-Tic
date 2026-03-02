@@ -171,7 +171,14 @@ export default function Carrousel(){
             stopOnHover={false}
             showStatus={false}
             showIndicators={false}
-            interval={3000}>
+            interval={6000}>
+
+                <CustomLink to={"/formacion-tic"}>
+                    <ImageDiv>
+                        <CarrouselTitle>¡Avanzando en lo Digital 2026!</CarrouselTitle>
+                        <CarrouselText>Transforma tu futuro digital este 2026!.</CarrouselText>
+                    </ImageDiv>
+                </CustomLink>
 
                 <CustomLink to={"/buga-conectada"}>
                     <ImageDiv2>
@@ -186,16 +193,7 @@ export default function Carrousel(){
                         <CarrouselText>Habla, no estás solo. Te escuchamos y te acompañamos.</CarrouselText>
                     </ImageDiv4>
                 </CustomLink>
-                
-                <CustomLink to={"/formacion-tic"}>
-                    <ImageDiv>
-                        <CarrouselTitle>¡Avanzando en lo Digital se renueva!</CarrouselTitle>
-                        <CarrouselText>La secretaría TIC trae para ti nuevas capacitaciones tecnologicas.</CarrouselText>
-                    </ImageDiv>
-                </CustomLink>
-
-                
-
+                           
                 <CustomLink to={"/ondas-tic"}>
                     <ImageDiv3>
                         <CarrouselTitle>Podcast Tecnologico</CarrouselTitle>

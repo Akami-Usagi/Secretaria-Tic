@@ -98,73 +98,63 @@ export default function OfertaInstitucional(){
                 <Image src={`${window.innerWidth <= 700 ? "/images/ofertaInstitucional/oferta_movil.webp" : "/images/ofertaInstitucional/oferta_pc.webp"}`} alt="Imagen Noticia" />
             </ContentDiv>
             <TextDiv>
-                <Title>¡Avanzando en lo Digital se renueva!</Title>
+                <Title>¡Avanzando en lo Digital 2026 ya está aquí!</Title>
                 <Text>
-                La Secretaría de Tecnologías de la Información y las Comunicaciones sigue fortaleciendo su compromiso 
-                con la comunidad bugueña a través de "Avanzando en lo Digital 2.0", una estrategia renovada para continuar 
-                cerrando la brecha digital. Además de nuestros cursos en Ofimática Básica, Excel, Office, Manejo de Drones 
-                y Fundamentos de Programación, ahora incorporamos <strong>Ciberseguridad, Introducción a la Realidad Extendida, Audio Digital, Vuelo de DRON Avanzado y 
-                Manejo de Plataformas Digitales.</strong> Seguimos innovando para ofrecer oportunidades de formación accesibles y 
-                alineadas con las necesidades del mundo digital. ¡Prepárate para potenciar tus habilidades con nosotros!
-                </Text>  
+                    <strong>La Secretaría de Tecnologías de la Información y las Comunicaciones</strong> reafirma su compromiso con la comunidad bugueña presentando <strong>“Avanzando en lo Digital 2026”</strong>, una nueva edición de nuestra estrategia para seguir cerrando la brecha digital y fortalecer las competencias tecnológicas en el municipio.
+                </Text> 
+                <Text>
+                    Este año continuamos impulsando nuestra oferta propia de formación con cursos diseñados para brindar herramientas prácticas y actuales: Curso Básico Piloto de Dron, Excel, Informática Básica, Ofimática Básica, Manejo de Plataformas Digitales y Audio Digital. Espacios pensados para estudiantes, emprendedores, trabajadores y ciudadanos que desean mejorar sus habilidades, optimizar sus procesos y adaptarse a las dinámicas del entorno digital.
+                </Text>
+                <Text>
+                    Además, en articulación con el <strong>Servicio Nacional de Aprendizaje (SENA)</strong>, ampliamos las oportunidades de formación con cursos certificados en WhatsApp Business, Creación de Contenido para Redes Sociales, Marketing Digital y Fotografía Básica de Productos para Redes Sociales. Esta alianza fortalece la calidad académica del programa y brinda a los participantes la posibilidad de obtener certificación respaldada por una de las instituciones más reconocidas del país.
+                </Text>
+                <Text>
+                    Seguimos avanzando, innovando y generando oportunidades reales de crecimiento para nuestra comunidad.
+¡Inscríbete         y sé parte de <strong>Avanzando en lo Digital 2026!</strong>
+                </Text>
             </TextDiv>
             <CousesDiv>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSeP1086aoDjwa1Mg7DVvvET5Sa2MtatPGoilvTKzIEpZpxQgA/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/programacion.webp" alt="Programacion" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLScpRstBWCwsHg2KHyk5u_rgFy9EfNixXQXKRfXyBuPtnmJOaQ/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSf_IATgBVletsRUOAzl089zrc_dRZ20S_f3ivjNiiEnqvtccg/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/dron.webp" alt="Drones" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSeQ_1kTULo4VG850Bh2xcrHAuByMUKNryLowga194xhFchirA/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfaf-CtoCnp4y0cOXXioGgXTXrngwZBM-dgLMWZnXUq0X9bPQ/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/excel.webp" alt="Excel" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfFySbYH6C_iWTBPZ1Qy46v8DmidfHrqQOkZeOmEgvsgh3xHg/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSchyNt__o7Yi_f1mth7j9h3tvYpoZApQSXJuFepGagtiXTF2A/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/ciberseguridad.webp" alt="Ciberseguridad" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdpIZiGGKfsidDdGmOL50MXxhJkWoXTyCPc5FivyoCZSmiSNg/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSe3zF6riloblJ4KeVc6ZLHAyO06OX7NFPqtLhBWJ6PRnQcf3g/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/ia.webp" alt="Inteligencia Artificial" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfpVCWFRygfnN03O9NokKkh7Jn2V8VTlO0leB-G5UjDpV-hKg/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLScNZFiPvF2oT_76GW0pajJ9hkWu3HCVGPnPOM_N91a3jB9OJw/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/plataformas.webp" alt="Plataformas" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLScRPnDipzY7m0yUqJlSgv9CZHbDpLVJ_C7BwDGsoZQHFNtmYA/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/audio.webp" alt="Audio Digital" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLScAlgp8UtYkx7qrnOtqctKD1-7YhTNT_iXFQts_vzrYGdjU3w/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/ofimatica.webp" alt="Ofimatica" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSexo-22YJ02GB1xNSDFOQSBeqFI7VlBAy_64XKZhiEI5NF7vw/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing Digital" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSe9c7dQGZmlzeDSfEFpF29CF51FHoqvVQ86IWPcKfT3_k0m7Q/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/informatica.webp" alt="Informatica" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSehez31aB3vtS5HCyVfWyLedh-2bua_XO4489ydO9GgysAlWw/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia Movil" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSegPCkf2BCFeiOzmrrhWXJWbGoUShPcOcfOTgHJToSWgFTU6A/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/vr.webp" alt="Realidad Extendida" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSex_7uyTzDEZK_yC8eog5bKVMfXJOaytyF58Wg0uZ5BXXgyTQ/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/whatsapp.webp" alt="Whatssap Business" /></Anchor>
                 <Anchor initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSfGjd_TlcxrDPPtCqnrnBgDNnY7jopflS9xXd-cpawlpYpDuw/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/audio.webp" alt="Audio Digital" /></Anchor>
-                <Anchor initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdJRskSI_LFqzHom3lUj4DBKc1Zj9fFDqeYqfyPo8SAg91e9Q/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/gestion.webp" alt="Gestion Documental" /></Anchor>
-                <Anchor initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSeM1JDQFRhO0kTTKhH0a2DXlnHg35_XV2p4mkROu3qpucTObQ/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/marketing.webp" alt="Marketing Digital" /></Anchor>
-                <Anchor initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdeIAQgzR8WhAvNyisQJEqum7GG_yjFXsusUv_trpzN-7LXIg/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/fotografia.webp" alt="Fotografia Movil" /></Anchor>
-                <Anchor initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{once: true, amount: .5}}
-                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSdlctYBUWTRjOMSJoJou2lxTcv4LjVoJpP3bDoscX63D2Z64Q/viewform" target="_blank"><CourseImage src="/images/ofertaInstitucional/dron_avanzado.webp" alt="Dron Avanzado" /></Anchor>
+                        transition={{ duration: 0.5 }} href="https://docs.google.com/forms/d/e/1FAIpQLSf18DeQpCJ7IioWZM2HxwWm4JMHJdnfH7OPHMz8tOIyep6RzQ/viewform?usp=dialog" target="_blank"><CourseImage src="/images/ofertaInstitucional/contenido.webp" alt="Contenido" /></Anchor>
+
             </CousesDiv>
         </BugaDiv>
     )
